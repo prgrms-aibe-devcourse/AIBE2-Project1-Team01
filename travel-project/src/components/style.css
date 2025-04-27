@@ -1,0 +1,131 @@
+.frame {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlap-group {
+  border-radius: 10px;
+  height: 362px;
+  position: relative;
+  width: 227px;
+}
+
+.rectangle {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px #c9f0f766;
+  height: 362px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 227px;
+}
+
+.regioncard-img {
+  background-color: #e3e3e3;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px 10px 0px 0px;
+  height: 251px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 227px;
+}
+
+.region-title {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 22.4px;
+  position: absolute;
+  top: 258px;
+  white-space: nowrap;
+}
+
+.region-description {
+  color: #9f9f9f;
+  font-family: "Inter-Thin", Helvetica;
+  font-size: 12px;
+  font-weight: 100;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 282px;
+  width: 211px;
+}
+
+/* Tag styles */
+.tag-wrapper-1, .tag-wrapper-2, .tag-wrapper-3, .tag-wrapper-4 {
+  background-color: #c9f0f7;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  height: 19px;
+  position: absolute;
+  top: 338px;
+  width: 44px;
+}
+
+.tag-wrapper-1 {
+  left: 6px;
+}
+
+.tag-wrapper-2 {
+  left: 54px;
+}
+
+.tag-wrapper-3 {
+  left: 103px;
+}
+
+.tag-wrapper-4 {
+  left: 152px;
+}
+
+.region-tag1, .region-tag2, .region-tag3, .region-tag4 {
+  color: #333333;
+  font-family: "Inter-Thin", Helvetica;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: 14.0px;
+  position: absolute;
+  top: 339px;
+  white-space: nowrap;
+}
+
+.region-tag1 {
+  left: 19px;
+}
+
+.region-tag2 {
+  left: 67px;
+}
+
+.region-tag3 {
+  left: 116px;
+}
+
+.region-tag4 {
+  left: 165px;
+}
+
+/* Star icon styling */
+.Star {
+  height: 24px;
+  position: absolute;
+  top: 255px;
+  right: 8px;
+  width: 24px;
+}
