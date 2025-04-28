@@ -1,4 +1,72 @@
-.frame {
+/* 모든 요소에 Noto Sans Korean 적용 */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../assets/fonts/NotoSansKR-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/NotoSansKR-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/NotoSansKR-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/NotoSansKR-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/NotoSansKR-Black.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-layout {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -41,7 +109,7 @@
 
 .region-title {
   color: #000000;
-  font-family: "Inter-Bold", Helvetica;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 700;
   left: 9px;
@@ -54,7 +122,7 @@
 
 .region-description {
   color: #9f9f9f;
-  font-family: "Inter-Thin", Helvetica;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
   font-weight: 100;
   left: 9px;
@@ -67,7 +135,7 @@
 }
 
 /* Tag styles */
-.tag-wrapper-1, .tag-wrapper-2, .tag-wrapper-3, .tag-wrapper-4 {
+.tag-wrapper {
   background-color: #c9f0f7;
   border: 1px solid;
   border-color: #000000;
@@ -75,28 +143,14 @@
   height: 19px;
   position: absolute;
   top: 338px;
-  width: 44px;
+  min-width: 30px; /* 최소 너비 */
+  transition: width 0.2s ease;
+  /* 더 이상 max-width 제한 없음 */
 }
 
-.tag-wrapper-1 {
-  left: 6px;
-}
-
-.tag-wrapper-2 {
-  left: 54px;
-}
-
-.tag-wrapper-3 {
-  left: 103px;
-}
-
-.tag-wrapper-4 {
-  left: 152px;
-}
-
-.region-tag1, .region-tag2, .region-tag3, .region-tag4 {
+.region-tag {
   color: #333333;
-  font-family: "Inter-Thin", Helvetica;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 10px;
   font-weight: 100;
   letter-spacing: 0;
@@ -104,29 +158,6 @@
   position: absolute;
   top: 339px;
   white-space: nowrap;
-}
-
-.region-tag1 {
-  left: 19px;
-}
-
-.region-tag2 {
-  left: 67px;
-}
-
-.region-tag3 {
-  left: 116px;
-}
-
-.region-tag4 {
-  left: 165px;
-}
-
-/* Star icon styling */
-.Star {
-  height: 24px;
-  position: absolute;
-  top: 255px;
-  right: 8px;
-  width: 24px;
+  z-index: 1; /* 텍스트가 래퍼 위에 표시되도록 */
+  text-align: center; /* 중앙 정렬 */
 }
