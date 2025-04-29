@@ -3,7 +3,7 @@ import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // 메인 스타일 시트
 import 'react-date-range/dist/theme/default.css'; // 테마 CSS 파일
 import { ko } from 'date-fns/locale'; // 한국어 로케일
-import { addDays, isSameDay, isAfter, isBefore, differenceInDays, format } from 'date-fns';
+import { addDays, isSameDay, isAfter, isBefore } from 'date-fns';
 
 const DatePickerModal = () => {
   // 오늘 날짜 (시간 00:00으로 초기화)
@@ -114,6 +114,9 @@ const DatePickerModal = () => {
 
   return (
     <div>
+      <h2>여행 기간이 어떻게 되시나요?</h2>
+      <p> 여행 일자는 최대 10일까지 선택 가능합니다</p>
+
       <DateRange
         editableDateInputs={false}            // 날짜 입력을 직접 수정하지 못하게 설정
         onChange={handleSelect}               // 날짜가 변경될 때 호출
@@ -132,6 +135,10 @@ const DatePickerModal = () => {
         selectionType={selectionStep === 2 ? 'single' : 'range'}  // 선택 모드 설정 
         preventSnapRefocus={true}             // 날짜 선택 후 자동으로 포커스 이동 방지
       />
+
+      <div>
+        <button>선택</button>
+      </div>
     </div>
   );
 };
