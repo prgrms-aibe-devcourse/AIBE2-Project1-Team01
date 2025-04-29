@@ -6,10 +6,30 @@ import { ko } from 'date-fns/locale'; // 한국어 로케일
 import { addDays, isSameDay, isAfter, isBefore, differenceInDays, format } from 'date-fns';
 
 const DatePickerModal = () => {
-  return (
-    <div>
-    </div>
-  );
-};
+    return (
+      <div>
+        <DateRange
+          editableDateInputs={false}
+          moveRangeOnFirstSelection={false}
+          ranges={[
+            {
+              startDate: new Date(),
+              endDate: new Date(),
+              key: 'selection',
+              color: '#000000'
+            }
+          ]}
+          months={2}
+          direction="horizontal"
+          locale={ko}
+          weekdayDisplayFormat="EEEEE"
+          showMonthAndYearPickers={false}
+          showDateDisplay={false}
+          className="date-range-calendar"
+          preventSnapRefocus={true}
+        />
+      </div>
+    );
+  };
 
 export default DatePickerModal;
