@@ -1,36 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { BigStar, EmptyStar, HalfStar } from '../../components/StarRating';
 import ConfirmModal from '../../components/ConfirmModal';
 import './ReviewWrite.css';
-
-const BigStar = () => (
-  <svg className="star-svg large" viewBox="0 0 24 24">
-    <polygon
-      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-      fill="currentColor"
-      stroke="currentColor"
-      strokeWidth="1.5"
-    />
-  </svg>
-);
-
-const Star = ({ filled, half }) => (
-  <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
-    {half ? (
-      <>
-        <defs>
-          <linearGradient id="half-grad-modify">
-            <stop offset="50%" stopColor="currentColor" />
-            <stop offset="50%" stopColor="white" stopOpacity="0" />
-          </linearGradient>
-        </defs>
-        <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="url(#half-grad-modify)" stroke="currentColor" strokeWidth="1.5" />
-      </>
-    ) : (
-      <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="1.5" />
-    )}
-  </svg>
-);
 
 function ReviewModify({ reviews, onUpdateReview, setReviews }) {
   const navigate = useNavigate();
@@ -101,7 +73,7 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
       return (
         <span
           key={index}
-          style={{position:'relative', display:'inline-block'}}
+          className="star-container"
           onMouseMove={e => {
             const { left, width } = e.currentTarget.getBoundingClientRect();
             handleStarInteraction(index, false, e.clientX - left, width);
@@ -112,7 +84,7 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
             handleStarInteraction(index, true, e.clientX - left, width);
           }}
         >
-          <Star filled={filled} half={half} />
+          {filled ? <BigStar /> : half ? <HalfStar /> : <EmptyStar />}
         </span>
       );
     });
@@ -123,7 +95,7 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
   return (
     <div className="review-write-page">
       <button className="back-btn" onClick={() => navigate('/reviews')}>뒤로가기</button>
-      <form onSubmit={handleSubmit} className="review-form" style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+      <form onSubmit={handleSubmit} className="review-form">
         <div className="review-photo-upload">
           {photoPreview ? (
             <img src={photoPreview} alt="미리보기" className="photo-preview" />
@@ -131,14 +103,14 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
             <div className="photo-placeholder">사진</div>
           )}
         </div>
-        <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
-          <label className="file-label" style={{alignSelf:'flex-start', margin:'8px 0 0 0'}}>
+        <div className="file-input-container">
+          <label className="file-label">
             파일 선택
-            <input type="file" accept="image/*" style={{display:'none'}} onChange={handlePhotoChange} />
+            <input type="file" accept="image/*" onChange={handlePhotoChange} />
           </label>
-          <span style={{marginTop: '8px', color: '#666'}}>{fileName}</span>
+          <span className="file-name">{fileName}</span>
         </div>
-        <div className="review-rating-select" style={{display:'flex', alignItems:'center', gap:'2px'}}>
+        <div className="review-rating-select">
           {renderStars()}
         </div>
         <textarea
@@ -150,8 +122,8 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
           required
         />
         <div className="review-write-actions">
-          <button type="submit">수정하기</button>
-          <button type="button" onClick={() => setShowDeleteModal(true)} style={{background:'#f66'}}>삭제하기</button>
+          <button type="submit" className="common-btn blue">수정하기</button>
+          <button type="button" onClick={() => setShowDeleteModal(true)} className="common-btn red">삭제하기</button>
         </div>
       </form>
       {showDeleteModal && (

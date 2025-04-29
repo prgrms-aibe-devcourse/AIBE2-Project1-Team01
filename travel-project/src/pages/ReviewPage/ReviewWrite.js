@@ -1,46 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BigStar, EmptyStar, HalfStar } from '../../components/StarRating';
 import './ReviewWrite.css';
-
-const BigStar = () => (
-  <svg className="star-svg large" viewBox="0 0 24 24">
-    <polygon
-      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-      fill="currentColor"
-      stroke="currentColor"
-      strokeWidth="1.5"
-    />
-  </svg>
-);
-
-const EmptyStar = () => (
-  <svg className="star-svg large star-outline" viewBox="0 0 24 24">
-    <polygon
-      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-    />
-  </svg>
-);
-
-const HalfStar = () => (
-  <svg className="star-svg large" viewBox="0 0 24 24">
-    <defs>
-      <linearGradient id="half-gradient" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="50%" stopColor="#FFD700" />
-        <stop offset="50%" stopColor="white" stopOpacity="0" />
-      </linearGradient>
-    </defs>
-    <polygon
-      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-      fill="url(#half-gradient)"
-      stroke="currentColor"
-      strokeWidth="1.5"
-    />
-    <polygon
-      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-      className="star-outline"
-    />
-  </svg>
-);
 
 function ReviewWrite({ onAddReview }) {
   const navigate = useNavigate();
@@ -124,7 +85,7 @@ function ReviewWrite({ onAddReview }) {
   return (
     <div className="review-write-page">
       <button className="back-btn" onClick={() => navigate('/reviews')}>뒤로가기</button>
-      <form onSubmit={handleSubmit} className="review-form" style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+      <form onSubmit={handleSubmit} className="review-form">
         <div className="review-photo-upload">
           {photoPreview ? (
             <img src={photoPreview} alt="미리보기" className="photo-preview" />
@@ -132,15 +93,15 @@ function ReviewWrite({ onAddReview }) {
             <div className="photo-placeholder">사진</div>
           )}
         </div>
-        <label className="file-label" style={{alignSelf:'flex-start', margin:'8px 0 0 0'}}>
+        <label className="file-label">
           파일선택
-          <input type="file" accept="image/*" style={{display:'none'}} onChange={handlePhotoChange} />
+          <input type="file" accept="image/*" onChange={handlePhotoChange} />
         </label>
-        <div className="review-rating-select" style={{display:'flex', alignItems:'center', gap:'2px'}}>
+        <div className="review-rating-select">
           {Array(5).fill(1).map((_, index) => (
             <span
               key={index}
-              style={{position:'relative', display:'inline-block'}}
+              className="star-container"
               onMouseMove={e => handleMouseMove(e, index)}
               onMouseLeave={handleMouseLeave}
               onClick={handleStarClick}
@@ -148,7 +109,7 @@ function ReviewWrite({ onAddReview }) {
               {renderStarIcons()[index]}
             </span>
           ))}
-          <span style={{marginLeft:'8px', fontSize:'1rem'}}></span>
+          <span className="rating-text"></span>
         </div>
         <textarea
           className="review-content-input"
@@ -159,8 +120,8 @@ function ReviewWrite({ onAddReview }) {
           required
         />
         <div className="review-write-actions">
-          <button type="submit">저장하기</button>
-          <button type="button" onClick={() => navigate('/reviews')} style={{background:'#f66'}}>취소</button>
+          <button type="submit" className="common-btn blue">저장하기</button>
+          <button type="button" onClick={() => navigate('/reviews')} className="common-btn red">취소</button>
         </div>
       </form>
     </div>
