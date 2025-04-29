@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import ReviewList from './pages/Review/ReviewList';
-import ReviewWrite from './pages/Review/ReviewWrite';
-import ReviewModify from './pages/Review/ReviewModify';
-import ReviewDetail from './pages/Review/ReviewDetail';
+import ReviewList from './pages/ReviewPage/ReviewList';
+import ReviewWrite from './pages/ReviewPage/ReviewWrite';
+import ReviewModify from './pages/ReviewPage/ReviewModify';
+import ReviewDetail from './pages/ReviewPage/ReviewDetail';
 import reviewsData from './data/reviews.json';
 
 import './App.css';
@@ -37,7 +37,7 @@ function App() {
           <Route path="/reviews" element={<ReviewList reviews={reviews} />} />
           <Route path="/reviews/new" element={<ReviewWrite onAddReview={handleAddReview} />} />
           <Route path="/reviews/:id" element={<ReviewDetail reviews={reviews} setReviews={setReviews} />} />
-          <Route path="/reviews/:id/edit" element={<ReviewModify reviews={reviews} onUpdateReview={handleUpdateReview} setReviews={setReviews} />} />
+          <Route path="/reviews/:id/edit" element={<ReviewModify reviews={reviews} onUpdateReview={handleUpdateReview} setReviews={setReviews} />} />          
         </Routes>
       </div>
     </Router>

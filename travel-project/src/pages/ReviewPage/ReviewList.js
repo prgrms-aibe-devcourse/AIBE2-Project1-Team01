@@ -6,7 +6,6 @@ import './ReviewList.css';
 
 function ReviewList({ reviews }) {
   const navigate = useNavigate();
-
   
   const filteredReviews = reviews.filter(
     (review) => review && review.content && review.content.trim() !== ''

@@ -8,19 +8,20 @@ const BigStar = () => (
   </svg>
 );
 const EmptyStar = () => (
-  <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
-    <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="none" stroke="currentColor" strokeWidth="1.5" />
+  <svg className="star-svg star-outline" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
+    <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" />
   </svg>
 );
 const HalfStar = () => (
   <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
     <defs>
-      <linearGradient id="half-grad-modal">
-        <stop offset="50%" stopColor="currentColor" />
+      <linearGradient id="half-gradient" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="50%" stopColor="#FFD700" />
         <stop offset="50%" stopColor="white" stopOpacity="0" />
       </linearGradient>
     </defs>
-    <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="url(#half-grad-modal)" stroke="currentColor" strokeWidth="1.5" />
+    <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="url(#half-gradient)" stroke="currentColor" strokeWidth="1.5" />
+    <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" className="star-outline" />
   </svg>
 );
 
