@@ -1,0 +1,153 @@
+/* 폰트 및 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #F9FAFB;
+    color: #333333;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  /* 버튼 스타일 */
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* hover시 살짝 커짐 */
+    transform: translateY(-2px); /* 살짝 위로 올라옴 */
+  }
+  
+  .button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 클릭시 그림자 줄어듬 */
+    transform: translateY(2px); /* 클릭시 아래로 눌림 */
+  }
+  
+  .back-button {
+    background-color: #9F9F9F;
+    color: white;
+  }
+  
+  .submit-button {
+    background-color: #4F9DDE;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #FF5A5F;
+    color: white;
+  }
+  
+  .recommend-button {
+    background-color: #00C6AE;
+    color: white;
+  }
+  
+  /* 별점 */
+  .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFD700;
+  }
+  
+  /* 팝업 */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  /* 텍스트 스타일 */
+  .large-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .sub-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .body-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .caption {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  /* 색상 변수 */
+  :root {
+    --primary-blue: #4F9DDE;
+    --light-blue: #C9F0F7;
+    --light-green: #D4ED93;
+    --yellow: #FFE35C;
+    --pale-yellow: #F9FBE7;
+    --text-primary: #333333;
+    --text-secondary: #9F9F9F;
+  }
+
+  .review-edit {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  /* 모달 뒷배경 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+  z-index: 999;
+}
+
+/* 모달 본체 */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+  
+  
