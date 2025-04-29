@@ -7,7 +7,6 @@ export const MainPage = () => {
     <div className="main-page">
       <div className="main-page-header">
         <div className="label-logo">
-          {/* 다 지우고 다시시작ㅠ */}
           메인페이지
           <RegionCard 
             regionName="서울" 
