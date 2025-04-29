@@ -8,6 +8,26 @@ import { addDays, isSameDay, isAfter, isBefore, differenceInDays, format } from 
 const DatePickerModal = () => {
   return (
     <div>
+      <DateRange
+        editableDateInputs={false}
+        moveRangeOnFirstSelection={false}
+        ranges={[
+          {
+            startDate: new Date(),
+            endDate: new Date(),
+            key: 'selection',
+            color: '#000000'
+          }
+        ]}
+        months={2}
+        direction="horizontal"
+        locale={ko}
+        weekdayDisplayFormat="EEEEE"
+        showMonthAndYearPickers={false}
+        showDateDisplay={false}
+        className="date-range-calendar"
+        preventSnapRefocus={true}
+      />
     </div>
   );
 };
