@@ -1,0 +1,30 @@
+.review-list-page {
+  padding: 32px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+  justify-items: center;
+}
+.write-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 100;
+}
+.write-btn:hover {
+  background: #1565c0;
+} 
