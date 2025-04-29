@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./style.css";
-import testImage from "../assets/img/test.jpg";
+import "./RegionCard.css";
+import testImage from "../../assets/img/test.jpg";
 
 /* 사용예시입니다. */
 /*
 <RegionCard 
     regionName="서울" 
     regionDescription="대한민국의 수도이자 최대 도시입니다."
-    imagePath={require("../assets/img/test2.jpg")}
+    imagePath={require("../../assets/img/test2.jpg")}
     tags={["관광", "맛집", "역사","도시"]}  // 3개만 입력하면 3개만 표시됨
 />
 */

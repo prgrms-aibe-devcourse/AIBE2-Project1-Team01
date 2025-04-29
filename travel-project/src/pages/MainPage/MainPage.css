@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../assets/fonts/NotoSansKR-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../../assets/fonts/NotoSansKR-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../assets/fonts/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../assets/fonts/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../assets/fonts/NotoSansKR-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../assets/fonts/NotoSansKR-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../assets/fonts/NotoSansKR-Black.ttf') format('truetype');
+}
+
+/* 모든 요소에 Noto Sans Korean 적용 */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-page-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.label-logo {
+  height: 36px;
+  width: 121px;
+  margin: 20px;
+  padding: 15px;
+}
+
+.label-logo .text-wrapper-logo {
+  color: #4f9dde;
+  font-family: var(--large-title-font-family);
+  font-size: var(--large-title-font-size);
+  font-style: var(--large-title-font-style);
+  font-weight: var(--large-title-font-weight);
+  position: relative;
+  letter-spacing: var(--large-title-letter-spacing);
+  line-height: var(--large-title-line-height);
+  white-space: nowrap;
+}
