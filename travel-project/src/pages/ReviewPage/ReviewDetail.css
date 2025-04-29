@@ -10,7 +10,7 @@
   gap: 18px;
   align-items: center;
 }
-.review-photo img, .photo-placeholder {
+ .photo-placeholder {
   width: 180px;
   height: 120px;
   object-fit: cover;
