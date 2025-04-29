@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./RegionCard.css";
-import testImage from "../../assets/img/test.jpg";
+import testImage from "../assets/img/test.jpg";
 
 /* 사용예시입니다. */
 /*
