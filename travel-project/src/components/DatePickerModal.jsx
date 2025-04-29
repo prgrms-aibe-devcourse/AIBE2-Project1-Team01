@@ -20,6 +20,9 @@ const DatePickerModal = () => {
     }
   ]);
 
+  // 선택가능한 최대 날짜 (시작일 + 10일)
+  const [maxDate, setMaxDate] = useState(null);
+
   // 월 변경 이벤트 핸들러
   const handleMonthChange = (date) => {
     setDisplayMonth(date);
@@ -28,14 +31,32 @@ const DatePickerModal = () => {
   // 날짜 선택 처리 함수
   const handleSelect = (ranges) => {
     const { startDate, endDate } = ranges.selection;
-    setState([
-      {
-        startDate: startDate,
-        endDate: endDate,
-        key: 'selection'
-      }
-    ]);
 
+    if (isAfter(endDate, startDate) || isSameDay(endDate, startDate)) {
+      // 10일 제한 체크
+      const daysDiff = differenceInDays(endDate, startDate);
+      
+      if (daysDiff > 9) {
+        // 10일 초과시 최대 10일까지만 선택
+        setState([
+          {
+            startDate: startDate,
+            endDate: addDays(startDate, 9),
+            key: 'selection'
+          }
+        ]);
+      } else {
+        // 10일 이내면 그대로 적용
+        setState([
+          {
+            startDate: startDate,
+            endDate: endDate,
+            key: 'selection'
+          }
+        ]);
+      }
+      setMaxDate(null); // 구간 선택 완료 후 제한 해제
+    }
     return;
   };
 
