@@ -1,0 +1,101 @@
+/* 모든 요소에 Noto Sans Korean 적용 */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-layout {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlap-group {
+  border-radius: 10px;
+  height: 362px;
+  position: relative;
+  width: 227px;
+}
+
+.rectangle {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px #c9f0f766;
+  height: 362px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 227px;
+}
+
+.regioncard-img {
+  background-color: #e3e3e3;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px 10px 0px 0px;
+  height: 251px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 227px;
+  overflow: hidden;
+}
+
+.region-title {
+  color: #000000;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 22.4px;
+  position: absolute;
+  top: 258px;
+  white-space: nowrap;
+}
+
+.region-description {
+  color: #6b6b6b;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 282px;
+  width: 211px;
+  text-align: left; /* 명시적으로 좌측 정렬 추가 */
+}
+
+/* Tag styles */
+.tag-wrapper {
+  background-color: #c9f0f7;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  height: 19px;
+  position: absolute;
+  top: 338px;
+  min-width: 30px; /* 최소 너비 */
+  transition: width 0.2s ease;
+  /* 더 이상 max-width 제한 없음 */
+}
+
+.region-tag {
+  color: #6b6b6b;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 14.0px;
+  position: absolute;
+  top: 339px;
+  white-space: nowrap;
+  z-index: 1; /* 텍스트가 래퍼 위에 표시되도록 */
+  text-align: center; /* 중앙 정렬 */
+}
