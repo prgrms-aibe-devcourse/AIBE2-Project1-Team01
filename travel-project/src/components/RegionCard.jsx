@@ -71,13 +71,14 @@ const RegionTag = React.forwardRef(({ text, index, startPosition }, ref) => {
     
     // 전체 태그 길이 계산
     const maxTagsLength = getMaxTagsLength(slicedTags.length);
-    const totalTagsLength = slicedTags.reduce((total, tag) => total + tag.length, 0);
     
     // 태그 길이에 따라 처리
     let displayTags = [...slicedTags];
-    if (totalTagsLength > maxTagsLength && displayTags.length >= 1) {
-      // 마지막 태그를 "..."로 교체
-      displayTags[displayTags.length - 1] = "...";
+    let totalTagsLength = displayTags.reduce((total, tag) => total + tag.length, 0);
+    
+    while (totalTagsLength > maxTagsLength && displayTags.length > 0) {
+      displayTags.pop(); // 마지막 태그 제거
+      totalTagsLength = displayTags.reduce((total, tag) => total + tag.length, 0); // 다시 계산
     }
     
     // 태그 위치 및 너비 계산을 위한 상태
@@ -146,7 +147,6 @@ const RegionTag = React.forwardRef(({ text, index, startPosition }, ref) => {
             ref={tagRefs.current[index]}
           />
         ))}
-
       </div>
     );
   };
