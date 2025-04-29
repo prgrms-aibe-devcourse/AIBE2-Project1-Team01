@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './ReviewWrite.css';
 
 const BigStar = () => (
-  <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
+  <svg className="star-svg large" viewBox="0 0 24 24">
     <polygon
       points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
       fill="currentColor"
@@ -14,7 +14,7 @@ const BigStar = () => (
 );
 
 const EmptyStar = () => (
-  <svg className="star-svg star-outline" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
+  <svg className="star-svg large star-outline" viewBox="0 0 24 24">
     <polygon
       points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
     />
@@ -22,7 +22,7 @@ const EmptyStar = () => (
 );
 
 const HalfStar = () => (
-  <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
+  <svg className="star-svg large" viewBox="0 0 24 24">
     <defs>
       <linearGradient id="half-gradient" x1="0" x2="1" y1="0" y2="0">
         <stop offset="50%" stopColor="#FFD700" />

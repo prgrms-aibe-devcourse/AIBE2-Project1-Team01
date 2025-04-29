@@ -3,6 +3,17 @@ import { useNavigate, useParams } from 'react-router-dom';
 import ConfirmModal from '../../components/ConfirmModal';
 import './ReviewWrite.css';
 
+const BigStar = () => (
+  <svg className="star-svg large" viewBox="0 0 24 24">
+    <polygon
+      points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
+      fill="currentColor"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
+  </svg>
+);
+
 const Star = ({ filled, half }) => (
   <svg className="star-svg" width="32" height="32" viewBox="0 0 24 24" style={{display:'inline-block', verticalAlign:'middle'}}>
     {half ? (
