@@ -1,102 +1,102 @@
 .transport-modal {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 600px;
-    padding: 32px 24px;
-    text-align: center;
-  }
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 600px;
+  padding: 32px 24px;
+  text-align: center;
+}
   
-  /* 닫기 버튼 */
-  .close-button {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    background: none;
-    border: none;
-    font-size: 32px;
-    cursor: pointer;
-    color: #666;
-  }
-  
-  /* 제목 */
-  .modal-title {
-    font-size: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    margin-bottom: 8px;
-  }
-  
-  /* 부제목 */
-  .modal-subtitle {
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
-    color: #777;
-    margin-bottom: 32px;
-  }
-  
-  /* 카드 전체 영역*/
-  .transport-options {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
-  }
-  
-  /* 카드 */
-  .transport-card {
-    width: 240px;
-    height: 240px;
-    border-radius: 12px;
-    background: #f2f5f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-  
-  .transport-card:hover {
-    background: #e5e9ec;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* 이모지 아이콘 */
-  .transport-card span:first-child {
-    font-size:48px;
-  }
-  
-  /* 텍스트 (예: 대중교통, 승용차) */
-  .transport-card span:last-child {
-    font-size: 16px;
-    margin-top: 12px;
-    font-family: 'Noto Sans', sans-serif;
-  }
-  
-  /* 선택된 카드 */
-  .transport-card.selected {
-    background: #4F9DDE;
-    color: white;
-  }
-  
-  /* 버튼 영역 */
-  .footer {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .confirm-button {
-    background: #4F9DDE;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
-    cursor: pointer;
-  }
+/* 닫기 버튼 */
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* 제목 */
+.modal-title {
+  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* 부제목 */
+.modal-subtitle {
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+/* 카드 전체 영역*/
+.transport-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* 카드 */
+.transport-card {
+  width: 240px;
+  height: 240px;
+  border-radius: 12px;
+  background: #f2f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.transport-card:hover {
+  background: #e5e9ec;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 이모지 아이콘 */
+.transport-card span:first-child {
+  font-size:48px;
+}
+
+/* 텍스트 (예: 대중교통, 승용차) */
+.transport-card span:last-child {
+  font-size: 16px;
+  margin-top: 12px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* 선택된 카드 */
+.transport-card.selected {
+  background: #4F9DDE;
+  color: white;
+}
+
+/* 버튼 영역 */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-button {
+  background: #4F9DDE;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  cursor: pointer;
+}
