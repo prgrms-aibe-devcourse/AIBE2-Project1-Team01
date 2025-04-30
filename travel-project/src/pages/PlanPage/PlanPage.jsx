@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DatePickerModal from "../../components/DatePickerModal";
+// import DatePickerModal from "../../components/DatePickerModal";
 import "./PlanPage.css";
 
 export const PlanPage = () => {
@@ -175,42 +175,49 @@ export const PlanPage = () => {
   }, []);
 
   return (
-    <div>
-      <h1>제주도</h1>
-      {/* TODO: DatePickerModal 선택한 일정 표시 */}
-      <p>2025.04.25 ~ 2025.05.01</p>
+    <div className="plan-page-container">
+      <div className="plan-page-header">
+        <div className="plan-title">제주도</div>
+        {/* TODO: DatePickerModal 선택한 일정 표시 */}
+        <div className="plan-dates">2025.04.25 ~ 2025.05.01</div>
+      </div>
 
-      <div>
-        {planData.map((dayItem) => (
-          <div key={dayItem.day}>
-            <h2>
-              {dayItem.day}: {dayItem.theme}
-            </h2>
+      <div className="day-scroll-wrapper">
+        <div className="day-grid-horizontal">
+          {planData.map((dayItem) => (
+            <div key={dayItem.day} className="day-card">
+              <h2>
+                {dayItem.day}: {dayItem.theme}
+              </h2>
 
-            {dayItem.plans.map((plan, idx) => (
-              <div key={idx}>
-                <div>
-                  <span>📍</span>
-                  <span>
-                    {plan.place} <span>({plan.time})</span>
-                  </span>
+              {dayItem.plans.map((plan, idx) => (
+                <div key={idx} className="plan-block">
+                  <div className="plan-place">
+                    <span className="location-icon">📍</span>
+                    <span className="place-name">
+                      {plan.place}{" "}
+                      <span className="time-label">({plan.time})</span>
+                    </span>
+                  </div>
+
+                  {plan.activities.length > 0 && (
+                    <ul className="activity-list">
+                      {plan.activities.map((activity, i) => (
+                        <li key={i} className="activity-item">
+                          {activity}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-
-                {plan.activities.length > 0 && (
-                  <ul>
-                    {plan.activities.map((activity, i) => (
-                      <li key={i}>{activity}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-        ))}
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="footer">
-        <button>저장하기</button>
+        <button className="save-button">저장하기</button>
       </div>
     </div>
 
