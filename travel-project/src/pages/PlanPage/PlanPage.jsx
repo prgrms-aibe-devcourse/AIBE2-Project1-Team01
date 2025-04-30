@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import DatePickerModal from "../../components/DatePickerModal";
 import { useTravelPlan } from "../../hooks/useTravelPlan";
 import TravelPlanList from "../../components/TravelPlanList";
@@ -16,6 +17,26 @@ export const PlanPage = () => {
   );
   const [isModalOpen, setIsModalOpen] = useState(true);
 
+  const handleSave = async () => {
+    const saveData = {
+      locationId,
+      locationName,
+      transportType,
+      travelRange,
+      period: "2025.04.25 ~ 2025.05.01",
+      plan: planData,
+    };
+  
+    try {
+      const response = await axios.post("http://localhost:4000/plans", saveData);
+      alert("저장 성공!");
+      console.log("저장된 데이터:", response.data);
+    } catch (error) {
+      console.error("저장 실패:", error);
+      alert("저장 중 오류가 발생했습니다.");
+    }
+  };
+
   return (
     <div className="plan-page-container">
       <div className="plan-page-header">
@@ -26,7 +47,7 @@ export const PlanPage = () => {
       <TravelPlanList planData={planData} />
 
       <div className="footer">
-        <button className="save-button">저장하기</button>
+        <button className="save-button" onClick={handleSave}>저장하기</button>
       </div>
     </div>
   );
