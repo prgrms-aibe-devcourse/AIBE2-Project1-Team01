@@ -19,7 +19,7 @@ export const PlanPage = () => {
     transportType,
     travelRange
   );
-
+  
   const [showConfirm, setShowConfirm] = useState(false);
 
   const handleSave = async () => {
