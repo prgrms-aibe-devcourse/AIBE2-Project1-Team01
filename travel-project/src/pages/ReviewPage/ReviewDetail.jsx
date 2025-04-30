@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ConfirmModal from '../../components/ConfirmModal';
+import { renderStars } from '../../components/StarRating';
 import './ReviewDetail.css';
 
 function ReviewDetail({ reviews, setReviews }) {
@@ -26,7 +27,7 @@ function ReviewDetail({ reviews, setReviews }) {
         )}
       </div>
       <div className="review-rating">
-        {'★'.repeat(review.rating)}{'☆'.repeat(5 - review.rating)}
+        {renderStars(review.rating)}
       </div>
       <div className="review-content">{review.content}</div>
       <button className="delete-btn" onClick={() => setShowModal(true)}>삭제</button>
