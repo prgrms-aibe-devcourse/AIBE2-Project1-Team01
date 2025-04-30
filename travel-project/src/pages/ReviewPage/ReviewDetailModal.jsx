@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BigStar, EmptyStar, HalfStar, renderStars } from '../../components/StarRating';
+import { renderStars } from '../../components/StarRating';
 import './ReviewDetailModal.css';
 
 const ReviewDetailModal = ({ review, onClose, onPrev, onNext, hasPrev, hasNext }) => {
