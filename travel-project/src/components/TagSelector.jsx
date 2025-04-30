@@ -28,7 +28,7 @@ const TagSelector = ({ onSubmit }) => {
 
   // 태그 선택 토글 핸들러 - 여러 태그 선택 가능
   const handleTagSelect = (category, tag) => {
-    console.log('태그 선택 전:', category, tag, selectedTags);
+    // 태그 선택 상태 업데이트
     setSelectedTags(prev => {
       // 이전 상태를 깊은 복사
       const newTags = JSON.parse(JSON.stringify(prev));
@@ -52,15 +52,24 @@ const TagSelector = ({ onSubmit }) => {
         newTags[category].push(tag);
       }
       
-      console.log('태그 선택 후:', newTags);
+      // 즉시 변경사항 적용
+      setAppliedTags(newTags);
+      
+      // onSubmit prop이 제공되었다면 부모 컴포넌트로 선택된 태그 전달
+      const allTags = Object.values(newTags).flat();
+      if (onSubmit && typeof onSubmit === 'function') {
+        onSubmit(allTags);
+      }
+      
       return newTags;
     });
   };
   
   // 모달의 선택된 태그에서 태그 제거 핸들러
   const handleRemoveTag = (category, tag) => {
+    // 상태 업데이트
     setSelectedTags(prev => {
-      const newTags = { ...prev };
+      const newTags = JSON.parse(JSON.stringify(prev));
       
       if (newTags[category]) {
         const tagIndex = newTags[category].indexOf(tag);
@@ -73,6 +82,15 @@ const TagSelector = ({ onSubmit }) => {
         }
       }
       
+      // 즉시 변경사항 적용
+      setAppliedTags(newTags);
+      
+      // onSubmit 호출
+      const allTags = Object.values(newTags).flat();
+      if (onSubmit && typeof onSubmit === 'function') {
+        onSubmit(allTags);
+      }
+      
       return newTags;
     });
   };
@@ -82,8 +100,7 @@ const TagSelector = ({ onSubmit }) => {
     function handleClickOutside(event) {
       if (modalRef.current && !modalRef.current.contains(event.target) && 
           searchRef.current && !searchRef.current.contains(event.target)) {
-        // 모달 외부 클릭 시 모달 닫고 변경사항 취소 (적용되지 않은 변경 무시)
-        setSelectedTags({...appliedTags});
+        // 모달 닫기
         setIsModalOpen(false);
       }
     }
@@ -94,23 +111,9 @@ const TagSelector = ({ onSubmit }) => {
     };
   }, []);
 
-  // 선택된 태그 제출
-  const handleSubmitTags = () => {
-    // 현재 selected-tags-container에 있는 태그들만 적용
-    console.log('선택된 태그:', selectedTags);
-    
-    // 선택된 태그를 적용된 태그로 저장
-    setAppliedTags({...selectedTags});
+  // 모달 닫기
+  const handleCloseModal = () => {
     setIsModalOpen(false);
-    
-    // 카테고리를 제외하고 모든 태그를 단일 배열로 변환
-    const allTags = Object.values(selectedTags).flat();
-    console.log('단일 배열로 변환된 태그:', allTags);
-    
-    // onSubmit prop이 제공되었다면 부모 컴포넌트로 선택된 태그 전달 (카테고리 없이)
-    if (onSubmit && typeof onSubmit === 'function') {
-      onSubmit(allTags);
-    }
   };
 
   // 태그가 선택되었는지 확인 - 여러 태그 선택 가능
@@ -141,6 +144,16 @@ const TagSelector = ({ onSubmit }) => {
                     className="search-tag"
                   >
                     {tag}
+                    <span 
+                      onClick={(e) => {
+                        e.stopPropagation(); // 이벤트 버블링 방지
+                        // 해당 태그 즉시 제거 - handleRemoveTag 함수 사용
+                        handleRemoveTag(category, tag);
+                      }}
+                      className="remove-tag"
+                    >
+                      ×
+                    </span>
                   </div>
                 ))
               )}
@@ -193,38 +206,13 @@ const TagSelector = ({ onSubmit }) => {
             </div>
           ))}
 
-          {/* 선택된 태그 요약 */}
-          <div className="selected-tags-section">
-            <div className="selected-tags-title">선택된 태그</div>
-            <div className="selected-tags-container">
-              {Object.entries(selectedTags).flatMap(([category, tags]) => 
-                tags.map(tag => (
-                  <div 
-                    key={`${category}-${tag}`}
-                    className="selected-tag"
-                  >
-                    {tag}
-                    <span 
-                      onClick={(e) => {
-                        e.stopPropagation(); // 이벤트 버블링 방지
-                        handleRemoveTag(category, tag);
-                      }}
-                      className="remove-tag"
-                    >
-                      ×
-                    </span>
-                  </div>
-                ))
-              )}
-              {Object.keys(selectedTags).length === 0 && (
-                <div className="no-tags-message">선택된 태그가 없습니다</div>
-              )}
-            </div>
+          {/* 모달 닫기 버튼 */}
+          <div className="modal-footer">
             <button
-              onClick={handleSubmitTags}
-              className="submit-button"
+              onClick={handleCloseModal}
+              className="close-modal-button"
             >
-              태그 적용하기
+              닫기
             </button>
           </div>
         </div>

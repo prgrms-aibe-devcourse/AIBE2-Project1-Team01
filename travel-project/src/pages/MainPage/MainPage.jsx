@@ -4,8 +4,18 @@ import TagSelector from "../../components/TagSelector";
 import "./MainPage.css";
 
 export const MainPage = () => {
+  // 이전 태그를 기억하기 위한 레퍼런스
+  const prevTagsRef = React.useRef([]);
+  
   const handleTagsSubmitted = (selectedTags) => { // 선택된 태그 처리할 수 있는 함수입니다.
-    console.log("선택된 태그:", selectedTags);
+    // 이전 태그와 현재 태그를 비교하여 변경이 있을 때만 처리
+    const prevTagsString = JSON.stringify(prevTagsRef.current.sort());
+    const currentTagsString = JSON.stringify([...selectedTags].sort());
+    
+    if (prevTagsString !== currentTagsString) {
+      console.log("선택된 태그:", selectedTags);
+      prevTagsRef.current = selectedTags;
+    }
   };
 
   return (
