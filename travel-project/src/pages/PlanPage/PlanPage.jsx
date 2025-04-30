@@ -16,20 +16,23 @@ export const PlanPage = () => {
     travelRange
   );
   const [isModalOpen, setIsModalOpen] = useState(true);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const handleSave = async () => {
     const saveData = {
       locationId,
       locationName,
-      transportType,
       travelRange,
-      period: "2025.04.25 ~ 2025.05.01",
+      period: "2025.04.25 ~ 2025.05.01", //TODO: 캘린더에서 선택한 날짜로 변경
       plan: planData,
     };
-  
+
     try {
-      const response = await axios.post("http://localhost:4000/plans", saveData);
-      alert("저장 성공!");
+      const response = await axios.post(
+        "http://localhost:4000/plans",
+        saveData
+      );
+      setShowConfirm(true);
       console.log("저장된 데이터:", response.data);
     } catch (error) {
       console.error("저장 실패:", error);
@@ -47,8 +50,26 @@ export const PlanPage = () => {
       <TravelPlanList planData={planData} />
 
       <div className="footer">
-        <button className="save-button" onClick={handleSave}>저장하기</button>
+        <button className="save-button" onClick={handleSave}>
+          저장하기
+        </button>
       </div>
+
+      {showConfirm && (
+        <div className="modal-overlay">
+          <div className="modal-wrapper">
+            <p>
+              저장이 완료되었습니다.
+              <br />
+              나의 여행으로 이동하시겠습니까?
+            </p>
+            <div className="modal-buttons">
+              <button onClick={() => setShowConfirm(false)}>닫기</button>
+              <button>확인</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 
