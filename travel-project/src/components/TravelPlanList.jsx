@@ -15,13 +15,16 @@ const TravelPlanList = ({ planData }) => {
                 <div className="plan-place">
                   <span className="location-icon">📍</span>
                   <span className="place-name">
-                    {plan.place} <span className="time-label">({plan.time})</span>
+                    {plan.place}{" "}
+                    <span className="time-label">({plan.time})</span>
                   </span>
                 </div>
                 {(plan.activities || []).length > 0 && (
                   <ul className="activity-list">
                     {plan.activities.map((activity, i) => (
-                      <li key={i} className="activity-item">{activity}</li>
+                      <li key={i} className="activity-item">
+                        {activity}
+                      </li>
                     ))}
                   </ul>
                 )}

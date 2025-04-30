@@ -2,82 +2,83 @@
 
 /* 가로 스크롤 영역 */
 .day-scroll-wrapper {
-    overflow-x: auto;
-    padding-bottom: 12px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: 'Noto Sans', sans-serif;
-  }
-  
-  .day-grid-horizontal {
-    display: flex;
-    gap: 24px;
-    width: max-content;
-  }
-  
-  /* 각 Day 카드 */
-  .day-card {
-    flex: 0 0 auto;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 240px;
-    padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .day-card h2 {
-    font-size: 16px;
-    margin-bottom: 16px;
-    font-weight: 500;
-  }
-  /* 일정 블록 */
-  .plan-block {
-    margin-bottom: 24px;
-  }
-  
-  /* 장소 + 시간대 */
-  .plan-place {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .place-name {
-    color: #333;
-  }
-  
-  .time-label {
-    color: #777;
-    font-weight: normal;
-  }
-  
-  /* 활동 리스트 */
-  .activity-list {
-    padding-left: 18px;
-    margin: 0;
-  }
-  
-  .activity-item {
-    font-size: 13px;
-    margin-bottom: 6px;
-    color: #444;
-  }
-  
-  .location-icon {
-    margin-right: 8px;
-    font-size: 18px;
-  }
-  
-  ul {
-    padding-left: 18px;
-    margin: 0;
-  }
-  
-  li {
-    list-style-type: disc;
-  }
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.day-grid-horizontal {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+/* 각 Day 카드 */
+.day-card {
+  flex: 0 0 auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 240px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.day-card h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* 일정 블록 */
+.plan-block {
+  margin-bottom: 24px;
+}
+
+/* 장소 + 시간대 */
+.plan-place {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.place-name {
+  color: #333;
+}
+
+.time-label {
+  color: #777;
+  font-weight: normal;
+}
+
+/* 활동 리스트 */
+.activity-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.activity-item {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.location-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+li {
+  list-style-type: disc;
+}
