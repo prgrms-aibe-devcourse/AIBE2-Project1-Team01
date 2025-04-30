@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #F9FAFB;
@@ -63,6 +63,5 @@ body {
   .star {
     font-size: 30px;
     cursor: pointer;
-    color: #FFD700; /* 골드색 */
+    color: #FFD700;
   }
-  
