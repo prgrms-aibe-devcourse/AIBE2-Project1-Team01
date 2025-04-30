@@ -1,0 +1,85 @@
+.search-area {
+  width: 1354px;
+  height: 114px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tag-input-wrapper {
+  width: 838px;
+  min-height: 53px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 5px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tag-item {
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 입력창 */
+.tag-input {
+  min-width: 120px;
+  font-size: 16px;
+  height: 30px;
+  border: none;
+  outline: none;
+  margin-left: 10px; /* 태그들과 입력창 사이 10px 띄우기 */
+  flex-shrink: 0;
+  background: none;
+}
+
+/* 태그 아이콘 */
+.tag-img {
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  left: 218px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: brightness(0) saturate(100%) invert(62%) sepia(33%) saturate(1531%)
+    hue-rotate(175deg) brightness(92%) contrast(91%);
+}
+
+/* 검색 버튼 아이콘 */
+.search-icon {
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  right: 230px;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(33%) saturate(1531%)
+    hue-rotate(175deg) brightness(92%) contrast(91%);
+  cursor: pointer;
+}
