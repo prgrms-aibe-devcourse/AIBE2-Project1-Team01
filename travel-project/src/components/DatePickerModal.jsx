@@ -158,17 +158,23 @@ const DatePickerModal = ({ onConfirm }) => {
           className="select-button"
           onClick={() => {
             if (state[0].startDate && state[0].endDate && selectionStep === 2) {
+              const start = state[0].startDate;
+              const end = state[0].endDate;
+
               const formatted =
-                addDays(state[0].startDate, 1)
-                  .toISOString()
-                  .slice(0, 10)
-                  .replace(/-/g, ".") +
+                start.toISOString().slice(0, 10).replace(/-/g, ".") +
                 " ~ " +
-                addDays(state[0].endDate, 1)
-                  .toISOString()
-                  .slice(0, 10)
-                  .replace(/-/g, ".");
-              onConfirm(formatted); // 부모로 전달
+                end.toISOString().slice(0, 10).replace(/-/g, ".");
+
+              const days =
+                Math.ceil(
+                  (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+                ) + 1;
+
+              onConfirm({
+                period: formatted,
+                range: days,
+              });
             } else {
               alert("날짜를 선택해주세요.");
             }

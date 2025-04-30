@@ -9,10 +9,10 @@ import "./PlanPage.css";
 export const PlanPage = () => {
   const [step, setStep] = useState("date"); // 'date' → 'transport' → 'done'
   const [dateRange, setDateRange] = useState(null);
+  const [travelRange, setTravelRange] = useState(0);
   const [transportType, setTransportType] = useState(null);
 
-  const locationId = "location_001";
-  const travelRange = 3;
+  const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
 
   const { planData, locationName } = useTravelPlan(
     locationId,
@@ -50,8 +50,9 @@ export const PlanPage = () => {
         <div className="modal-overlay">
           <div className="modal-wrapper">
             <DatePickerModal
-              onConfirm={(selectedRange) => {
-                setDateRange(selectedRange);
+              onConfirm={({ period, range }) => {
+                setDateRange(period);
+                setTravelRange(range);
                 setStep("transport");
               }}
             />
