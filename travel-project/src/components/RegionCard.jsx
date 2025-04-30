@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./RegionCard.css";
 import testImage from "../assets/img/test.jpg";
 
@@ -9,6 +10,7 @@ import testImage from "../assets/img/test.jpg";
     regionDescription="대한민국의 수도이자 최대 도시입니다."
     imagePath={require("../../assets/img/test2.jpg")}
     tags={["관광", "맛집", "역사","도시"]}  // 3개만 입력하면 3개만 표시됨
+    url="/region/seoul"  // 클릭 시 이동할 URL
 />
 */
 
@@ -53,7 +55,8 @@ const RegionTag = React.forwardRef(({ text, index, startPosition }, ref) => {
     imagePath = testImage,
     regionName = "지역명(regionName)",
     regionDescription = "지역설명(regionDescription)",
-    tags = ["태그"] // 기본값으로 1개의 태그만 표시
+    tags = ["태그"], // 기본값으로 1개의 태그만 표시
+    url = "/" // 클릭 시 이동할 URL, 기본값은 홈페이지
   }) => {
     // 최대 4개의 태그만 표시하도록 제한
     const slicedTags = tags.slice(0, 4);
@@ -120,33 +123,48 @@ const RegionTag = React.forwardRef(({ text, index, startPosition }, ref) => {
       return () => clearTimeout(timer);
     }, [displayTags]); // 태그 내용이 변경될 때마다 위치 재계산
     
+    // Link 컴포넌트 스타일
+    const linkStyle = {
+      textDecoration: 'none',
+      color: 'inherit',
+      cursor: 'pointer',
+      display: 'block',
+      width: '227px',  // overlap-group과 동일한 너비
+      height: '362px', // overlap-group과 동일한 높이
+      position: 'relative'
+    };
+    
     return (
-      <div className="overlap-group">
-        <div className="rectangle" />
-        
-        <div className="regioncard-img">
-          <img
-            src={imagePath}
-            alt="지역 이미지"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
-        </div>
-        
-        <div className="region-title">{regionName}</div>
-        <div className="region-description">
-          {regionDescription}
-        </div>
-        
-        {/* 태그들 - 동적 위치 계산 */}
-        {displayTags.map((tag, index) => (
-          <RegionTag
-            key={`tag-${index}-${tag}`} // 고유 키 부여
-            text={tag}
-            index={index}
-            startPosition={tagPositions[index] || (6 + index * (45 + 6))} // 초기 위치 설정
-            ref={tagRefs.current[index]}
-          />
-        ))}
+      <div style={{ width: '227px', height: '362px', position: 'relative' }}>
+        <Link to={url} style={linkStyle}>
+          <div className="overlap-group">
+            <div className="rectangle" />
+            
+            <div className="regioncard-img">
+              <img
+                src={imagePath}
+                alt="지역 이미지"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
+            
+            <div className="region-title">{regionName}</div>
+            <div className="region-description">
+              {regionDescription}
+            </div>
+            
+            {/* 태그들 - 동적 위치 계산 */}
+            {displayTags.map((tag, index) => (
+              <RegionTag
+                key={`tag-${index}-${tag}`} // 고유 키 부여
+                text={tag}
+                index={index}
+                startPosition={tagPositions[index] || (6 + index * (45 + 6))} // 초기 위치 설정
+                ref={tagRefs.current[index]}
+              />
+            ))}
+          </div>
+        </Link>
       </div>
     );
   };
