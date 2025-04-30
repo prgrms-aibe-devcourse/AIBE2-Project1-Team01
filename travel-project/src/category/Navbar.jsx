@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-left"> {/*home 링크 수정 및 로고 수정 필요*/}
         <Link to="/home" className="navbar-logo"> 
-          wire frame
+          <img src="../assets/img/mainLogo.png" alt="Logo" className="logo" />
         </Link>
       </div>
       <div className="navbar-right">
