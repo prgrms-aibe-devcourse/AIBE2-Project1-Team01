@@ -5,7 +5,6 @@
 
 .main-page-header {
   background-color: #ffffff;
-  display: flex;
   flex-direction: row;
   width: 100%;
 }
