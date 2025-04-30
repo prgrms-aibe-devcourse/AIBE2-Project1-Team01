@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import DatePickerModal from "../../components/DatePickerModal";
+import DatePickerModal from "../../components/DatePickerModal";
 import "./PlanPage.css";
 
 export const PlanPage = () => {
