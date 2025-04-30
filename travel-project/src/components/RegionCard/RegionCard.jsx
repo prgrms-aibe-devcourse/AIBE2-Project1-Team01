@@ -1,4 +1,3 @@
-// 커밋
 import React, { useRef, useEffect, useState, useMemo } from "react";
 import "./RegionCard.css";
 import testImage from "../../assets/img/test.jpg";  // ← 경로 수정

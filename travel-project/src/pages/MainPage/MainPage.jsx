@@ -1,4 +1,3 @@
-// 커밋
 import React, { useState, useEffect } from "react";
 import { RegionCard } from "../../components/RegionCard/RegionCard"; 
 import ReviewDetailPage from "../travel/ReviewDetailPage";

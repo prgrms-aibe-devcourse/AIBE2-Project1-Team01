@@ -1,4 +1,3 @@
-// 커밋
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../assets/base.css';
