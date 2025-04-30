@@ -13,11 +13,6 @@
   align-items: center;
 }
 
-.navbar-logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #4F9DDE; /* 메인 컬러 */
-}
 
 .navbar-right {
   display: flex;
@@ -28,7 +23,7 @@
 .navbar-right a {
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 24px;
   transition: all 0.3s ease;
 }
 
@@ -43,7 +38,7 @@
   pointer-events: none;
 }
 .navbar-logo {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   color: #4F9DDE;
   text-decoration: none;
