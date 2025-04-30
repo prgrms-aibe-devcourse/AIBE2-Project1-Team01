@@ -14,7 +14,7 @@ const TripModal = ({ trip, onClose }) => {
         <div className="modal-content">
           <div className="modal-text">
             <p><strong>대한민국 {trip.regionName}</strong></p>
-            <p style={{ margin: "12px 0" }}>{trip.description}</p>
+            <p className="trip-description">{trip.description}</p>
             <ul>
               {Object.entries(trip.details).map(([label, value]) => (
                 <li key={label}>📌 {label}: {value}</li>

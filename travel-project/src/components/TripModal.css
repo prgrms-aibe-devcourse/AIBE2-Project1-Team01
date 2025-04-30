@@ -37,6 +37,10 @@
     font-size: 14px;
   }
   
+  .trip-description {
+    margin: 12px 0;
+  }
+  
   .modal-image img {
     width: 250px;
     height: 170px;
@@ -49,5 +53,4 @@
     background: none;
     border: none;
     cursor: pointer;
-  }
-  
+  }  
