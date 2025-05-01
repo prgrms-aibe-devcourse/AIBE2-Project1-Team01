@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BigStar, EmptyStar, HalfStar } from '../../components/StarRating';
+import { useReview } from '../../contexts/ReviewContext';
 import './ReviewWrite.css';
 
-function ReviewWrite({ onAddReview }) {
+function ReviewWrite() {
   const navigate = useNavigate();
+  const { handleAddReview } = useReview();
   const [formData, setFormData] = useState({
     content: '',
     photo: '',
@@ -64,7 +66,7 @@ function ReviewWrite({ onAddReview }) {
       rating: myStarRate,
       photo: photoPreview || '',
     };
-    onAddReview(newReview);
+    handleAddReview(newReview);
     navigate('/reviews');
   };
 

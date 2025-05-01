@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ReviewCard from '../../components/ReviewCard';
 import ReviewDetailModal from './ReviewDetailModal';
+import { useReview } from '../../contexts/ReviewContext';
 import './ReviewList.css';
 
-function ReviewList({ reviews }) {
+function ReviewList() {
   const navigate = useNavigate();
+  const { reviews } = useReview();
   
   const filteredReviews = reviews.filter(
     (review) => review && review.content && review.content.trim() !== ''

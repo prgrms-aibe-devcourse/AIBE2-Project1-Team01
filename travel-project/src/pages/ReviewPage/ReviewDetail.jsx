@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ConfirmModal from '../../components/ConfirmModal';
 import { renderStars } from '../../components/StarRating';
+import { useReview } from '../../contexts/ReviewContext';
 import './ReviewDetail.css';
 
-function ReviewDetail({ reviews, setReviews }) {
+function ReviewDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { reviews, handleDeleteReview } = useReview();
   const review = reviews.find(r => String(r.id) === id);
   const [showModal, setShowModal] = useState(false);
 
   if (!review) return <div>리뷰를 찾을 수 없습니다.</div>;
 
   const handleDelete = () => {
-    setReviews(reviews.filter(r => String(r.id) !== id));
+    handleDeleteReview(id);
     navigate('/reviews');
   };
 

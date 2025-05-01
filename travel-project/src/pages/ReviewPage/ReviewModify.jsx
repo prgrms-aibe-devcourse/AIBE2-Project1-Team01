@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { BigStar, EmptyStar, HalfStar } from '../../components/StarRating';
 import ConfirmModal from '../../components/ConfirmModal';
+import { useReview } from '../../contexts/ReviewContext';
 import './ReviewWrite.css';
 
-function ReviewModify({ reviews, onUpdateReview, setReviews }) {
+function ReviewModify() {
   const navigate = useNavigate();
   const { id } = useParams();
+  const { reviews, handleUpdateReview, handleDeleteReview } = useReview();
   const reviewId = Number(id);
   const review = reviews.find(r => r.id === reviewId);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -55,7 +57,7 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onUpdateReview({
+    handleUpdateReview({
       ...review,
       content: formData.content,
       rating: myStarRate,
@@ -130,7 +132,7 @@ function ReviewModify({ reviews, onUpdateReview, setReviews }) {
         <ConfirmModal
           message="정말 삭제하시겠습니까?"
           onConfirm={() => {
-            setReviews(reviews.filter(r => r.id !== reviewId));
+            handleDeleteReview(reviewId);
             navigate('/reviews');
           }}
           onCancel={() => setShowDeleteModal(false)}
