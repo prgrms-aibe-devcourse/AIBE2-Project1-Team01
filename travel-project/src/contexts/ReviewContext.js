@@ -1,41 +1,51 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
-import reviewsData from '../data/reviews.json';
+import React, { createContext, useContext, useState } from 'react';
+import reviewsData from '../reviewData/reviews.json';
+
+// 이미지 import
+import jejuImage from '../reviewData/reviewImages/jeju.jpg';
+import busanImage from '../reviewData/reviewImages/busan.jpg';
+import seoulImage from '../reviewData/reviewImages/seoul.jpg';
+import gyeongjuImage from '../reviewData/reviewImages/gyeongju.jpg';
+import gangneungImage from '../reviewData/reviewImages/gangneung.jpg';
+import jeonjuImage from '../reviewData/reviewImages/jeonju.jpg';
+
+// 이미지 매핑 객체
+const imageMap = {
+  './reviewImages/jeju.jpg': jejuImage,
+  './reviewImages/busan.jpg': busanImage,
+  './reviewImages/seoul.jpg': seoulImage,
+  './reviewImages/gyeongju.jpg': gyeongjuImage,
+  './reviewImages/gangneung.jpg': gangneungImage,
+  './reviewImages/jeonju.jpg': jeonjuImage
+};
+
+// 이미지 경로를 실제 import된 이미지로 변환
+const reviewsWithImages = reviewsData.reviews.map(review => ({
+  ...review,
+  photo: imageMap[review.photo] || review.photo
+}));
 
 const ReviewContext = createContext();
 
 export function ReviewProvider({ children }) {
-  const [reviews, setReviews] = useState([]);
-
-  useEffect(() => {
-    // JSON 파일에서 데이터 로드
-    setReviews(reviewsData.reviews);
-  }, []);
+  const [reviews, setReviews] = useState(reviewsWithImages);
 
   const handleAddReview = (newReview) => {
-    setReviews(prevReviews => [...prevReviews, newReview]);
+    setReviews(prev => [...prev, newReview]);
   };
 
   const handleUpdateReview = (updatedReview) => {
-    setReviews(prevReviews => 
-      prevReviews.map(r => r.id === updatedReview.id ? updatedReview : r)
-    );
+    setReviews(prev => prev.map(review => 
+      review.id === updatedReview.id ? updatedReview : review
+    ));
   };
 
-  const handleDeleteReview = (reviewId) => {
-    setReviews(prevReviews => 
-      prevReviews.filter(r => String(r.id) !== String(reviewId))
-    );
-  };
-
-  const value = {
-    reviews,
-    handleAddReview,
-    handleUpdateReview,
-    handleDeleteReview
+  const handleDeleteReview = (id) => {
+    setReviews(prev => prev.filter(review => review.id !== Number(id)));
   };
 
   return (
-    <ReviewContext.Provider value={value}>
+    <ReviewContext.Provider value={{ reviews, handleAddReview, handleUpdateReview, handleDeleteReview }}>
       {children}
     </ReviewContext.Provider>
   );
