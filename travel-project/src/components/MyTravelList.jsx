@@ -21,26 +21,34 @@ const MyTravelList = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(227px, 1fr))",
-        gap: "20px",
-        justifyItems: "center",
-        padding: "20px",
-      }}
-    >
-      {mytrips.map((trip) => (
-        <TripCard
-          key={trip.id}
-          id={trip.locationId}
-          locationName={trip.locationName}
-          travelPeriod={trip.period}
-          image={trip.locationImage}
-          tags={trip.tags}
-          plans={trip.plan}
-        />
-      ))}
+    <div>
+      {mytrips.length === 0 ? (
+        <div style={{ textAlign: "center", fontSize: "18px", color: "#888" }}>
+          저장된 여행이 없어요
+        </div>
+      ) : (
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(227px, 1fr))",
+            gap: "20px",
+            justifyItems: "center",
+            padding: "20px",
+          }}
+        >
+          {mytrips.map((trip) => (
+            <TripCard
+              key={trip.id}
+              id={trip.locationId}
+              locationName={trip.locationName}
+              travelPeriod={trip.period}
+              image={trip.locationImage}
+              tags={trip.tags}
+              plans={trip.plan}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
