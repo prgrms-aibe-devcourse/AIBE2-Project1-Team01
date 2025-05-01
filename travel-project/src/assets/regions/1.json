@@ -1,0 +1,4584 @@
+{
+  "locations": [
+    //부산
+    {
+      "id": "location_001",
+      "name": "부산",
+      "description": "부산은 대한민국 남동부에 위치한 대표적인 항구 도시로, 바다와 도시가 공존하는 다채로운 매력을 지니고 있습니다. 해운대와 광안리 같은 아름다운 해변, 감천문화마을과 흰여울마을 같은 감성적인 골목, 그리고 다양한 해산물 요리를 즐길 수 있는 자갈치시장까지, 부산은 자연과 문화, 먹거리와 볼거리가 조화를 이루는 여행지입니다. 시티투어버스와 지하철 등 대중교통이 잘 발달되어 있어 이동이 편리하고, 승용차로는 외곽의 숨겨진 명소까지 자유롭게 여행할 수 있어 다양한 스타일의 여행자가 만족할 수 있는 도시입니다.",
+      "images": [
+        "busan1.jpg",
+        "busan2.jpg"
+      ],
+      "tags": [
+        "여름", "부산", "바다", "문화", "맛집탐방", "데이트", "2박3일", "경상"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "송도 & 암남공원",
+              "plans": [
+                {
+                  "place": "송도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "암남공원 전망 감상",
+                    "케이블카 탑승"
+                  ]
+                },
+                {
+                  "place": "송도 해수욕장",
+                  "time": "점심",
+                  "activities": [
+                    "구름산책로 산책",
+                    "해변 카페"
+                  ]
+                },
+                {
+                  "place": "청사포",
+                  "time": "오후",
+                  "activities": [
+                    "카페 거리 드라이브",
+                    "조용한 티타임"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "해운대 & 동백섬",
+              "plans": [
+                {
+                  "place": "해운대 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "해변 산책",
+                    "사진 촬영"
+                  ]
+                },
+                {
+                  "place": "동백섬 & 누리마루",
+                  "time": "오후",
+                  "activities": [
+                    "해안 산책로 산책",
+                    "전망대 방문"
+                  ]
+                },
+                {
+                  "place": "더베이101",
+                  "time": "저녁",
+                  "activities": [
+                    "야경 감상",
+                    "요트 경기장 주변 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "광안리 & 마린시티",
+              "plans": [
+                {
+                  "place": "광안리 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "산책",
+                    "모래놀이"
+                  ]
+                },
+                {
+                  "place": "마린시티",
+                  "time": "오후",
+                  "activities": [
+                    "고층 카페 방문",
+                    "광안대교 뷰 감상"
+                  ]
+                },
+                {
+                  "place": "민락포차 거리",
+                  "time": "저녁",
+                  "activities": [
+                    "야시장 구경",
+                    "해산물 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "동래 & 온천",
+              "plans": [
+                {
+                  "place": "동래읍성",
+                  "time": "오전",
+                  "activities": [
+                    "역사 유적지 산책"
+                  ]
+                },
+                {
+                  "place": "금강공원",
+                  "time": "오후",
+                  "activities": [
+                    "모노레일 체험",
+                    "범어사 방문"
+                  ]
+                },
+                {
+                  "place": "온천장 허심청",
+                  "time": "저녁",
+                  "activities": [
+                    "온천욕으로 힐링"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "감천마을 & 흰여울",
+              "plans": [
+                {
+                  "place": "감천문화마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 골목 탐방",
+                    "사진 촬영"
+                  ]
+                },
+                {
+                  "place": "흰여울문화마을",
+                  "time": "오후",
+                  "activities": [
+                    "예술 산책로 걷기",
+                    "카페에서 휴식"
+                  ]
+                },
+                {
+                  "place": "영도 카페거리",
+                  "time": "저녁",
+                  "activities": [
+                    "바다 전망 카페"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "기장 해안 드라이브",
+              "plans": [
+                {
+                  "place": "해동용궁사",
+                  "time": "오전",
+                  "activities": [
+                    "절경 감상",
+                    "사찰 산책"
+                  ]
+                },
+                {
+                  "place": "일광해변",
+                  "time": "오후",
+                  "activities": [
+                    "한적한 해변 산책"
+                  ]
+                },
+                {
+                  "place": "죽성성당",
+                  "time": "저녁",
+                  "activities": [
+                    "드라마 촬영지 구경"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "송정 & 청사포",
+              "plans": [
+                {
+                  "place": "송정 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "모래놀이",
+                    "카페"
+                  ]
+                },
+                {
+                  "place": "청사포 다릿돌 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                },
+                {
+                  "place": "미포 블루라인 철길",
+                  "time": "저녁",
+                  "activities": [
+                    "산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "다대포 & 장림포구",
+              "plans": [
+                {
+                  "place": "다대포 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "갯벌 체험",
+                    "석양 감상"
+                  ]
+                },
+                {
+                  "place": "을숙도 철새공원",
+                  "time": "오후",
+                  "activities": [
+                    "생태공원 탐방"
+                  ]
+                },
+                {
+                  "place": "장림포구",
+                  "time": "저녁",
+                  "activities": [
+                    "포구 산책",
+                    "사진 촬영"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "서면 & 전포카페거리",
+              "plans": [
+                {
+                  "place": "전포카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문",
+                    "디저트 브레이크"
+                  ]
+                },
+                {
+                  "place": "서면",
+                  "time": "오후",
+                  "activities": [
+                    "쇼핑",
+                    "로컬 맛집 탐방"
+                  ]
+                },
+                {
+                  "place": "영화관 또는 LP바",
+                  "time": "저녁",
+                  "activities": [
+                    "감성 저녁 마무리"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 기념품 쇼핑",
+              "plans": [
+                {
+                  "place": "부산역 근처",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑",
+                    "근처 산책"
+                  ]
+                },
+                {
+                  "place": "자유 일정",
+                  "time": "오후",
+                  "activities": [
+                    "마지막 방문지 선택"
+                  ]
+                },
+                {
+                  "place": "부산역",
+                  "time": "저녁",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "송도 & 암남공원",
+              "plans": [
+                {
+                  "place": "송도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "암남공원 전망 감상"
+                  ]
+                },
+                {
+                  "place": "송도 해수욕장",
+                  "time": "점심",
+                  "activities": [
+                    "구름산책로 산책"
+                  ]
+                },
+                {
+                  "place": "청사포",
+                  "time": "오후",
+                  "activities": [
+                    "카페 거리 드라이브"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "해운대 & 동백섬",
+              "plans": [
+                {
+                  "place": "해운대 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "해변 산책"
+                  ]
+                },
+                {
+                  "place": "동백섬 & 누리마루",
+                  "time": "오후",
+                  "activities": [
+                    "해안 산책로 산책"
+                  ]
+                },
+                {
+                  "place": "더베이101",
+                  "time": "저녁",
+                  "activities": [
+                    "야경 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "광안리 & 마린시티",
+              "plans": [
+                {
+                  "place": "광안리 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "산책"
+                  ]
+                },
+                {
+                  "place": "마린시티",
+                  "time": "오후",
+                  "activities": [
+                    "고층 카페 방문"
+                  ]
+                },
+                {
+                  "place": "민락포차 거리",
+                  "time": "저녁",
+                  "activities": [
+                    "야시장 구경"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "동래 & 온천",
+              "plans": [
+                {
+                  "place": "동래읍성",
+                  "time": "오전",
+                  "activities": [
+                    "역사 유적지 산책"
+                  ]
+                },
+                {
+                  "place": "금강공원",
+                  "time": "오후",
+                  "activities": [
+                    "모노레일 체험"
+                  ]
+                },
+                {
+                  "place": "온천장 허심청",
+                  "time": "저녁",
+                  "activities": [
+                    "온천욕으로 힐링"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "감천마을 & 흰여울",
+              "plans": [
+                {
+                  "place": "감천문화마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 골목 탐방"
+                  ]
+                },
+                {
+                  "place": "흰여울문화마을",
+                  "time": "오후",
+                  "activities": [
+                    "예술 산책로 걷기"
+                  ]
+                },
+                {
+                  "place": "영도 카페거리",
+                  "time": "저녁",
+                  "activities": [
+                    "바다 전망 카페"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "기장 해안 드라이브",
+              "plans": [
+                {
+                  "place": "해동용궁사",
+                  "time": "오전",
+                  "activities": [
+                    "절경 감상"
+                  ]
+                },
+                {
+                  "place": "일광해변",
+                  "time": "오후",
+                  "activities": [
+                    "한적한 해변 산책"
+                  ]
+                },
+                {
+                  "place": "죽성성당",
+                  "time": "저녁",
+                  "activities": [
+                    "드라마 촬영지 구경"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "송정 & 청사포",
+              "plans": [
+                {
+                  "place": "송정 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "모래놀이"
+                  ]
+                },
+                {
+                  "place": "청사포 다릿돌 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                },
+                {
+                  "place": "미포 블루라인 철길",
+                  "time": "저녁",
+                  "activities": [
+                    "산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "다대포 & 장림포구",
+              "plans": [
+                {
+                  "place": "다대포 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "갯벌 체험"
+                  ]
+                },
+                {
+                  "place": "을숙도 철새공원",
+                  "time": "오후",
+                  "activities": [
+                    "생태공원 탐방"
+                  ]
+                },
+                {
+                  "place": "장림포구",
+                  "time": "저녁",
+                  "activities": [
+                    "포구 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "서면 & 전포카페거리",
+              "plans": [
+                {
+                  "place": "전포카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "서면",
+                  "time": "오후",
+                  "activities": [
+                    "쇼핑"
+                  ]
+                },
+                {
+                  "place": "영화관 또는 LP바",
+                  "time": "저녁",
+                  "activities": [
+                    "감성 저녁 마무리"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 기념품 쇼핑",
+              "plans": [
+                {
+                  "place": "부산역 근처",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "자유 일정",
+                  "time": "오후",
+                  "activities": [
+                    "마지막 방문지 선택"
+                  ]
+                },
+                {
+                  "place": "부산역",
+                  "time": "저녁",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //대구
+    {
+      "id": "location_002",
+      "name": "대구",
+      "description": "대구는 대한민국 남부 내륙에 위치한 도시로, 전통과 현대가 공존하며 문화예술, 자연, 먹거리 모두를 즐길 수 있는 매력적인 여행지입니다. 팔공산과 앞산 같은 자연 경관과 함께 서문시장, 근대골목, 김광석 다시그리기길 등 도심 속 다양한 테마를 경험할 수 있습니다. 지하철, 버스 등 대중교통이 잘 갖춰져 있으며, 승용차를 이용하면 외곽의 절경지나 온천까지도 편리하게 접근할 수 있어 여행 스타일에 맞게 선택할 수 있습니다.",
+      "images": [
+        "daegu1.jpg",
+        "daegu2.jpg"
+      ],
+      "tags": [
+        "가을",
+        "경상",
+        "문화",
+        "도심",
+        "워킹",
+        "가족여행",
+        "2박3일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "도심 탐방",
+              "plans": [
+                {
+                  "place": "대구근대골목",
+                  "time": "오전",
+                  "activities": [
+                    "3.1만세운동길 걷기",
+                    "역사 체험"
+                  ]
+                },
+                {
+                  "place": "김광석 다시그리기길",
+                  "time": "오후",
+                  "activities": [
+                    "벽화 감상",
+                    "사진 촬영"
+                  ]
+                },
+                {
+                  "place": "동성로",
+                  "time": "저녁",
+                  "activities": [
+                    "야경 산책",
+                    "쇼핑"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "전통시장 탐방",
+              "plans": [
+                {
+                  "place": "서문시장",
+                  "time": "오전",
+                  "activities": [
+                    "길거리 음식 탐방",
+                    "시장 산책"
+                  ]
+                },
+                {
+                  "place": "서문야시장",
+                  "time": "저녁",
+                  "activities": [
+                    "야시장 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "자연 힐링",
+              "plans": [
+                {
+                  "place": "앞산공원",
+                  "time": "오전",
+                  "activities": [
+                    "앞산전망대 오르기",
+                    "도심 전경 감상"
+                  ]
+                },
+                {
+                  "place": "앞산케이블카",
+                  "time": "오후",
+                  "activities": [
+                    "케이블카 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "역사문화",
+              "plans": [
+                {
+                  "place": "대구향교",
+                  "time": "오전",
+                  "activities": [
+                    "전통 유적지 탐방"
+                  ]
+                },
+                {
+                  "place": "국립대구박물관",
+                  "time": "오후",
+                  "activities": [
+                    "문화 전시 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "자연경관",
+              "plans": [
+                {
+                  "place": "팔공산",
+                  "time": "오전",
+                  "activities": [
+                    "도보 산책",
+                    "자연경관 감상"
+                  ]
+                },
+                {
+                  "place": "동화사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 산책",
+                    "명상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "온천과 휴식",
+              "plans": [
+                {
+                  "place": "이시아폴리스 온천",
+                  "time": "오전",
+                  "activities": [
+                    "온천욕",
+                    "스파"
+                  ]
+                },
+                {
+                  "place": "이시아폴리스 아울렛",
+                  "time": "오후",
+                  "activities": [
+                    "쇼핑",
+                    "카페 휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "테마파크",
+              "plans": [
+                {
+                  "place": "이월드",
+                  "time": "오전",
+                  "activities": [
+                    "놀이기구 체험",
+                    "랜드마크 타워"
+                  ]
+                },
+                {
+                  "place": "83타워 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "예술 감성",
+              "plans": [
+                {
+                  "place": "대구예술발전소",
+                  "time": "오전",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                },
+                {
+                  "place": "수창청춘맨숀",
+                  "time": "오후",
+                  "activities": [
+                    "복합문화공간 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "공원 산책",
+              "plans": [
+                {
+                  "place": "수성못",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책",
+                    "백조 관찰"
+                  ]
+                },
+                {
+                  "place": "수성랜드 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "카페에서 디저트"
+                  ]
+                },
+                {
+                  "place": "야경 산책",
+                  "time": "저녁",
+                  "activities": [
+                    "분수 쇼 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정",
+              "plans": [
+                {
+                  "place": "대구역 주변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "선택 관광지 재방문",
+                  "time": "오후",
+                  "activities": [
+                    "자유 시간"
+                  ]
+                },
+                {
+                  "place": "귀가 준비",
+                  "time": "저녁",
+                  "activities": [
+                    "숙소 체크아웃"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "도심 탐방",
+              "plans": [
+                {
+                  "place": "대구근대골목",
+                  "time": "오전",
+                  "activities": [
+                    "3.1만세운동길 걷기"
+                  ]
+                },
+                {
+                  "place": "김광석 다시그리기길",
+                  "time": "오후",
+                  "activities": [
+                    "벽화 감상"
+                  ]
+                },
+                {
+                  "place": "동성로",
+                  "time": "저녁",
+                  "activities": [
+                    "야경 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "전통시장 탐방",
+              "plans": [
+                {
+                  "place": "서문시장",
+                  "time": "오전",
+                  "activities": [
+                    "길거리 음식 탐방"
+                  ]
+                },
+                {
+                  "place": "서문야시장",
+                  "time": "저녁",
+                  "activities": [
+                    "야시장 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "자연 힐링",
+              "plans": [
+                {
+                  "place": "앞산공원",
+                  "time": "오전",
+                  "activities": [
+                    "앞산전망대 오르기"
+                  ]
+                },
+                {
+                  "place": "앞산케이블카",
+                  "time": "오후",
+                  "activities": [
+                    "케이블카 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "역사문화",
+              "plans": [
+                {
+                  "place": "대구향교",
+                  "time": "오전",
+                  "activities": [
+                    "전통 유적지 탐방"
+                  ]
+                },
+                {
+                  "place": "국립대구박물관",
+                  "time": "오후",
+                  "activities": [
+                    "문화 전시 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "자연경관",
+              "plans": [
+                {
+                  "place": "팔공산",
+                  "time": "오전",
+                  "activities": [
+                    "도보 산책"
+                  ]
+                },
+                {
+                  "place": "동화사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "온천과 휴식",
+              "plans": [
+                {
+                  "place": "이시아폴리스 온천",
+                  "time": "오전",
+                  "activities": [
+                    "온천욕"
+                  ]
+                },
+                {
+                  "place": "이시아폴리스 아울렛",
+                  "time": "오후",
+                  "activities": [
+                    "쇼핑"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "테마파크",
+              "plans": [
+                {
+                  "place": "이월드",
+                  "time": "오전",
+                  "activities": [
+                    "놀이기구 체험"
+                  ]
+                },
+                {
+                  "place": "83타워 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "예술 감성",
+              "plans": [
+                {
+                  "place": "대구예술발전소",
+                  "time": "오전",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                },
+                {
+                  "place": "수창청춘맨숀",
+                  "time": "오후",
+                  "activities": [
+                    "복합문화공간 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "공원 산책",
+              "plans": [
+                {
+                  "place": "수성못",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책"
+                  ]
+                },
+                {
+                  "place": "수성랜드 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "카페에서 디저트"
+                  ]
+                },
+                {
+                  "place": "야경 산책",
+                  "time": "저녁",
+                  "activities": [
+                    "분수 쇼 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정",
+              "plans": [
+                {
+                  "place": "대구역 주변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "선택 관광지 재방문",
+                  "time": "오후",
+                  "activities": [
+                    "자유 시간"
+                  ]
+                },
+                {
+                  "place": "귀가 준비",
+                  "time": "저녁",
+                  "activities": [
+                    "숙소 체크아웃"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //경주
+    {
+      "id": "location_003",
+      "name": "경주",
+      "description": "경주는 천년고도로 불리는 신라의 수도로, 유네스코 세계문화유산과 전통 한옥, 고분, 사찰 등 수많은 역사 유적지가 있는 도시입니다. 역사 탐방과 자연 경관, 야경까지 어우러져 다양한 테마 여행이 가능하며, 대중교통과 승용차 모두 접근성이 좋은 여행지입니다. 특히 봄과 가을에는 벚꽃길, 은행나무길이 아름다워 많은 관광객이 찾는 명소입니다.",
+      "images": [
+        "gyeongju1.jpg",
+        "gyeongju2.jpg"
+      ],
+      "tags": [
+        "봄",
+        "경상",
+        "역사",
+        "자연",
+        "워킹",
+        "가족여행",
+        "2박3일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "불국사와 석굴암",
+              "plans": [
+                {
+                  "place": "불국사",
+                  "time": "오전",
+                  "activities": [
+                    "사찰 관람",
+                    "유네스코 세계유산 체험"
+                  ]
+                },
+                {
+                  "place": "석굴암",
+                  "time": "오후",
+                  "activities": [
+                    "불상 감상",
+                    "동해 조망"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "동궁과 월지 & 첨성대",
+              "plans": [
+                {
+                  "place": "동궁과 월지",
+                  "time": "오전",
+                  "activities": [
+                    "연못 산책",
+                    "야경 명소"
+                  ]
+                },
+                {
+                  "place": "첨성대",
+                  "time": "오후",
+                  "activities": [
+                    "천문대 유적 관람",
+                    "포토 스팟"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "경주역사유적지구",
+              "plans": [
+                {
+                  "place": "대릉원",
+                  "time": "오전",
+                  "activities": [
+                    "고분 탐방",
+                    "한복 체험"
+                  ]
+                },
+                {
+                  "place": "경주 교촌마을",
+                  "time": "오후",
+                  "activities": [
+                    "전통 한옥 체험",
+                    "향교 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "황리단길 감성 투어",
+              "plans": [
+                {
+                  "place": "황리단길",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문",
+                    "디저트 맛집"
+                  ]
+                },
+                {
+                  "place": "경주 예술의 거리",
+                  "time": "오후",
+                  "activities": [
+                    "공방 구경",
+                    "거리 공연 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "보문호 & 보문단지",
+              "plans": [
+                {
+                  "place": "보문호수",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책",
+                    "자전거 타기"
+                  ]
+                },
+                {
+                  "place": "보문관광단지",
+                  "time": "오후",
+                  "activities": [
+                    "호텔 카페",
+                    "온천 스파"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "남산 트레킹",
+              "plans": [
+                {
+                  "place": "남산 등산로",
+                  "time": "오전",
+                  "activities": [
+                    "삼릉계곡 코스",
+                    "불상·탑 감상"
+                  ]
+                },
+                {
+                  "place": "남산 불곡 마을",
+                  "time": "오후",
+                  "activities": [
+                    "전통 마을 구경",
+                    "로컬 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "양동마을 & 경주국립박물관",
+              "plans": [
+                {
+                  "place": "양동마을",
+                  "time": "오전",
+                  "activities": [
+                    "조선시대 전통마을 관람"
+                  ]
+                },
+                {
+                  "place": "경주국립박물관",
+                  "time": "오후",
+                  "activities": [
+                    "문화재 관람",
+                    "신라 역사 이해"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "문무대왕릉 & 감은사지",
+              "plans": [
+                {
+                  "place": "문무대왕릉",
+                  "time": "오전",
+                  "activities": [
+                    "바닷속 왕릉 관람"
+                  ]
+                },
+                {
+                  "place": "감은사지",
+                  "time": "오후",
+                  "activities": [
+                    "절터 산책",
+                    "탑 유적 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "경주 스탬프 투어 & 전통시장",
+              "plans": [
+                {
+                  "place": "경주 스탬프 투어",
+                  "time": "오전",
+                  "activities": [
+                    "관광지 인증샷 미션"
+                  ]
+                },
+                {
+                  "place": "경주 중앙시장",
+                  "time": "오후",
+                  "activities": [
+                    "전통 시장 탐방",
+                    "먹거리 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문지 or 황리단길",
+                  "time": "오전",
+                  "activities": [
+                    "자유 시간"
+                  ]
+                },
+                {
+                  "place": "경주역 또는 시외버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "기념품 쇼핑",
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "불국사와 석굴암",
+              "plans": [
+                {
+                  "place": "불국사",
+                  "time": "오전",
+                  "activities": [
+                    "사찰 관람"
+                  ]
+                },
+                {
+                  "place": "석굴암",
+                  "time": "오후",
+                  "activities": [
+                    "불상 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "동궁과 월지 & 첨성대",
+              "plans": [
+                {
+                  "place": "동궁과 월지",
+                  "time": "오전",
+                  "activities": [
+                    "연못 산책"
+                  ]
+                },
+                {
+                  "place": "첨성대",
+                  "time": "오후",
+                  "activities": [
+                    "천문대 유적 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "경주역사유적지구",
+              "plans": [
+                {
+                  "place": "대릉원",
+                  "time": "오전",
+                  "activities": [
+                    "고분 탐방"
+                  ]
+                },
+                {
+                  "place": "경주 교촌마을",
+                  "time": "오후",
+                  "activities": [
+                    "전통 한옥 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "황리단길 감성 투어",
+              "plans": [
+                {
+                  "place": "황리단길",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "경주 예술의 거리",
+                  "time": "오후",
+                  "activities": [
+                    "공방 구경"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "보문호 & 보문단지",
+              "plans": [
+                {
+                  "place": "보문호수",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책"
+                  ]
+                },
+                {
+                  "place": "보문관광단지",
+                  "time": "오후",
+                  "activities": [
+                    "호텔 카페"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "남산 트레킹",
+              "plans": [
+                {
+                  "place": "남산 등산로",
+                  "time": "오전",
+                  "activities": [
+                    "삼릉계곡 코스"
+                  ]
+                },
+                {
+                  "place": "남산 불곡 마을",
+                  "time": "오후",
+                  "activities": [
+                    "전통 마을 구경"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "양동마을 & 경주국립박물관",
+              "plans": [
+                {
+                  "place": "양동마을",
+                  "time": "오전",
+                  "activities": [
+                    "조선시대 전통마을 관람"
+                  ]
+                },
+                {
+                  "place": "경주국립박물관",
+                  "time": "오후",
+                  "activities": [
+                    "문화재 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "문무대왕릉 & 감은사지",
+              "plans": [
+                {
+                  "place": "문무대왕릉",
+                  "time": "오전",
+                  "activities": [
+                    "바닷속 왕릉 관람"
+                  ]
+                },
+                {
+                  "place": "감은사지",
+                  "time": "오후",
+                  "activities": [
+                    "절터 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "경주 스탬프 투어 & 전통시장",
+              "plans": [
+                {
+                  "place": "경주 스탬프 투어",
+                  "time": "오전",
+                  "activities": [
+                    "관광지 인증샷 미션"
+                  ]
+                },
+                {
+                  "place": "경주 중앙시장",
+                  "time": "오후",
+                  "activities": [
+                    "전통 시장 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문지 or 황리단길",
+                  "time": "오전",
+                  "activities": [
+                    "자유 시간"
+                  ]
+                },
+                {
+                  "place": "경주역 또는 시외버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //포항
+    {
+      "id": "location_004",
+      "name": "포항",
+      "description": "포항은 경상북도 동해안에 위치한 해양도시로, 일출 명소인 호미곶과 영일대 해변, 내연산 폭포군과 같은 자연 절경은 물론, 철강 산업도시로서의 현대적인 면모도 갖추고 있는 매력적인 여행지입니다. 해산물 맛집과 바닷길 드라이브, 지역 축제 등 다양한 즐길 거리가 풍부하며, 대중교통으로도 주요 명소 접근이 가능하고 승용차 이용 시 숨겨진 자연명소까지 보다 편리하게 이동할 수 있습니다.",
+      "images": [
+        "pohang1.jpg",
+        "pohang2.jpg"
+      ],
+      "tags": [
+        "여름",
+        "경상",
+        "자연",
+        "바다",
+        "일출구경",
+        "혼자가기좋음",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "영일대 해변 산책",
+              "plans": [
+                {
+                  "place": "영일대 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "바다 산책",
+                    "해상 누각 관람"
+                  ]
+                },
+                {
+                  "place": "죽도시장",
+                  "time": "오후",
+                  "activities": [
+                    "해산물 식사",
+                    "시장 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "호미곶 일출 여행",
+              "plans": [
+                {
+                  "place": "호미곶 해맞이광장",
+                  "time": "오전",
+                  "activities": [
+                    "상생의 손 조형물 감상",
+                    "일출 촬영"
+                  ]
+                },
+                {
+                  "place": "호미반도 해안둘레길",
+                  "time": "오후",
+                  "activities": [
+                    "해안 걷기",
+                    "등대 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "구룡포 일제거리 & 해안도로",
+              "plans": [
+                {
+                  "place": "구룡포 근대문화역사거리",
+                  "time": "오전",
+                  "activities": [
+                    "전통 거리 탐방"
+                  ]
+                },
+                {
+                  "place": "구룡포 해수욕장",
+                  "time": "오후",
+                  "activities": [
+                    "바다 감상",
+                    "카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "내연산 & 보경사",
+              "plans": [
+                {
+                  "place": "내연산 폭포군",
+                  "time": "오전",
+                  "activities": [
+                    "폭포 탐방",
+                    "트레킹"
+                  ]
+                },
+                {
+                  "place": "보경사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 산책",
+                    "명상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "환호공원 & 포항운하",
+              "plans": [
+                {
+                  "place": "환호공원 스페이스워크",
+                  "time": "오전",
+                  "activities": [
+                    "조형물 산책",
+                    "전망 감상"
+                  ]
+                },
+                {
+                  "place": "포항운하",
+                  "time": "오후",
+                  "activities": [
+                    "운하 보트 체험",
+                    "카페 타임"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "영덕 드라이브(외곽)",
+              "plans": [
+                {
+                  "place": "블루로드 산책길",
+                  "time": "오전",
+                  "activities": [
+                    "해안 트레킹"
+                  ]
+                },
+                {
+                  "place": "장사해변",
+                  "time": "오후",
+                  "activities": [
+                    "휴식",
+                    "해변 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "철길 마을 & 연오랑세오녀 테마공원",
+              "plans": [
+                {
+                  "place": "철길마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 감상",
+                    "레트로 풍경 촬영"
+                  ]
+                },
+                {
+                  "place": "연오랑세오녀 테마공원",
+                  "time": "오후",
+                  "activities": [
+                    "테마파크 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "포항시립미술관 & 오천읍성",
+              "plans": [
+                {
+                  "place": "포항시립미술관",
+                  "time": "오전",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                },
+                {
+                  "place": "오천읍성",
+                  "time": "오후",
+                  "activities": [
+                    "산책",
+                    "사진 촬영"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "도심 카페투어 & 포항철강공단 뷰",
+              "plans": [
+                {
+                  "place": "포항 카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "철강공단 야경 명소",
+                  "time": "오후",
+                  "activities": [
+                    "야경 촬영"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "죽도시장 또는 해변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "포항역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "영일대 해변 산책",
+              "plans": [
+                {
+                  "place": "영일대 해수욕장",
+                  "time": "오전",
+                  "activities": [
+                    "바다 산책"
+                  ]
+                },
+                {
+                  "place": "죽도시장",
+                  "time": "오후",
+                  "activities": [
+                    "해산물 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "호미곶 일출 여행",
+              "plans": [
+                {
+                  "place": "호미곶 해맞이광장",
+                  "time": "오전",
+                  "activities": [
+                    "상생의 손 조형물 감상"
+                  ]
+                },
+                {
+                  "place": "호미반도 해안둘레길",
+                  "time": "오후",
+                  "activities": [
+                    "해안 걷기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "구룡포 일제거리 & 해안도로",
+              "plans": [
+                {
+                  "place": "구룡포 근대문화역사거리",
+                  "time": "오전",
+                  "activities": [
+                    "전통 거리 탐방"
+                  ]
+                },
+                {
+                  "place": "구룡포 해수욕장",
+                  "time": "오후",
+                  "activities": [
+                    "바다 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "내연산 & 보경사",
+              "plans": [
+                {
+                  "place": "내연산 폭포군",
+                  "time": "오전",
+                  "activities": [
+                    "폭포 탐방"
+                  ]
+                },
+                {
+                  "place": "보경사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "환호공원 & 포항운하",
+              "plans": [
+                {
+                  "place": "환호공원 스페이스워크",
+                  "time": "오전",
+                  "activities": [
+                    "조형물 산책"
+                  ]
+                },
+                {
+                  "place": "포항운하",
+                  "time": "오후",
+                  "activities": [
+                    "운하 보트 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "영덕 드라이브(외곽)",
+              "plans": [
+                {
+                  "place": "블루로드 산책길",
+                  "time": "오전",
+                  "activities": [
+                    "해안 트레킹"
+                  ]
+                },
+                {
+                  "place": "장사해변",
+                  "time": "오후",
+                  "activities": [
+                    "휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "철길 마을 & 연오랑세오녀 테마공원",
+              "plans": [
+                {
+                  "place": "철길마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 감상"
+                  ]
+                },
+                {
+                  "place": "연오랑세오녀 테마공원",
+                  "time": "오후",
+                  "activities": [
+                    "테마파크 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "포항시립미술관 & 오천읍성",
+              "plans": [
+                {
+                  "place": "포항시립미술관",
+                  "time": "오전",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                },
+                {
+                  "place": "오천읍성",
+                  "time": "오후",
+                  "activities": [
+                    "산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "도심 카페투어 & 포항철강공단 뷰",
+              "plans": [
+                {
+                  "place": "포항 카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "철강공단 야경 명소",
+                  "time": "오후",
+                  "activities": [
+                    "야경 촬영"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "죽도시장 또는 해변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "포항역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //통영
+    {
+      "id": "location_005",
+      "name": "통영",
+      "description": "통영은 경상남도 남해안에 위치한 항구 도시로, 아름다운 바다 풍경과 예술적인 감성이 어우러진 낭만적인 여행지입니다. 동피랑 벽화마을, 한려수도 케이블카, 통영항과 함께하는 섬 여행까지 다양한 테마가 공존하며, 바다와 예술, 전통과 현대를 모두 경험할 수 있습니다. 승용차를 이용하면 외곽 섬이나 해안 도로 접근이 용이하고, 대중교통만으로도 주요 명소들을 편리하게 둘러볼 수 있습니다.",
+      "images": [
+        "tongyeong1.jpg",
+        "tongyeong2.jpg"
+      ],
+      "tags": [
+        "가을",
+        "경상",
+        "바다",
+        "문화",
+        "섬탐험",
+        "데이트",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "동피랑 벽화마을 & 중앙시장",
+              "plans": [
+                {
+                  "place": "동피랑마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 골목 산책",
+                    "사진 촬영"
+                  ]
+                },
+                {
+                  "place": "통영 중앙시장",
+                  "time": "오후",
+                  "activities": [
+                    "충무김밥, 해산물 먹거리 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "한려수도 케이블카 & 미륵산",
+              "plans": [
+                {
+                  "place": "한려수도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "케이블카 탑승",
+                    "전망대 감상"
+                  ]
+                },
+                {
+                  "place": "미륵산",
+                  "time": "오후",
+                  "activities": [
+                    "산 정상에서 바다 조망",
+                    "산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "이순신공원 & 통영항 산책",
+              "plans": [
+                {
+                  "place": "이순신공원",
+                  "time": "오전",
+                  "activities": [
+                    "장군 동상 관람",
+                    "해안 산책"
+                  ]
+                },
+                {
+                  "place": "통영항",
+                  "time": "오후",
+                  "activities": [
+                    "배경 사진 촬영",
+                    "카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "통영루지 & 박경리기념관",
+              "plans": [
+                {
+                  "place": "통영루지",
+                  "time": "오전",
+                  "activities": [
+                    "스릴 넘치는 트랙 주행"
+                  ]
+                },
+                {
+                  "place": "박경리기념관",
+                  "time": "오후",
+                  "activities": [
+                    "작가 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "연화도 섬 여행",
+              "plans": [
+                {
+                  "place": "연화도 선착장",
+                  "time": "오전",
+                  "activities": [
+                    "배 타고 섬 이동"
+                  ]
+                },
+                {
+                  "place": "연화도 트레킹",
+                  "time": "오후",
+                  "activities": [
+                    "해안 절벽 감상",
+                    "등대까지 걷기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "욕지도 일일 여행",
+              "plans": [
+                {
+                  "place": "욕지도",
+                  "time": "오전",
+                  "activities": [
+                    "전망대 방문",
+                    "해변 트레킹"
+                  ]
+                },
+                {
+                  "place": "욕지 케이블카",
+                  "time": "오후",
+                  "activities": [
+                    "섬 경치 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "도남동 해안도로 드라이브",
+              "plans": [
+                {
+                  "place": "도남동 해안도로",
+                  "time": "오전",
+                  "activities": [
+                    "바다 옆 드라이브"
+                  ]
+                },
+                {
+                  "place": "남망산 조각공원",
+                  "time": "오후",
+                  "activities": [
+                    "조형물 감상",
+                    "야경 명소"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "달아공원 & 학림도 일몰",
+              "plans": [
+                {
+                  "place": "달아공원",
+                  "time": "오전",
+                  "activities": [
+                    "남해 일몰 명소 산책"
+                  ]
+                },
+                {
+                  "place": "학림도",
+                  "time": "오후",
+                  "activities": [
+                    "조용한 섬 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "케이블카 재탑승 & 한산도 유적지",
+              "plans": [
+                {
+                  "place": "한려수도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "미륵산 재탑승"
+                  ]
+                },
+                {
+                  "place": "한산도",
+                  "time": "오후",
+                  "activities": [
+                    "이순신 유적지 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "동피랑 or 시장",
+                  "time": "오전",
+                  "activities": [
+                    "재방문, 기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "통영터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "동피랑 벽화마을 & 중앙시장",
+              "plans": [
+                {
+                  "place": "동피랑마을",
+                  "time": "오전",
+                  "activities": [
+                    "벽화 골목 산책"
+                  ]
+                },
+                {
+                  "place": "통영 중앙시장",
+                  "time": "오후",
+                  "activities": [
+                    "충무김밥, 해산물 먹거리 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "한려수도 케이블카 & 미륵산",
+              "plans": [
+                {
+                  "place": "한려수도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "케이블카 탑승"
+                  ]
+                },
+                {
+                  "place": "미륵산",
+                  "time": "오후",
+                  "activities": [
+                    "산 정상에서 바다 조망"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "이순신공원 & 통영항 산책",
+              "plans": [
+                {
+                  "place": "이순신공원",
+                  "time": "오전",
+                  "activities": [
+                    "장군 동상 관람"
+                  ]
+                },
+                {
+                  "place": "통영항",
+                  "time": "오후",
+                  "activities": [
+                    "배경 사진 촬영"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "통영루지 & 박경리기념관",
+              "plans": [
+                {
+                  "place": "통영루지",
+                  "time": "오전",
+                  "activities": [
+                    "스릴 넘치는 트랙 주행"
+                  ]
+                },
+                {
+                  "place": "박경리기념관",
+                  "time": "오후",
+                  "activities": [
+                    "작가 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "연화도 섬 여행",
+              "plans": [
+                {
+                  "place": "연화도 선착장",
+                  "time": "오전",
+                  "activities": [
+                    "배 타고 섬 이동"
+                  ]
+                },
+                {
+                  "place": "연화도 트레킹",
+                  "time": "오후",
+                  "activities": [
+                    "해안 절벽 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "욕지도 일일 여행",
+              "plans": [
+                {
+                  "place": "욕지도",
+                  "time": "오전",
+                  "activities": [
+                    "전망대 방문"
+                  ]
+                },
+                {
+                  "place": "욕지 케이블카",
+                  "time": "오후",
+                  "activities": [
+                    "섬 경치 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "도남동 해안도로 드라이브",
+              "plans": [
+                {
+                  "place": "도남동 해안도로",
+                  "time": "오전",
+                  "activities": [
+                    "바다 옆 드라이브"
+                  ]
+                },
+                {
+                  "place": "남망산 조각공원",
+                  "time": "오후",
+                  "activities": [
+                    "조형물 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "달아공원 & 학림도 일몰",
+              "plans": [
+                {
+                  "place": "달아공원",
+                  "time": "오전",
+                  "activities": [
+                    "남해 일몰 명소 산책"
+                  ]
+                },
+                {
+                  "place": "학림도",
+                  "time": "오후",
+                  "activities": [
+                    "조용한 섬 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "케이블카 재탑승 & 한산도 유적지",
+              "plans": [
+                {
+                  "place": "한려수도 케이블카",
+                  "time": "오전",
+                  "activities": [
+                    "미륵산 재탑승"
+                  ]
+                },
+                {
+                  "place": "한산도",
+                  "time": "오후",
+                  "activities": [
+                    "이순신 유적지 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "동피랑 or 시장",
+                  "time": "오전",
+                  "activities": [
+                    "재방문, 기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "통영터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //창원
+    {
+      "id": "location_006",
+      "name": "창원",
+      "description": "창원은 경남의 행정 중심지이자 바다와 도시, 자연이 공존하는 매력적인 도시입니다. 진해 군항제 벚꽃으로 유명하며, 마산 어시장, 용지호수, 창동예술촌, 주남저수지와 같은 자연·문화 명소도 풍부합니다. 대중교통으로도 주요 지역 접근이 편리하고, 승용차 이용 시 외곽 생태공원이나 해안 드라이브 코스도 자유롭게 즐길 수 있어 도심과 자연을 모두 아우르는 여행에 적합한 도시입니다.",
+      "images": [
+        "changwon1.jpg",
+        "changwon2.jpg"
+      ],
+      "tags": [
+        "봄",
+        "경상",
+        "자연",
+        "문화",
+        "워킹",
+        "가족여행",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "용지호수 & 창원시립미술관",
+              "plans": [
+                {
+                  "place": "용지호수",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책",
+                    "백조 관찰"
+                  ]
+                },
+                {
+                  "place": "창원시립미술관",
+                  "time": "오후",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "창동예술촌 & 마산 어시장",
+              "plans": [
+                {
+                  "place": "창동예술촌",
+                  "time": "오전",
+                  "activities": [
+                    "예술 공방 탐방",
+                    "벽화 거리 산책"
+                  ]
+                },
+                {
+                  "place": "마산 어시장",
+                  "time": "오후",
+                  "activities": [
+                    "해산물 구경 및 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "진해 군항제 코스",
+              "plans": [
+                {
+                  "place": "여좌천 벚꽃길",
+                  "time": "오전",
+                  "activities": [
+                    "벚꽃 산책",
+                    "사진 촬영"
+                  ]
+                },
+                {
+                  "place": "경화역 철길",
+                  "time": "오후",
+                  "activities": [
+                    "벚꽃길 산책",
+                    "철길 포토 스팟"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "주남저수지 생태탐방",
+              "plans": [
+                {
+                  "place": "주남저수지",
+                  "time": "오전",
+                  "activities": [
+                    "철새 관찰",
+                    "자연 생태 탐방"
+                  ]
+                },
+                {
+                  "place": "주남환경교육관",
+                  "time": "오후",
+                  "activities": [
+                    "교육 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "창원NC파크 & 스포츠",
+              "plans": [
+                {
+                  "place": "창원NC파크",
+                  "time": "오전",
+                  "activities": [
+                    "야구 경기 관람 (시즌)"
+                  ]
+                },
+                {
+                  "place": "용지문화공원",
+                  "time": "오후",
+                  "activities": [
+                    "운동, 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "해양드라이브: 안민고개 & 드림로드",
+              "plans": [
+                {
+                  "place": "안민고개 드라이브",
+                  "time": "오전",
+                  "activities": [
+                    "해안 전망 감상"
+                  ]
+                },
+                {
+                  "place": "드림로드",
+                  "time": "오후",
+                  "activities": [
+                    "바다와 도시를 함께 보는 길 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "삼정자 해안길 & 진해내수면환경생태공원",
+              "plans": [
+                {
+                  "place": "삼정자 해안 산책로",
+                  "time": "오전",
+                  "activities": [
+                    "조용한 해변 걷기"
+                  ]
+                },
+                {
+                  "place": "내수면환경생태공원",
+                  "time": "오후",
+                  "activities": [
+                    "환경 학습"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "진해루 & 속천항",
+              "plans": [
+                {
+                  "place": "진해루",
+                  "time": "오전",
+                  "activities": [
+                    "정자에서 바다 감상"
+                  ]
+                },
+                {
+                  "place": "속천항",
+                  "time": "오후",
+                  "activities": [
+                    "작은 항구 산책",
+                    "카페 휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "카페거리 & 로컬 맛집",
+              "plans": [
+                {
+                  "place": "중앙동 카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "창원 로컬 식당",
+                  "time": "오후",
+                  "activities": [
+                    "향토 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문지 또는 쇼핑",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑",
+                    "산책"
+                  ]
+                },
+                {
+                  "place": "창원역 또는 버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "용지호수 & 창원시립미술관",
+              "plans": [
+                {
+                  "place": "용지호수",
+                  "time": "오전",
+                  "activities": [
+                    "호수 산책"
+                  ]
+                },
+                {
+                  "place": "창원시립미술관",
+                  "time": "오후",
+                  "activities": [
+                    "전시 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "창동예술촌 & 마산 어시장",
+              "plans": [
+                {
+                  "place": "창동예술촌",
+                  "time": "오전",
+                  "activities": [
+                    "예술 공방 탐방"
+                  ]
+                },
+                {
+                  "place": "마산 어시장",
+                  "time": "오후",
+                  "activities": [
+                    "해산물 구경 및 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "진해 군항제 코스",
+              "plans": [
+                {
+                  "place": "여좌천 벚꽃길",
+                  "time": "오전",
+                  "activities": [
+                    "벚꽃 산책"
+                  ]
+                },
+                {
+                  "place": "경화역 철길",
+                  "time": "오후",
+                  "activities": [
+                    "벚꽃길 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "주남저수지 생태탐방",
+              "plans": [
+                {
+                  "place": "주남저수지",
+                  "time": "오전",
+                  "activities": [
+                    "철새 관찰"
+                  ]
+                },
+                {
+                  "place": "주남환경교육관",
+                  "time": "오후",
+                  "activities": [
+                    "교육 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "창원NC파크 & 스포츠",
+              "plans": [
+                {
+                  "place": "창원NC파크",
+                  "time": "오전",
+                  "activities": [
+                    "야구 경기 관람 (시즌)"
+                  ]
+                },
+                {
+                  "place": "용지문화공원",
+                  "time": "오후",
+                  "activities": [
+                    "운동, 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "해양드라이브: 안민고개 & 드림로드",
+              "plans": [
+                {
+                  "place": "안민고개 드라이브",
+                  "time": "오전",
+                  "activities": [
+                    "해안 전망 감상"
+                  ]
+                },
+                {
+                  "place": "드림로드",
+                  "time": "오후",
+                  "activities": [
+                    "바다와 도시를 함께 보는 길 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "삼정자 해안길 & 진해내수면환경생태공원",
+              "plans": [
+                {
+                  "place": "삼정자 해안 산책로",
+                  "time": "오전",
+                  "activities": [
+                    "조용한 해변 걷기"
+                  ]
+                },
+                {
+                  "place": "내수면환경생태공원",
+                  "time": "오후",
+                  "activities": [
+                    "환경 학습"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "진해루 & 속천항",
+              "plans": [
+                {
+                  "place": "진해루",
+                  "time": "오전",
+                  "activities": [
+                    "정자에서 바다 감상"
+                  ]
+                },
+                {
+                  "place": "속천항",
+                  "time": "오후",
+                  "activities": [
+                    "작은 항구 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "카페거리 & 로컬 맛집",
+              "plans": [
+                {
+                  "place": "중앙동 카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                },
+                {
+                  "place": "창원 로컬 식당",
+                  "time": "오후",
+                  "activities": [
+                    "향토 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유 일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문지 또는 쇼핑",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "창원역 또는 버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //양산
+    {
+      "id": "location_007",
+      "name": "양산",
+      "description": "양산은 경상남도 북부에 위치한 도시로, 자연과 불교문화가 잘 보존된 대표적인 힐링 여행지입니다. 통도사를 비롯한 전통 사찰과 함께 에덴밸리 리조트, 홍룡폭포, 법기수원지 등 자연 경관이 뛰어난 명소가 많아 사계절 모두 여행객들에게 인기가 많습니다. 대중교통을 통해 주요 사찰과 시내는 접근 가능하며, 승용차를 이용하면 외곽의 산이나 리조트, 골짜기 계곡 등도 수월하게 탐방할 수 있습니다.",
+      "images": [
+        "yangsan1.jpg",
+        "yangsan2.jpg"
+      ],
+      "tags": [
+        "가을",
+        "경상",
+        "자연",
+        "산",
+        "하이킹",
+        "심신안정",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "통도사 탐방",
+              "plans": [
+                {
+                  "place": "통도사",
+                  "time": "오전",
+                  "activities": [
+                    "사찰 산책",
+                    "불보사찰 문화 이해"
+                  ]
+                },
+                {
+                  "place": "통도사 템플스테이 체험관",
+                  "time": "오후",
+                  "activities": [
+                    "명상, 다도 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "에덴밸리 리조트 & 주변",
+              "plans": [
+                {
+                  "place": "에덴밸리 리조트",
+                  "time": "오전",
+                  "activities": [
+                    "스키 또는 산책"
+                  ]
+                },
+                {
+                  "place": "리조트 주변 산책로",
+                  "time": "오후",
+                  "activities": [
+                    "자연 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "홍룡폭포 트레킹",
+              "plans": [
+                {
+                  "place": "홍룡폭포",
+                  "time": "오전",
+                  "activities": [
+                    "폭포 감상",
+                    "계곡 산책"
+                  ]
+                },
+                {
+                  "place": "홍룡사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 둘러보기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "법기수원지 & 물금역 주변",
+              "plans": [
+                {
+                  "place": "법기수원지",
+                  "time": "오전",
+                  "activities": [
+                    "호숫가 산책",
+                    "가을 단풍 감상"
+                  ]
+                },
+                {
+                  "place": "물금역 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "천성산 & 내원사",
+              "plans": [
+                {
+                  "place": "천성산 등산로",
+                  "time": "오전",
+                  "activities": [
+                    "등산, 가을 억새 감상"
+                  ]
+                },
+                {
+                  "place": "내원사",
+                  "time": "오후",
+                  "activities": [
+                    "산사 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "양산타워 & 북정공원",
+              "plans": [
+                {
+                  "place": "양산타워 전망대",
+                  "time": "오전",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                },
+                {
+                  "place": "북정공원",
+                  "time": "오후",
+                  "activities": [
+                    "산책, 휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "양산 시내 & 전통시장",
+              "plans": [
+                {
+                  "place": "남부시장",
+                  "time": "오전",
+                  "activities": [
+                    "전통시장 탐방"
+                  ]
+                },
+                {
+                  "place": "중앙동 로컬 맛집",
+                  "time": "오후",
+                  "activities": [
+                    "음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "회야강 생태공원 & 자전거 산책",
+              "plans": [
+                {
+                  "place": "회야강 생태공원",
+                  "time": "오전",
+                  "activities": [
+                    "자연 산책",
+                    "자전거 타기"
+                  ]
+                },
+                {
+                  "place": "수변카페",
+                  "time": "오후",
+                  "activities": [
+                    "강 뷰 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "웅상 체육공원 & 천성중앙공원",
+              "plans": [
+                {
+                  "place": "웅상체육공원",
+                  "time": "오전",
+                  "activities": [
+                    "운동, 산책"
+                  ]
+                },
+                {
+                  "place": "천성중앙공원",
+                  "time": "오후",
+                  "activities": [
+                    "지역민 쉼터 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "기념품 샵 or 통도사 주변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "양산역 or 물금역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "통도사 탐방",
+              "plans": [
+                {
+                  "place": "통도사",
+                  "time": "오전",
+                  "activities": [
+                    "사찰 산책"
+                  ]
+                },
+                {
+                  "place": "통도사 템플스테이 체험관",
+                  "time": "오후",
+                  "activities": [
+                    "명상, 다도 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "에덴밸리 리조트 & 주변",
+              "plans": [
+                {
+                  "place": "에덴밸리 리조트",
+                  "time": "오전",
+                  "activities": [
+                    "스키 또는 산책"
+                  ]
+                },
+                {
+                  "place": "리조트 주변 산책로",
+                  "time": "오후",
+                  "activities": [
+                    "자연 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "홍룡폭포 트레킹",
+              "plans": [
+                {
+                  "place": "홍룡폭포",
+                  "time": "오전",
+                  "activities": [
+                    "폭포 감상"
+                  ]
+                },
+                {
+                  "place": "홍룡사",
+                  "time": "오후",
+                  "activities": [
+                    "사찰 둘러보기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "법기수원지 & 물금역 주변",
+              "plans": [
+                {
+                  "place": "법기수원지",
+                  "time": "오전",
+                  "activities": [
+                    "호숫가 산책"
+                  ]
+                },
+                {
+                  "place": "물금역 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "천성산 & 내원사",
+              "plans": [
+                {
+                  "place": "천성산 등산로",
+                  "time": "오전",
+                  "activities": [
+                    "등산, 가을 억새 감상"
+                  ]
+                },
+                {
+                  "place": "내원사",
+                  "time": "오후",
+                  "activities": [
+                    "산사 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "양산타워 & 북정공원",
+              "plans": [
+                {
+                  "place": "양산타워 전망대",
+                  "time": "오전",
+                  "activities": [
+                    "전망 감상"
+                  ]
+                },
+                {
+                  "place": "북정공원",
+                  "time": "오후",
+                  "activities": [
+                    "산책, 휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "양산 시내 & 전통시장",
+              "plans": [
+                {
+                  "place": "남부시장",
+                  "time": "오전",
+                  "activities": [
+                    "전통시장 탐방"
+                  ]
+                },
+                {
+                  "place": "중앙동 로컬 맛집",
+                  "time": "오후",
+                  "activities": [
+                    "음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "회야강 생태공원 & 자전거 산책",
+              "plans": [
+                {
+                  "place": "회야강 생태공원",
+                  "time": "오전",
+                  "activities": [
+                    "자연 산책"
+                  ]
+                },
+                {
+                  "place": "수변카페",
+                  "time": "오후",
+                  "activities": [
+                    "강 뷰 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "웅상 체육공원 & 천성중앙공원",
+              "plans": [
+                {
+                  "place": "웅상체육공원",
+                  "time": "오전",
+                  "activities": [
+                    "운동, 산책"
+                  ]
+                },
+                {
+                  "place": "천성중앙공원",
+                  "time": "오후",
+                  "activities": [
+                    "지역민 쉼터 탐방"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "기념품 샵 or 통도사 주변",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "양산역 or 물금역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //안동
+    {
+      "id": "location_008",
+      "name": "안동",
+      "description": "안동은 한국 전통 문화의 중심지로 불리는 경상북도의 대표적인 역사 도시입니다. 유네스코 세계문화유산인 하회마을을 비롯해 도산서원, 병산서원 등 유교 문화가 깊이 스며든 장소들과, 전통시장과 한옥, 강변 풍경이 어우러져 한국의 정신과 미를 느낄 수 있는 곳입니다. 대중교통으로도 주요 명소를 둘러볼 수 있으며, 승용차를 이용하면 외곽 서원이나 호수 주변까지 여유롭게 여행할 수 있습니다.",
+      "images": [
+        "andong1.jpg",
+        "andong2.jpg"
+      ],
+      "tags": [
+        "가을",
+        "경상",
+        "역사",
+        "문화",
+        "심신안정",
+        "혼자가기좋음",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "하회마을 탐방",
+              "plans": [
+                {
+                  "place": "하회마을",
+                  "time": "오전",
+                  "activities": [
+                    "전통 한옥 산책",
+                    "탈춤공연 관람"
+                  ]
+                },
+                {
+                  "place": "하회세계탈박물관",
+                  "time": "오후",
+                  "activities": [
+                    "전통 탈 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "병산서원 & 낙동강 풍경",
+              "plans": [
+                {
+                  "place": "병산서원",
+                  "time": "오전",
+                  "activities": [
+                    "서원 산책",
+                    "낙동강 절경 감상"
+                  ]
+                },
+                {
+                  "place": "부용대 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "하회마을 전경 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "도산서원 & 퇴계이황 유적지",
+              "plans": [
+                {
+                  "place": "도산서원",
+                  "time": "오전",
+                  "activities": [
+                    "유교문화 탐방"
+                  ]
+                },
+                {
+                  "place": "퇴계종택",
+                  "time": "오후",
+                  "activities": [
+                    "한옥 체험",
+                    "역사해설 듣기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "안동 전통시장 & 찜닭골목",
+              "plans": [
+                {
+                  "place": "구시장",
+                  "time": "오전",
+                  "activities": [
+                    "로컬 상품 구경"
+                  ]
+                },
+                {
+                  "place": "찜닭골목",
+                  "time": "오후",
+                  "activities": [
+                    "찜닭 식사 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "월영교 & 안동호반",
+              "plans": [
+                {
+                  "place": "월영교",
+                  "time": "오전",
+                  "activities": [
+                    "호수 위 나무다리 산책",
+                    "연못 감상"
+                  ]
+                },
+                {
+                  "place": "안동호 수변공원",
+                  "time": "오후",
+                  "activities": [
+                    "자연 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "안동민속촌 & 전통생활 체험",
+              "plans": [
+                {
+                  "place": "안동민속촌",
+                  "time": "오전",
+                  "activities": [
+                    "전통 생활 공간 관람"
+                  ]
+                },
+                {
+                  "place": "한지체험관",
+                  "time": "오후",
+                  "activities": [
+                    "한지 만들기 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "임청각 & 안동역 주변",
+              "plans": [
+                {
+                  "place": "임청각",
+                  "time": "오전",
+                  "activities": [
+                    "독립운동 유적 관람"
+                  ]
+                },
+                {
+                  "place": "안동역 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "봉정사 & 유네스코 사찰",
+              "plans": [
+                {
+                  "place": "봉정사",
+                  "time": "오전",
+                  "activities": [
+                    "세계문화유산 사찰 관람"
+                  ]
+                },
+                {
+                  "place": "극락전",
+                  "time": "오후",
+                  "activities": [
+                    "고려시대 건축 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "안동문화의 거리 & 박물관",
+              "plans": [
+                {
+                  "place": "문화의 거리",
+                  "time": "오전",
+                  "activities": [
+                    "전통 상점 구경",
+                    "로컬 맛집"
+                  ]
+                },
+                {
+                  "place": "안동국학진흥원",
+                  "time": "오후",
+                  "activities": [
+                    "전통 문헌 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문 또는 시장",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "안동터미널 또는 안동역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "하회마을 탐방",
+              "plans": [
+                {
+                  "place": "하회마을",
+                  "time": "오전",
+                  "activities": [
+                    "전통 한옥 산책"
+                  ]
+                },
+                {
+                  "place": "하회세계탈박물관",
+                  "time": "오후",
+                  "activities": [
+                    "전통 탈 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "병산서원 & 낙동강 풍경",
+              "plans": [
+                {
+                  "place": "병산서원",
+                  "time": "오전",
+                  "activities": [
+                    "서원 산책"
+                  ]
+                },
+                {
+                  "place": "부용대 전망대",
+                  "time": "오후",
+                  "activities": [
+                    "하회마을 전경 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "도산서원 & 퇴계이황 유적지",
+              "plans": [
+                {
+                  "place": "도산서원",
+                  "time": "오전",
+                  "activities": [
+                    "유교문화 탐방"
+                  ]
+                },
+                {
+                  "place": "퇴계종택",
+                  "time": "오후",
+                  "activities": [
+                    "한옥 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "안동 전통시장 & 찜닭골목",
+              "plans": [
+                {
+                  "place": "구시장",
+                  "time": "오전",
+                  "activities": [
+                    "로컬 상품 구경"
+                  ]
+                },
+                {
+                  "place": "찜닭골목",
+                  "time": "오후",
+                  "activities": [
+                    "찜닭 식사 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "월영교 & 안동호반",
+              "plans": [
+                {
+                  "place": "월영교",
+                  "time": "오전",
+                  "activities": [
+                    "호수 위 나무다리 산책"
+                  ]
+                },
+                {
+                  "place": "안동호 수변공원",
+                  "time": "오후",
+                  "activities": [
+                    "자연 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "안동민속촌 & 전통생활 체험",
+              "plans": [
+                {
+                  "place": "안동민속촌",
+                  "time": "오전",
+                  "activities": [
+                    "전통 생활 공간 관람"
+                  ]
+                },
+                {
+                  "place": "한지체험관",
+                  "time": "오후",
+                  "activities": [
+                    "한지 만들기 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "임청각 & 안동역 주변",
+              "plans": [
+                {
+                  "place": "임청각",
+                  "time": "오전",
+                  "activities": [
+                    "독립운동 유적 관람"
+                  ]
+                },
+                {
+                  "place": "안동역 카페거리",
+                  "time": "오후",
+                  "activities": [
+                    "감성 카페 방문"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "봉정사 & 유네스코 사찰",
+              "plans": [
+                {
+                  "place": "봉정사",
+                  "time": "오전",
+                  "activities": [
+                    "세계문화유산 사찰 관람"
+                  ]
+                },
+                {
+                  "place": "극락전",
+                  "time": "오후",
+                  "activities": [
+                    "고려시대 건축 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "안동문화의 거리 & 박물관",
+              "plans": [
+                {
+                  "place": "문화의 거리",
+                  "time": "오전",
+                  "activities": [
+                    "전통 상점 구경"
+                  ]
+                },
+                {
+                  "place": "안동국학진흥원",
+                  "time": "오후",
+                  "activities": [
+                    "전통 문헌 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문 또는 시장",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 쇼핑"
+                  ]
+                },
+                {
+                  "place": "안동터미널 또는 안동역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //김해
+    {
+      "id": "location_009",
+      "name": "김해",
+      "description": "김해는 가야의 역사와 전통이 살아 숨 쉬는 도시로, 문화유산과 자연이 조화롭게 어우러져 있는 여행지입니다. 김해가야테마파크, 수로왕릉, 봉하마을 등 역사 체험 명소뿐만 아니라, 낙동강과 대청계곡 같은 자연 힐링 장소도 많아 다양한 여행 테마에 적합합니다. 대중교통으로 시내 주요지 접근이 가능하며, 승용차를 이용하면 외곽 자연 관광지까지 편리하게 여행할 수 있습니다.",
+      "images": [
+        "gimhae1.jpg",
+        "gimhae2.jpg"
+      ],
+      "tags": [
+        "봄",
+        "경상",
+        "역사",
+        "자연",
+        "워킹",
+        "가족여행",
+        "1박2일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "가야 유적지 탐방",
+              "plans": [
+                {
+                  "place": "수로왕릉",
+                  "time": "오전",
+                  "activities": [
+                    "왕릉 산책",
+                    "가야 역사 소개"
+                  ]
+                },
+                {
+                  "place": "가야박물관",
+                  "time": "오후",
+                  "activities": [
+                    "유물 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "김해가야테마파크",
+              "plans": [
+                {
+                  "place": "가야테마파크",
+                  "time": "오전",
+                  "activities": [
+                    "놀이시설 체험",
+                    "문화 공연 관람"
+                  ]
+                },
+                {
+                  "place": "가야왕궁체험관",
+                  "time": "오후",
+                  "activities": [
+                    "가상 왕체험, 전통복 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "봉하마을 탐방",
+              "plans": [
+                {
+                  "place": "봉하마을",
+                  "time": "오전",
+                  "activities": [
+                    "노무현 대통령 생가 방문"
+                  ]
+                },
+                {
+                  "place": "생태연못 산책",
+                  "time": "오후",
+                  "activities": [
+                    "정원 걷기",
+                    "전시관 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "김해천문대 & 분산성",
+              "plans": [
+                {
+                  "place": "김해천문대",
+                  "time": "오전",
+                  "activities": [
+                    "우주 전시 관람",
+                    "천체 투영관 체험"
+                  ]
+                },
+                {
+                  "place": "분산성",
+                  "time": "오후",
+                  "activities": [
+                    "산책로 걷기",
+                    "도심 전망 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "김해전통시장 & 수제 음식",
+              "plans": [
+                {
+                  "place": "김해시장",
+                  "time": "오전",
+                  "activities": [
+                    "로컬 먹거리 탐방"
+                  ]
+                },
+                {
+                  "place": "전통 수제빵집 or 국밥집",
+                  "time": "오후",
+                  "activities": [
+                    "로컬 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "대청계곡 자연 힐링",
+              "plans": [
+                {
+                  "place": "대청계곡",
+                  "time": "오전",
+                  "activities": [
+                    "계곡 산책",
+                    "물놀이 (여름)"
+                  ]
+                },
+                {
+                  "place": "계곡 근처 맛집",
+                  "time": "오후",
+                  "activities": [
+                    "현지 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "낙동강 수변공원 & 자전거",
+              "plans": [
+                {
+                  "place": "낙동강 레일바이크",
+                  "time": "오전",
+                  "activities": [
+                    "레일바이크 체험"
+                  ]
+                },
+                {
+                  "place": "수변공원 산책",
+                  "time": "오후",
+                  "activities": [
+                    "자전거 타기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "클레이아크 김해미술관",
+              "plans": [
+                {
+                  "place": "클레이아크 김해미술관",
+                  "time": "오전",
+                  "activities": [
+                    "현대 도자전 감상"
+                  ]
+                },
+                {
+                  "place": "야외 조각정원",
+                  "time": "오후",
+                  "activities": [
+                    "조형물 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "장유 율하 카페거리",
+              "plans": [
+                {
+                  "place": "율하카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 투어"
+                  ]
+                },
+                {
+                  "place": "장유 스파 or 찜질방",
+                  "time": "오후",
+                  "activities": [
+                    "휴식과 힐링"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문 또는 쇼핑",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 구입"
+                  ]
+                },
+                {
+                  "place": "김해공항 or 김해역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "가야 유적지 탐방",
+              "plans": [
+                {
+                  "place": "수로왕릉",
+                  "time": "오전",
+                  "activities": [
+                    "왕릉 산책"
+                  ]
+                },
+                {
+                  "place": "가야박물관",
+                  "time": "오후",
+                  "activities": [
+                    "유물 전시 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "김해가야테마파크",
+              "plans": [
+                {
+                  "place": "가야테마파크",
+                  "time": "오전",
+                  "activities": [
+                    "놀이시설 체험"
+                  ]
+                },
+                {
+                  "place": "가야왕궁체험관",
+                  "time": "오후",
+                  "activities": [
+                    "가상 왕체험, 전통복 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "봉하마을 탐방",
+              "plans": [
+                {
+                  "place": "봉하마을",
+                  "time": "오전",
+                  "activities": [
+                    "노무현 대통령 생가 방문"
+                  ]
+                },
+                {
+                  "place": "생태연못 산책",
+                  "time": "오후",
+                  "activities": [
+                    "정원 걷기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "김해천문대 & 분산성",
+              "plans": [
+                {
+                  "place": "김해천문대",
+                  "time": "오전",
+                  "activities": [
+                    "우주 전시 관람"
+                  ]
+                },
+                {
+                  "place": "분산성",
+                  "time": "오후",
+                  "activities": [
+                    "산책로 걷기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "김해전통시장 & 수제 음식",
+              "plans": [
+                {
+                  "place": "김해시장",
+                  "time": "오전",
+                  "activities": [
+                    "로컬 먹거리 탐방"
+                  ]
+                },
+                {
+                  "place": "전통 수제빵집 or 국밥집",
+                  "time": "오후",
+                  "activities": [
+                    "로컬 음식 체험"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "대청계곡 자연 힐링",
+              "plans": [
+                {
+                  "place": "대청계곡",
+                  "time": "오전",
+                  "activities": [
+                    "계곡 산책"
+                  ]
+                },
+                {
+                  "place": "계곡 근처 맛집",
+                  "time": "오후",
+                  "activities": [
+                    "현지 식사"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "낙동강 수변공원 & 자전거",
+              "plans": [
+                {
+                  "place": "낙동강 레일바이크",
+                  "time": "오전",
+                  "activities": [
+                    "레일바이크 체험"
+                  ]
+                },
+                {
+                  "place": "수변공원 산책",
+                  "time": "오후",
+                  "activities": [
+                    "자전거 타기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "클레이아크 김해미술관",
+              "plans": [
+                {
+                  "place": "클레이아크 김해미술관",
+                  "time": "오전",
+                  "activities": [
+                    "현대 도자전 감상"
+                  ]
+                },
+                {
+                  "place": "야외 조각정원",
+                  "time": "오후",
+                  "activities": [
+                    "조형물 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "장유 율하 카페거리",
+              "plans": [
+                {
+                  "place": "율하카페거리",
+                  "time": "오전",
+                  "activities": [
+                    "감성 카페 투어"
+                  ]
+                },
+                {
+                  "place": "장유 스파 or 찜질방",
+                  "time": "오후",
+                  "activities": [
+                    "휴식과 힐링"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "재방문 또는 쇼핑",
+                  "time": "오전",
+                  "activities": [
+                    "기념품 구입"
+                  ]
+                },
+                {
+                  "place": "김해공항 or 김해역",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    //울산
+    {
+      "id": "location_010",
+      "name": "울산",
+      "description": "울산은 대한민국 동남부에 위치한 광역시로, 태화강 국가정원, 대왕암공원, 간절곶 등 자연 경관이 아름다운 도시입니다. 공업 도시이자 해안 도시로서 산업과 자연, 전통이 조화된 매력적인 여행지이며, 울산대공원, 장생포 고래문화특구 등 가족 단위 체험 관광지로도 인기가 많습니다. 대중교통으로는 주요 시내 관광지를, 승용차를 이용하면 외곽 해안과 산지까지 여유롭게 둘러볼 수 있습니다.",
+      "images": [
+        "ulsan1.jpg",
+        "ulsan2.jpg"
+      ],
+      "tags": [
+        "봄",
+        "경상",
+        "자연",
+        "바다",
+        "워킹",
+        "가족여행",
+        "2박3일"
+      ],
+      "travel_plan": [
+        {
+          "transportation": "승용차",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "대왕암공원 탐방",
+              "plans": [
+                {
+                  "place": "대왕암공원",
+                  "time": "오전",
+                  "activities": [
+                    "해안 절경 감상",
+                    "소나무숲 산책"
+                  ]
+                },
+                {
+                  "place": "슬도",
+                  "time": "오후",
+                  "activities": [
+                    "등대 감상",
+                    "조용한 바다 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "태화강 국가정원",
+              "plans": [
+                {
+                  "place": "태화강 국가정원",
+                  "time": "오전",
+                  "activities": [
+                    "십리대숲 산책",
+                    "자전거 타기"
+                  ]
+                },
+                {
+                  "place": "태화루",
+                  "time": "오후",
+                  "activities": [
+                    "전통 누각 감상",
+                    "연못 휴식"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "장생포 고래문화특구",
+              "plans": [
+                {
+                  "place": "고래박물관",
+                  "time": "오전",
+                  "activities": [
+                    "고래 생태 전시 감상"
+                  ]
+                },
+                {
+                  "place": "장생포 옛마을",
+                  "time": "오후",
+                  "activities": [
+                    "1960년대 마을 재현지 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "울산대공원 & 동물원",
+              "plans": [
+                {
+                  "place": "울산대공원",
+                  "time": "오전",
+                  "activities": [
+                    "테마정원 산책"
+                  ]
+                },
+                {
+                  "place": "울산대공원 동물원",
+                  "time": "오후",
+                  "activities": [
+                    "동물 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "간절곶 일출 & 해안 드라이브",
+              "plans": [
+                {
+                  "place": "간절곶",
+                  "time": "오전",
+                  "activities": [
+                    "일출 감상",
+                    "최동단 우체통"
+                  ]
+                },
+                {
+                  "place": "진하해변",
+                  "time": "오후",
+                  "activities": [
+                    "해변 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "반구대 암각화 & 천전리 각석",
+              "plans": [
+                {
+                  "place": "반구대 암각화",
+                  "time": "오전",
+                  "activities": [
+                    "선사시대 유적 관람"
+                  ]
+                },
+                {
+                  "place": "천전리 각석",
+                  "time": "오후",
+                  "activities": [
+                    "바위그림 해설 듣기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "울산박물관 & 문화의 거리",
+              "plans": [
+                {
+                  "place": "울산박물관",
+                  "time": "오전",
+                  "activities": [
+                    "울산의 역사 전시 감상"
+                  ]
+                },
+                {
+                  "place": "문화의 거리",
+                  "time": "오후",
+                  "activities": [
+                    "카페 탐방, 소공연 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "신불산 & 영남알프스",
+              "plans": [
+                {
+                  "place": "신불산 간월재",
+                  "time": "오전",
+                  "activities": [
+                    "억새평원 트레킹"
+                  ]
+                },
+                {
+                  "place": "영남알프스",
+                  "time": "오후",
+                  "activities": [
+                    "등산 또는 케이블카"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "정자항 & 방어진 해안",
+              "plans": [
+                {
+                  "place": "정자항",
+                  "time": "오전",
+                  "activities": [
+                    "어촌 산책",
+                    "회센터 탐방"
+                  ]
+                },
+                {
+                  "place": "방어진 해안도로",
+                  "time": "오후",
+                  "activities": [
+                    "바다 전망 드라이브"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "기념품 상점 or 카페",
+                  "time": "오전",
+                  "activities": [
+                    "쇼핑 및 정리"
+                  ]
+                },
+                {
+                  "place": "울산역 or 고속버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "transportation": "대중교통",
+          "dailySchedules": [
+            {
+              "day": "Day 1",
+              "theme": "대왕암공원 탐방",
+              "plans": [
+                {
+                  "place": "대왕암공원",
+                  "time": "오전",
+                  "activities": [
+                    "해안 절경 감상"
+                  ]
+                },
+                {
+                  "place": "슬도",
+                  "time": "오후",
+                  "activities": [
+                    "등대 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 2",
+              "theme": "태화강 국가정원",
+              "plans": [
+                {
+                  "place": "태화강 국가정원",
+                  "time": "오전",
+                  "activities": [
+                    "십리대숲 산책"
+                  ]
+                },
+                {
+                  "place": "태화루",
+                  "time": "오후",
+                  "activities": [
+                    "전통 누각 감상"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 3",
+              "theme": "장생포 고래문화특구",
+              "plans": [
+                {
+                  "place": "고래박물관",
+                  "time": "오전",
+                  "activities": [
+                    "고래 생태 전시 감상"
+                  ]
+                },
+                {
+                  "place": "장생포 옛마을",
+                  "time": "오후",
+                  "activities": [
+                    "1960년대 마을 재현지 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 4",
+              "theme": "울산대공원 & 동물원",
+              "plans": [
+                {
+                  "place": "울산대공원",
+                  "time": "오전",
+                  "activities": [
+                    "테마정원 산책"
+                  ]
+                },
+                {
+                  "place": "울산대공원 동물원",
+                  "time": "오후",
+                  "activities": [
+                    "동물 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 5",
+              "theme": "간절곶 일출 & 해안 드라이브",
+              "plans": [
+                {
+                  "place": "간절곶",
+                  "time": "오전",
+                  "activities": [
+                    "일출 감상"
+                  ]
+                },
+                {
+                  "place": "진하해변",
+                  "time": "오후",
+                  "activities": [
+                    "해변 산책"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 6",
+              "theme": "반구대 암각화 & 천전리 각석",
+              "plans": [
+                {
+                  "place": "반구대 암각화",
+                  "time": "오전",
+                  "activities": [
+                    "선사시대 유적 관람"
+                  ]
+                },
+                {
+                  "place": "천전리 각석",
+                  "time": "오후",
+                  "activities": [
+                    "바위그림 해설 듣기"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 7",
+              "theme": "울산박물관 & 문화의 거리",
+              "plans": [
+                {
+                  "place": "울산박물관",
+                  "time": "오전",
+                  "activities": [
+                    "울산의 역사 전시 감상"
+                  ]
+                },
+                {
+                  "place": "문화의 거리",
+                  "time": "오후",
+                  "activities": [
+                    "카페 탐방, 소공연 관람"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 8",
+              "theme": "신불산 & 영남알프스",
+              "plans": [
+                {
+                  "place": "신불산 간월재",
+                  "time": "오전",
+                  "activities": [
+                    "억새평원 트레킹"
+                  ]
+                },
+                {
+                  "place": "영남알프스",
+                  "time": "오후",
+                  "activities": [
+                    "등산 또는 케이블카"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 9",
+              "theme": "정자항 & 방어진 해안",
+              "plans": [
+                {
+                  "place": "정자항",
+                  "time": "오전",
+                  "activities": [
+                    "어촌 산책"
+                  ]
+                },
+                {
+                  "place": "방어진 해안도로",
+                  "time": "오후",
+                  "activities": [
+                    "바다 전망 드라이브"
+                  ]
+                }
+              ]
+            },
+            {
+              "day": "Day 10",
+              "theme": "자유일정 & 귀가",
+              "plans": [
+                {
+                  "place": "기념품 상점 or 카페",
+                  "time": "오전",
+                  "activities": [
+                    "쇼핑 및 정리"
+                  ]
+                },
+                {
+                  "place": "울산역 or 고속버스터미널",
+                  "time": "오후",
+                  "activities": [
+                    "귀가 준비"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
