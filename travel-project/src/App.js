@@ -1,21 +1,23 @@
-import "./App.css";
-import Navbar from "./category/Navbar";
-import Footer from "./category/Footer";
-import { BrowserRouter } from "react-router-dom"; 
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MainPage } from './pages/MainPage/MainPage';
+import { MyTripPage } from './pages/travel/MyTripPage';
+import { TripDetailPage } from './pages/travel/TripDetailPage';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app-container">
-        <Navbar />
-        <div className="main-content">
-          {/* 여기에 Routes 나중에 넣을 수 있음 */}
-        </div>
-        <div className="footer">
-          <Footer />
-        </div>
-      </div>
-    </BrowserRouter>
+    <Router>
+      {/* ✅ Navbar 컴포넌트 사용 */}
+      <Navbar />
+
+      {/* 페이지 전환 라우팅 */}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/mytrips" element={<MyTripPage />} />
+        <Route path="/trip/:id" element={<TripDetailPage />} />
+      </Routes>
+    </Router>
   );
 }
 
