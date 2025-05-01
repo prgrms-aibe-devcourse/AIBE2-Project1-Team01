@@ -3,11 +3,21 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.main-page-header {
+.main-page {
+  background-color: #ffffff;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main-cardlist {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
 }
 
 .label-logo {
