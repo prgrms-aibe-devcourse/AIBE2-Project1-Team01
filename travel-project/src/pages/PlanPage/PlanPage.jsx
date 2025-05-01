@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import DatePickerModal from "../../components/DatePickerModal";
 import TransportSelectModal from "../../components/TransportSelectModal";
@@ -14,7 +14,7 @@ export const PlanPage = () => {
 
   const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
 
-  const { planData, locationName } = useTravelPlan(
+  const { planData, locationName, tags } = useTravelPlan(
     locationId,
     transportType,
     travelRange
@@ -26,14 +26,14 @@ export const PlanPage = () => {
     const saveData = {
       locationId,
       locationName,
-      travelRange,
       period: dateRange, // ex) "2025.04.25 ~ 2025.05.01"
+      tags: tags,
       plan: planData,
     };
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/plans",
+        "http://localhost:4000/mytrip",
         saveData
       );
       setShowConfirm(true);
