@@ -15,7 +15,10 @@ function ReviewModify() {
   const [formData, setFormData] = useState({
     content: '',
     photo: '',
-    photoFile: null
+    photoFile: null,
+    startDate: '',
+    endDate: '',
+    location: ''
   });
   const [starRate, setStarRate] = useState(0);
   const [myStarRate, setMyStarRate] = useState(0);
@@ -28,7 +31,10 @@ function ReviewModify() {
     setFormData({
       content: review.content || '',
       photo: review.photo || '',
-      photoFile: null
+      photoFile: null,
+      startDate: review.startDate || '',
+      endDate: review.endDate || '',
+      location: review.location || ''
     });
     setMyStarRate(review.rating || 0);
     setPhotoPreview(review.photo || '');
@@ -55,6 +61,14 @@ function ReviewModify() {
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     handleUpdateReview({
@@ -62,6 +76,9 @@ function ReviewModify() {
       content: formData.content,
       rating: myStarRate,
       photo: photoPreview || '',
+      startDate: formData.startDate,
+      endDate: formData.endDate,
+      location: formData.location
     });
     navigate('/reviews');
   };
@@ -115,11 +132,39 @@ function ReviewModify() {
         <div className="review-rating-select">
           {renderStars()}
         </div>
+        <div className="date-inputs">
+          <input
+            type="date"
+            name="startDate"
+            value={formData.startDate}
+            onChange={handleChange}
+            required
+            className="date-input"
+          />
+          <span>~</span>
+          <input
+            type="date"
+            name="endDate"
+            value={formData.endDate}
+            onChange={handleChange}
+            required
+            className="date-input"
+          />
+        </div>
+        <input
+          type="text"
+          name="location"
+          value={formData.location}
+          onChange={handleChange}
+          placeholder="여행지"
+          required
+          className="location-input"
+        />
         <textarea
           className="review-content-input"
           name="content"
           value={formData.content}
-          onChange={e => setFormData(prev => ({ ...prev, content: e.target.value }))}
+          onChange={handleChange}
           placeholder="리뷰 내용을 입력하세요."
           required
         />

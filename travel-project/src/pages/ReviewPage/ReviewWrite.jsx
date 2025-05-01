@@ -10,12 +10,16 @@ function ReviewWrite() {
   const [formData, setFormData] = useState({
     content: '',
     photo: '',
-    photoFile: null
+    photoFile: null,
+    startDate: '',
+    endDate: '',
+    location: ''
   });
   // 별점 상태
   const [starRate, setStarRate] = useState(0); // hover/선택 중
   const [myStarRate, setMyStarRate] = useState(0); // 최종 선택
   const [photoPreview, setPhotoPreview] = useState('');
+  const [fileName, setFileName] = useState(''); // 파일 이름 상태 추가
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,6 +33,7 @@ function ReviewWrite() {
     const file = e.target.files[0];
     if (file) {
       setFormData(prev => ({ ...prev, photoFile: file }));
+      setFileName(file.name); // 파일 이름 설정
       const reader = new FileReader();
       reader.onloadend = () => {
         setPhotoPreview(reader.result);
@@ -65,6 +70,9 @@ function ReviewWrite() {
       content: formData.content,
       rating: myStarRate,
       photo: photoPreview || '',
+      startDate: formData.startDate,
+      endDate: formData.endDate,
+      location: formData.location
     };
     handleAddReview(newReview);
     navigate('/reviews');
@@ -95,10 +103,13 @@ function ReviewWrite() {
             <div className="photo-placeholder">사진</div>
           )}
         </div>
-        <label className="file-label">
-          파일선택
-          <input type="file" accept="image/*" onChange={handlePhotoChange} />
-        </label>
+        <div className="file-input-container">
+          <label className="file-label">
+            파일선택
+            <input type="file" accept="image/*" onChange={handlePhotoChange} />
+          </label>
+          <span className="file-name">{fileName}</span>
+        </div>
         <div className="review-rating-select">
           {Array(5).fill(1).map((_, index) => (
             <span
@@ -113,6 +124,34 @@ function ReviewWrite() {
           ))}
           <span className="rating-text"></span>
         </div>
+        <div className="date-inputs">
+          <input
+            type="date"
+            name="startDate"
+            value={formData.startDate}
+            onChange={handleChange}
+            required
+            className="date-input"
+          />
+          <span>~</span>
+          <input
+            type="date"
+            name="endDate"
+            value={formData.endDate}
+            onChange={handleChange}
+            required
+            className="date-input"
+          />
+        </div>
+        <input
+          type="text"
+          name="location"
+          value={formData.location}
+          onChange={handleChange}
+          placeholder="여행지"
+          required
+          className="location-input"
+        />
         <textarea
           className="review-content-input"
           name="content"
