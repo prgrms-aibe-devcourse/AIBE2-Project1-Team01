@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import DatePickerModal from "../../components/DatePickerModal";
 import TransportSelectModal from "../../components/TransportSelectModal";
@@ -11,16 +12,16 @@ export const PlanPage = () => {
   const [dateRange, setDateRange] = useState(null);
   const [travelRange, setTravelRange] = useState(0);
   const [transportType, setTransportType] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
+  const navigate = useNavigate();
 
   const { planData, locationName, tags } = useTravelPlan(
     locationId,
     transportType,
     travelRange
   );
-  
-  const [showConfirm, setShowConfirm] = useState(false);
 
   const handleSave = async () => {
     const saveData = {
@@ -43,6 +44,10 @@ export const PlanPage = () => {
       alert("저장 중 오류가 발생했습니다.");
     }
   };
+
+  const handelMoveToMyTrip = () => {
+    navigate("/mytrips", { replace: true });
+  }
 
   return (
     <div className="plan-page-container">
@@ -98,7 +103,7 @@ export const PlanPage = () => {
                 </p>
                 <div className="modal-buttons">
                   <button onClick={() => setShowConfirm(false)}>닫기</button>
-                  <button>확인</button>
+                  <button onClick={handelMoveToMyTrip}>확인</button>
                 </div>
               </div>
             </div>
