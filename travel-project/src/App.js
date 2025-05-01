@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
-            <Route path="/" element={<Navigate to="/reviews" />} />
+            <Route path="/" element={<Navigate to="/reviews" />} /> // 기본으로 mainPage로 가도록 수정 필요
             <Route path="/reviews" element={<ReviewList />} />
             <Route path="/reviews/new" element={<ReviewWrite />} />
             <Route path="/reviews/:id" element={<ReviewDetail />} />
