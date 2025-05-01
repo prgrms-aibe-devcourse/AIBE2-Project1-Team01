@@ -1,6 +1,6 @@
 const dummyTripData = [
   {
-    id: 1,
+    id: "location_001",
     regionName: "부산",
     travelDate: "5.5 - 5.8",
     imagePath: require("../assets/img/test.jpg"),

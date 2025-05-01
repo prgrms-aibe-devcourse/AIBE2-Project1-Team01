@@ -47,7 +47,7 @@ export const PlanPage = () => {
 
   const handelMoveToMyTrip = () => {
     navigate("/mytrips", { replace: true });
-  }
+  };
 
   return (
     <div className="plan-page-container">
