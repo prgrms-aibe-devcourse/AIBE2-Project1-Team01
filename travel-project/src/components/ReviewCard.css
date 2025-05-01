@@ -1,0 +1,131 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.review-card {
+  border-radius: 10px;
+  height: 362px;
+  position: relative;
+  width: 227px;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.rectangle {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  box-shadow: 8px 8px 4px #c9f0f766;
+  height: 362px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 227px;
+}
+
+.review-photo {
+  background-color: #e3e3e3;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px 10px 0px 0px;
+  height: 251px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 227px;
+  overflow: hidden;
+}
+
+.review-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.review-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 22.4px;
+  position: absolute;
+  top: 258px;
+  white-space: nowrap;
+  width: 211px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-location {
+  color: #6b6b6b;
+  font-size: 12px;
+  font-weight: 400;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 282px;
+  width: 211px;
+  text-align: left;
+}
+
+.review-date {
+  color: #6b6b6b;
+  font-size: 12px;
+  font-weight: 400;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 300px;
+  width: 211px;
+  text-align: left;
+}
+
+.review-rating {
+  position: absolute;
+  top: 320px;
+  left: 9px;
+}
+
+.review-content {
+  font-size: 14px;
+  color: #333;
+  min-height: 20px;
+}
+
+.star-svg {
+  color: #FFD700;
+  stroke: #FFD700;
+  stroke-width: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.star-svg.large {
+  width: 32px;
+  height: 32px;
+}
+
+.star-outline {
+  fill: none;
+  stroke: #FFD700;
+} 
