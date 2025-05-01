@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logoImg from '../assets/img/mainLogo4.png'; // 상대경로 기준: src/category → src/assets/img
+
 
 function Navbar() {
   const location = useLocation();
@@ -8,8 +10,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left"> {/*home 링크 수정 및 로고 수정 필요*/}
-        <Link to="/Home" className="navbar-logo"> 
-          미정
+        <Link to="/home" className="navbar-logo"> 
+          <img src={logoImg} alt="Logo" className="logo" />
+
         </Link>
       </div>
       <div className="navbar-right">
@@ -29,4 +32,5 @@ function Navbar() {
     </nav>
   );
 }
+
 export default Navbar;

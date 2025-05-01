@@ -1,0 +1,21 @@
+.trip-detail-wrapper {
+    padding: 20px;
+  }
+  
+  .trip-header {
+    margin-bottom: 20px;
+  }
+  
+  .trip-region-button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .trip-date {
+    margin-left: 12px;
+    color: #666;
+  } 
