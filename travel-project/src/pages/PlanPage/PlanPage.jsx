@@ -7,14 +7,13 @@ import { useTravelPlan } from "../../hooks/useTravelPlan";
 import TravelPlanList from "../../components/TravelPlanList";
 import "./PlanPage.css";
 
-export const PlanPage = () => {
+export const PlanPage = ({ locationId }) => {
   const [step, setStep] = useState("date"); // 'date' → 'transport' → 'done'
   const [dateRange, setDateRange] = useState(null);
   const [travelRange, setTravelRange] = useState(0);
   const [transportType, setTransportType] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
 
-  const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
   const navigate = useNavigate();
 
   const { planData, locationName, locationImage, tags } = useTravelPlan(
