@@ -17,14 +17,18 @@ const ReviewDetailModal = ({ review, onClose, onPrev, onNext, hasPrev, hasNext }
           )}
         </div>
         <div className="modal-content">
-          <div className="modal-rating">{renderStars(review.rating)}</div>
-          <div className="modal-location">{review.location}</div>
-          <div className="modal-date">{review.date}</div>
-          <div className="modal-text">{review.content}</div>
+          <div className="modal-header">
+            <div className="modal-rating">{renderStars(review.rating)}</div>
+            <div className="modal-location">{review.location}</div>
+            <div className="modal-date">{review.startDate} ~ {review.endDate}</div>
+          </div>
+          <div className="modal-text-container">
+            <div className="modal-text">{review.content}</div>
+          </div>
         </div>
         {hasPrev && <button className="arrow-btn left" onClick={onPrev}>&lt;</button>}
         {hasNext && <button className="arrow-btn right" onClick={onNext}>&gt;</button>}
-        <button className="modify-btn" onClick={() => navigate(`/reviews/${review.id}/edit`)}>수정하기</button>
+        <button className="modify-btn" onClick={() => navigate(`/reviews/${review.id}/edit`)}>수정 및 삭제하기</button>
       </div>
     </div>
   );

@@ -12,18 +12,17 @@
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-  padding: 32px 32px 24px 32px;
-  min-width: 340px;
-  max-width: 420px;
-  width: 90vw;
+  padding: 32px 32px 80px 32px;
+  width: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .close-btn {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: -8px;
+  right: -3px;
   background: none;
   border: none;
   font-size: 2rem;
@@ -31,8 +30,8 @@
   cursor: pointer;
 }
 .modal-photo {
-  width: 320px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   background: #eee;
   border-radius: 8px;
   display: flex;
@@ -51,9 +50,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   margin-bottom: 12px;
+}
+.modal-header {
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
 }
 .modal-rating {
   font-size: 1.7rem;
@@ -70,11 +73,35 @@
   font-size: 0.95rem;
   color: #888;
 }
+.modal-text-container {
+  width: 565px;
+  height: 300px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+/* 스크롤바 스타일링 */
+.modal-text-container::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-text-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.modal-text-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.modal-text-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .modal-text {
   font-size: 1.1rem;
   color: #222;
-  margin-top: 8px;
   word-break: break-all;
+  line-height: 1.5;
 }
 .arrow-btn {
   position: absolute;
