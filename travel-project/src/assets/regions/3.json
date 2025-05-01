@@ -1,10 +1,10 @@
 {
-    "locations": [
-      {
-        "id": "location_01",
-        "name": "강릉",
-        "description": "동해안의 아름다운 바다와 전통 문화가 어우러진 대표 관광지",
-        "images": [
+  "locations": [
+    {
+      "id": "location_01",
+      "name": "강릉",
+      "description": "동해안의 아름다운 바다와 전통 문화가 어우러진 대표 관광지",
+      "images": [
           "gangneung1.jpg",
           "gangneung2.jpg"
         ],
@@ -767,11 +767,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+      },
+//삼척
       {
         "id": "location_02",
         "name": "삼척시",
@@ -1539,11 +1536,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+      },
+      //속초
       {
         "id": "location_03",
         "name": "속초시",
@@ -2311,12 +2305,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-
-  {
-    "locations": [
+      },
+      //철원
       {
         "id": "location_04",
         "name": "철원군",
@@ -3084,11 +3074,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+    },
+    //영월
       {
         "id": "location_05",
         "name": "영월군",
@@ -3856,11 +3843,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+      },
+      //동해
       {
         "id": "location_06",
         "name": "동해시",
@@ -4628,11 +4612,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+  },
+  //횡성
       {
         "id": "location_07",
         "name": "횡성군",
@@ -5400,11 +5381,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+      },
+      //원주
       {
         "id": "location_08",
         "name": "원주시",
@@ -6152,11 +6130,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+      },
+      //태백
       {
         "id": "location_09",
         "name": "태백시",
@@ -6924,11 +6899,8 @@
             ]
           }
         ]
-      }
-    ]
-  }
-  {
-    "locations": [
+     },
+     //평창
       {
         "id": "location_10",
         "name": "평창군",
