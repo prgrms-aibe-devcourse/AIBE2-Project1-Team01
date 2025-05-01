@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { MainPage } from './pages/MainPage/MainPage';
 import { MyTripPage } from './pages/travel/MyTripPage';
 import { TripDetailPage } from './pages/travel/TripDetailPage';
-import Navbar from './components/Navbar'; // ✅ 추가
+import Navbar from './components/Navbar';
 
 function App() {
   return (
