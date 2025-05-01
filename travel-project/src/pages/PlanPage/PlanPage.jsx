@@ -17,7 +17,7 @@ export const PlanPage = () => {
   const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
   const navigate = useNavigate();
 
-  const { planData, locationName, tags } = useTravelPlan(
+  const { planData, locationName, locationImage, tags } = useTravelPlan(
     locationId,
     transportType,
     travelRange
@@ -27,6 +27,7 @@ export const PlanPage = () => {
     const saveData = {
       locationId,
       locationName,
+      locationImage,
       period: dateRange, // ex) "2025.04.25 ~ 2025.05.01"
       tags: tags,
       plan: planData,

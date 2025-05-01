@@ -30,7 +30,7 @@ const TripModal = ({ id, onClose }) => {
             </ul> */}
           </div>
           <div className="modal-image">
-            <img src={tripData.images?.[0]} alt={tripData.name} />
+            <img src={require(`../assets/img/${tripData.images?.[0]}`)} alt={tripData.name} />
           </div>
         </div>
       </div>

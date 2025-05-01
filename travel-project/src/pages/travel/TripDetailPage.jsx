@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
-import planData from "../../data/PlanTest.json"; // 상대경로로 import
+import { useLocation } from "react-router-dom";
 import TripModal from "../../components/TripModal";
 import TravelPlanList from "../../components/TravelPlanList";
 import "./TripDetailPage.css"; // 외부 스타일시트 import

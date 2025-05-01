@@ -6,7 +6,7 @@ import testImage from "../assets/img/test.jpg";
 
 export const TripCard = ({
   id,
-  imagePath = testImage,
+  image = testImage,
   locationName = "지역명",
   travelPeriod = "5.5 - 5.8",
   tags = ["태그"],
@@ -90,7 +90,7 @@ export const TripCard = ({
       <div className="rectangle" />
       <div className="regioncard-img">
         <img
-          src={imagePath}
+          src={require(`../assets/img/${image}`)}
           alt="여행 이미지"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />

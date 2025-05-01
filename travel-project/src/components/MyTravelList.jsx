@@ -36,7 +36,7 @@ const MyTravelList = () => {
           id={trip.locationId}
           locationName={trip.locationName}
           travelPeriod={trip.period}
-          imagePath={trip.imagePath}
+          image={trip.locationImage}
           tags={trip.tags}
           plans={trip.plan}
         />
