@@ -18,6 +18,7 @@ export const TripCard = ({
     console.log(plans);
     navigate(`/trip/${id}`, {
       state: {
+        id,
         locationName,
         travelPeriod,
         plans,
