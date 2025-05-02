@@ -7,7 +7,7 @@ import { useTravelPlan } from "../../hooks/useTravelPlan";
 import TravelPlanList from "../../components/TravelPlanList";
 import "./PlanPage.css";
 
-export const PlanPage = ({ locationId }) => {
+export const PlanPage = ({ fileName = "1", locationId = "location_001" }) => {
   const [step, setStep] = useState("date"); // 'date' → 'transport' → 'done'
   const [dateRange, setDateRange] = useState(null);
   const [travelRange, setTravelRange] = useState(0);
@@ -16,7 +16,8 @@ export const PlanPage = ({ locationId }) => {
 
   const navigate = useNavigate();
 
-  const { planData, locationName, locationImage, tags } = useTravelPlan(
+  const { planData, locationName, locationDescription, locationImage, tags } = useTravelPlan(
+    fileName,
     locationId,
     transportType,
     travelRange
@@ -26,6 +27,7 @@ export const PlanPage = ({ locationId }) => {
     const saveData = {
       locationId,
       locationName,
+      locationDescription,
       locationImage,
       period: dateRange, // ex) "2025.04.25 ~ 2025.05.01"
       tags: tags,
