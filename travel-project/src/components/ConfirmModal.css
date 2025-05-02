@@ -1,0 +1,44 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.confirm-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  min-width: 200px;
+  text-align: center;
+}
+.modal-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.modal-actions button {
+  flex: 1;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 80px;
+}
+.modal-actions button:first-child {
+  background: #4B9EFF;
+  color: #fff;
+}
+.modal-actions button:last-child {
+  background: #E9E9E9;
+  color: #666;
+} 

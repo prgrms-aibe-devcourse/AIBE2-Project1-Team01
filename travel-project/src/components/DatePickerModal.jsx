@@ -162,9 +162,17 @@ const DatePickerModal = ({ onConfirm }) => {
               const end = state[0].endDate;
 
               const formatted =
-                start.toISOString().slice(0, 10).replace(/-/g, ".") +
+                start.toLocaleDateString("ko-KR", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                }) +
                 " ~ " +
-                end.toISOString().slice(0, 10).replace(/-/g, ".");
+                end.toLocaleDateString("ko-KR", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                });
 
               const days =
                 Math.ceil(
