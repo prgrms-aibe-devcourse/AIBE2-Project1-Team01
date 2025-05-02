@@ -77,11 +77,7 @@ function RegionCardList() {
             key={card.id}
             imagePath={card.image}
             regionName={card.name}
-            regionDescription={
-              card.description.length > 65
-                ? card.description.substring(0, 65) + "..."
-                : card.description
-            }
+            regionDescription={card.description}
             tags={card.tags}
             url={`/detail/${card.id}`} // ✅ detail 경로도 유니크 id로 유지
           />
