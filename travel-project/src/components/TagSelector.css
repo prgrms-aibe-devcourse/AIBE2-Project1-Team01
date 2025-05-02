@@ -20,8 +20,8 @@
 }
 
 .search-tag {
-  padding: 4px 10px;
-  background-color: #4b7bec;
+  padding: 8px 10px;
+  background-color: #4F9DDE;
   color: white;
   border-radius: 16px;
   font-size: 12px;
@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* search-tag의 remove-tag 버튼 스타일 */
@@ -72,6 +73,7 @@
   background-color: #f5f5f5;
   cursor: pointer;
   transition: all 0.2s ease;
+  min-width: 600px;
 }
   
   .search-bar:hover {
@@ -92,14 +94,14 @@
   }
   
   .search-icon {
-    color: #4b7bec;
+    color: #4F9DDE;
     margin-left: 8px;
     flex-shrink: 0; /* 아이콘이 줄어들지 않도록 고정 */
   }
   
   .tag-modal {
     position: absolute;
-    top: 60px;
+    top: calc(100% + 5px); /* search-bar 높이 + 약간의 간격 */
     left: 0;
     width: 100%;
     background-color: white;
@@ -116,8 +118,21 @@
     align-items: center;
     margin-bottom: 16px;
   }
+
+  .tag-modal .modal-header {  /*modal-header 안에 텍스트 중앙정렬*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    text-align: center;
+  }
   
-  .modal-title {
+  .tag-modal .modal-header .modal-title { /*modal-header 안에 텍스트 중앙정렬*/
+    width: 100%;
+    text-align: center;
+  }
+  
+  .modal-title {  /*modal-header 안에 텍스트 중앙정렬*/
     margin: 0;
     font-size: 16px;
     font-weight: 600;
@@ -174,7 +189,7 @@
   }
   
   .close-modal-button {
-    background-color: #4b7bec;
+    background-color: #4F9DDE;
     color: white;
     border: none;
     border-radius: 4px;
@@ -210,9 +225,10 @@
   }
   
   .tag-button.selected {
-    background-color: #4b7bec;
+    background-color: #4F9DDE;
     color: white;
-    border-color: #4b7bec;
+    border-color: #4F9DDE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   /* search-tag의 remove-tag 버튼에 대한 스타일 유지 */
