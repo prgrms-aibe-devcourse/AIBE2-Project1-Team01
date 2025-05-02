@@ -1,0 +1,189 @@
+.review-write-page {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #f8fbff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.back-btn {
+  align-self: flex-start;
+  background: #ddd;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.review-photo-upload {
+  width: 100%;
+  min-height: 320px;
+  background: #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.photo-placeholder {
+  width: 100%;
+  height: 260px;
+  background: #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #666;
+  padding: 16px;
+}
+.photo-preview {
+  width: 100%;
+  max-width: 600px;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eee;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+.file-label {
+  background: #888;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 18px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+.file-label input[type="file"] {
+  display: none;
+}
+.review-rating-select {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.star-container {
+  position: relative;
+  display: inline-block;
+}
+.rating-text {
+  margin-left: 8px;
+  font-size: 1rem;
+}
+.date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.date-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.location-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+.review-content-input {
+  width: 100%;
+  min-height: 120px;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 8px;
+}
+.review-write-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.common-btn {
+  min-width: 120px;
+  padding: 10px 28px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s;
+  color: #fff;
+}
+.common-btn.blue {
+  background: #2196f3;
+}
+.common-btn.red {
+  background: #f66;
+}
+
+.review-card {
+  width: 250px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.review-photo {
+  flex: 2 1 0%;
+  min-height: 0;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-info {
+  flex: 1 1 0%;
+  min-height: 0;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  overflow: hidden;
+}
+
+.star-svg {
+  color: #FFD700;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-name {
+  margin-top: 8px;
+  color: #666;
+}
+
+.delete-btn {
+  background: #f66 !important;
+} 
