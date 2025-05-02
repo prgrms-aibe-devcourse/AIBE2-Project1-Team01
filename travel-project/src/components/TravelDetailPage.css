@@ -1,0 +1,109 @@
+.travel-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  max-width: 90%;
+  padding: 24px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 1px; 
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  z-index: 10;
+  padding: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.travel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 50px; /* ✅ 이미지와 X 겹침 방지용 여백 */
+  padding-top: 20px;
+  margin-bottom: 16px;
+}
+
+.travel-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.travel-description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.json-path, .location-id {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag-item {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.recommend-button {
+  background-color: #4F9DDE;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.recommend-button:hover {
+  background-color: #3c84c8;
+}
