@@ -35,6 +35,16 @@ export const PlanPage = ({ fileName = "1", locationId = "location_001" }) => {
     };
 
     try {
+      // 중복 체크
+      const res = await axios.get(
+        `http://localhost:4000/mytrip?locationId=${locationId}&period=${encodeURIComponent(dateRange)}&plan=${encodeURIComponent(planData)}`
+      );
+
+      if (res.data.length > 0) {
+        setShowConfirm(true);
+        return;
+      }
+
       const response = await axios.post(
         "http://localhost:4000/mytrip",
         saveData
