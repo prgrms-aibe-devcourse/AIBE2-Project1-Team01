@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left"> {/*home 링크 수정 및 로고 수정 필요*/}
-        <Link to="/home" className="navbar-logo"> 
+        <Link to="/" className="navbar-logo"> 
           <img src={logoImg} alt="Logo" className="logo" />
 
         </Link>
