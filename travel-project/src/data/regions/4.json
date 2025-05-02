@@ -76,7 +76,7 @@
         "id": "location_004",
         "name": "공주",
         "description": "백제 문화유산이 살아있는 역사 도시입니다.",
-        "images": ["Gongju.npg"],
+        "images": ["Gongju.jpg"],
         "tags": ["봄","가을","충청","역사","문화유산","워킹","당일치기","가족여행"],
         "travel_plan": [
           {
@@ -100,7 +100,7 @@
         "id": "location_005",
         "name": "논산",
         "description": "훈련소와 금강변 경관, 농촌 체험이 가능한 도시입니다.",
-        "images": ["Nonsan.npg"],
+        "images": ["Nonsan.jpg"],
         "tags": ["봄","가을","충청","역사","자연","워킹","체험","당일치기"],
         "travel_plan": [
           {
