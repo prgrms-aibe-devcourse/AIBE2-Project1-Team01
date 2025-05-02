@@ -1,7 +1,7 @@
 {
   "locations": [
     {
-      "id": "location_01",
+      "id": "location_001",
       "name": "강릉",
       "description": "동해안의 아름다운 바다와 전통 문화가 어우러진 대표 관광지",
       "images": [
@@ -769,7 +769,7 @@
         ]
       },
       {
-        "id": "location_02",
+        "id": "location_002",
         "name": "삼척시",
         "description": "동해안의 청정 자연과 동굴, 항구, 체험이 어우러진 해양 관광 도시",
         "images": [
@@ -1537,17 +1537,17 @@
         ]
       },
       {
-        "id": "location_03",
+        "id": "location_003",
         "name": "속초시",
         "description": "설악산과 동해안이 어우러진 아름다운 해양·산악 관광지",
         "images": [
-          "https://example.com/images/sokcho1.jpg",
-          "https://example.com/images/sokcho2.jpg"
+          "sokcho1.jpg",
+          "sokcho2.jpg"
         ],
         "tags": [
           "강원",
           "문화",
-          "대한민국관광100선",
+          "바다",
           "맛집탕방",
           "산"
         ],
@@ -2305,7 +2305,7 @@
         ]
       },
       {
-        "id": "location_04",
+        "id": "location_004",
         "name": "철원군",
         "description": "DMZ와 자연경관이 어우러진 생태·안보 관광 명소",
         "images": [
@@ -3073,7 +3073,7 @@
         ]
     },
       {
-        "id": "location_05",
+        "id": "location_005",
         "name": "영월군",
         "description": "역사와 자연이 공존하는 강원도의 매력적인 내륙 관광지",
         "images": [
@@ -3841,7 +3841,7 @@
         ]
       },
       {
-        "id": "location_06",
+        "id": "location_006",
         "name": "동해시",
         "description": "해변과 계곡이 어우러진 동해안의 청정 자연 관광지",
         "images": [
@@ -4609,7 +4609,7 @@
         ]
   },
       {
-        "id": "location_07",
+        "id": "location_007",
         "name": "횡성군",
         "description": "한우와 숲길로 유명한 강원도의 힐링 자연 체험지",
         "images": [
@@ -5377,7 +5377,7 @@
         ]
       },
       {
-        "id": "location_08",
+        "id": "location_008",
         "name": "원주시",
         "description": "문화와 자연이 조화를 이루는 강원도의 대표 도시",
         "images": [
@@ -6125,7 +6125,7 @@
         ]
       },
       {
-        "id": "location_09",
+        "id": "location_009",
         "name": "태백시",
         "description": "고원지대의 시원한 자연과 석탄 산업의 역사를 간직한 도시",
         "images": [
@@ -6893,7 +6893,7 @@
         ]
      },
       {
-        "id": "location_10",
+        "id": "location_010",
         "name": "평창군",
         "description": "자연과 스포츠, 문화가 어우러진 고원 휴양지",
         "images": [

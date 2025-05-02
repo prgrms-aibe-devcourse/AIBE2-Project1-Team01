@@ -1,83 +1,91 @@
-import React, { useState, useEffect } from 'react';
-import { RegionCard } from './RegionCard';
-import TagSelector from './TagSelector';
-import './RegionCardList.css';
+import React, { useState, useEffect } from "react";
+import { RegionCard } from "./RegionCard";
+import TagSelector from "./TagSelector";
+import "./RegionCardList.css";
 
-// 예시 JSON 데이터
-const dummyCards = [
-  {
-    id: 1,
-    name: "서울",
-    description: "대한민국의 수도",
-    image: require("../assets/img/seoul.jpg"),
-    tags: ["맛집", "역사", "도시"]
-  },
-  {
-    id: 2,
-    name: "부산",
-    description: "해운대가 있는 도시",
-    image: require("../assets/img/busan.jpg"),
-    tags: ["바다", "맛집", "데이트"]
-  },
-  {
-    id: 3,
-    name: "강릉",
-    description: "자연과 바다의 도시",
-    image: require("../assets/img/gangneung.jpg"),
-    tags: ["자연", "바다", "심신안정"]
-  },
-  {
-    id: 4,
-    name: "제주도",
-    description: "한국 최고의 휴양지",
-    image: require("../assets/img/jeju.jpg"),
-    tags: ["섬탐험", "자연", "바다", "맛집"]
-  },
-  {
-    id: 5,
-    name: "경주",
-    description: "역사와 문화의 도시",
-    image: require("../assets/img/gyeongju.jpg"),
-    tags: ["역사", "문화", "심신안정"]
-  }
-];
+// ✅ JSON 파일 import
+import data1 from "../data/regions/1.json";
+import data2 from "../data/regions/2.json";
+import data3 from "../data/regions/3.json";
+import data4 from "../data/regions/4.json";
+import data5 from "../data/regions/5.json";
+import data6 from "../data/regions/6.json";
 
 function RegionCardList() {
   const [selectedTags, setSelectedTags] = useState([]);
-  const [filteredCards, setFilteredCards] = useState(dummyCards);
+  const [filteredCards, setFilteredCards] = useState([]);
+  const [allCards, setAllCards] = useState([]);
 
-  // 태그 선택 시 필터링 처리
   useEffect(() => {
-    console.log("초기 selectedTags:", selectedTags);  // []
-    console.log("dummyCards:", dummyCards);
+    // ✅ 파일명 정보를 함께 넣은 데이터 배열 구성
+    const allData = [
+      { file: "1", data: data1 },
+      { file: "2", data: data2 },
+      { file: "3", data: data3 },
+      { file: "4", data: data4 },
+      { file: "5", data: data5 },
+      { file: "6", data: data6 },
+    ];
+
+    // ✅ 각 파일별 데이터에 파일명 prefix를 붙인 id 생성
+    const cardList = allData.flatMap(({ file, data }) =>
+      data.locations.map((loc, index) => ({
+        id: `${file}-${loc.id || `loc_${index}`}`, // 🔑 id에 파일 prefix 추가
+        name: loc.name,
+        description: loc.description,
+        image: loc.images[0].startsWith("http")
+          ? loc.images[0]
+          : (() => {
+              try {
+                return require(`../assets/images/${loc.images[0]}`);
+              } catch (e) {
+                console.warn("이미지 로드 실패:", loc.images[0]);
+                return require(`../assets/images/andong1.jpg`);
+              }
+            })(),
+        tags: loc.tags,
+      }))
+    );
+
+    setAllCards(cardList);
+    setFilteredCards(cardList);
+  }, []);
+
+  useEffect(() => {
     if (selectedTags.length === 0) {
-      setFilteredCards(dummyCards);
+      setFilteredCards(allCards);
     } else {
-      const result = dummyCards.filter(card =>
-        selectedTags.every(tag => card.tags.includes(tag))
+      const result = allCards.filter((card) =>
+        selectedTags.every((tag) =>
+          card.tags.map((t) => t.trim()).includes(tag.trim())
+        )
       );
       setFilteredCards(result);
     }
+  }, [selectedTags, allCards]);
+
+  useEffect(() => {
+    console.log("🔥 선택된 태그:", selectedTags);
   }, [selectedTags]);
+
   return (
     <div>
       <TagSelector onSubmit={setSelectedTags} />
-
       <div className="card-list">
-        {filteredCards.length === 0 ? (
-          <div className="center-text">일치하는 여행지가 없습니다.</div>
-        ) : (
-          filteredCards.map((card) => (
-            <RegionCard
-              key={card.id}
-              imagePath={card.image}
-              regionName={card.name}
-              regionDescription={card.description}
-              tags={card.tags}
-              url={`/detail/${card.id}`} // 상세 페이지로 이동
-            />
-          ))
-        )}
+        {filteredCards.map((card) => (
+          <RegionCard
+            key={card.id}
+            imagePath={card.image}
+            regionName={card.name}
+            regionDescription={
+              card.description.length > 65
+                ? card.description.substring(0, 65) + "..."
+                : card.description
+            }
+            tags={card.tags}
+            url={`/detail/${card.id}`} // ✅ detail 경로도 유니크 id로 유지
+          />
+        ))}
       </div>
     </div>
   );
