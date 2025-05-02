@@ -1,7 +1,7 @@
 {
   "locations": [
     {
-      "id": "location_002",
+      "id": "location_001",
       "name": "광주 양림동",
       "description": "예술과 역사, 문화가 살아 숨 쉬는 감성 골목",
       "images": [
@@ -735,7 +735,7 @@
       ]
     },
     {
-      "id": "location_008",
+      "id": "location_002",
       "name": "군산 시간여행마을",
       "description": "1920년대의 감성을 간직한 근대문화골목",
       "images": [
@@ -1469,7 +1469,7 @@
       ]
     },
     {
-      "id": "location_010",
+      "id": "location_003",
       "name": "남원 광한루원",
       "description": "고전 속 춘향전의 무대이자 한옥미의 진수",
       "images": [
@@ -2203,7 +2203,7 @@
       ]
     },
     {
-      "id": "location_006",
+      "id": "location_004",
       "name": "담양 메타세쿼이아길",
       "description": "숲속 힐링과 감성사진의 명소",
       "images": [
@@ -3671,7 +3671,7 @@
       ]
     },
     {
-      "id": "location_009",
+      "id": "location_006",
       "name": "보성 녹차밭",
       "description": "푸르른 차밭에서 여유를 만끽할 수 있는 녹차 향기 여행",
       "images": [
@@ -5139,7 +5139,7 @@
       ]
     },
     {
-      "id": "location_004",
+      "id": "location_008",
       "name": "여수 오동도",
       "description": "동백꽃과 해안 산책로가 아름다운 여수의 대표 명소",
       "images": [
@@ -5873,7 +5873,7 @@
       ]
     },
     {
-      "id": "location_001",
+      "id": "location_009",
       "name": "전주 한옥마을",
       "description": "전통과 현대가 어우러진 한옥 체험 명소",
       "images": [
@@ -6607,7 +6607,7 @@
       ]
     },
     {
-      "id": "location_003",
+      "id": "location_010",
       "name": "해남 땅끝마을",
       "description": "한반도의 최남단에서 일출과 평온을 만나는 감성 여행지",
       "images": [
