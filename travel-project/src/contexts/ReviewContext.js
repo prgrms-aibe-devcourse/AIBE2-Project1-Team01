@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useMemo } from 'react';
 import reviewsData from '../reviewData/reviews.json';
 
 // 이미지 import
@@ -30,6 +30,12 @@ const ReviewContext = createContext();
 export function ReviewProvider({ children }) {
   const [reviews, setReviews] = useState(reviewsWithImages);
 
+  // 고유한 장소 목록을 추출
+  const locations = useMemo(() => {
+    const uniqueLocations = [...new Set(reviews.map(review => review.location))];
+    return ['전체', ...uniqueLocations];
+  }, [reviews]);
+
   const handleAddReview = (newReview) => {
     setReviews(prev => [...prev, newReview]);
   };
@@ -45,7 +51,13 @@ export function ReviewProvider({ children }) {
   };
 
   return (
-    <ReviewContext.Provider value={{ reviews, handleAddReview, handleUpdateReview, handleDeleteReview }}>
+    <ReviewContext.Provider value={{ 
+      reviews, 
+      locations,
+      handleAddReview, 
+      handleUpdateReview, 
+      handleDeleteReview 
+    }}>
       {children}
     </ReviewContext.Provider>
   );

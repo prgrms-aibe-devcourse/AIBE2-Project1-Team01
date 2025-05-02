@@ -1,0 +1,244 @@
+{
+    "locations": [
+      {
+        "id": "location_001",
+        "name": "천안",
+        "description": "독립기념관·병천순대타운 등 역사와 맛집이 공존하는 도시입니다.",
+        "images": ["Cheonan.png"],
+        "tags": ["봄","가을","충청","역사","맛집탐방","워킹","당일치기","가족여행","친구와"],
+        "travel_plan": [
+          {
+            "transportation": "대중교통",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"역사탐방","plans":[{"place":"독립기념관","time":"오전","activities":["전시 관람","사진 촬영"]},{"place":"기념관 인근 식당","time":"점심","activities":["충청 특산 요리"]},{"place":"병천순대타운","time":"오후","activities":["순대 맛보기","거리 산책"]}]},
+              { "day":"Day 2","theme":"문화탐방","plans":[{"place":"유관순열사기념관","time":"오전","activities":["전시 관람"]},{"place":"기념관 인근 식당","time":"점심","activities":["지역 특산물 맛보기"]},{"place":"천안삼거리공원","time":"오후","activities":["공원 산책","사진 촬영"]}]},
+              { "day":"Day 3","theme":"워킹","plans":[{"place":"카페거리","time":"오전","activities":["카페 투어","커피 타임"]},{"place":"카페거리 맛집","time":"점심","activities":["베이커리 체험"]},{"place":"한국조각공원","time":"오후","activities":["조각 작품 감상","산책"]}]},
+              { "day":"Day 4","theme":"자연탐방","plans":[{"place":"천호지","time":"오전","activities":["호수 산책","조류 관찰"]},{"place":"호수 주변 식당","time":"점심","activities":["호반 전망 레스토랑"]},{"place":"광덕산 산림욕장","time":"오후","activities":["가벼운 등산","피톤치드 힐링"]}]},
+              { "day":"Day 5","theme":"문화탐방","plans":[{"place":"아라리오갤러리","time":"오전","activities":["미술 작품 감상"]},{"place":"갤러리 카페","time":"점심","activities":["아트 카페 체험"]},{"place":"충청수영성","time":"오후","activities":["유적지 탐방","사진 촬영"]}]},
+              { "day":"Day 6","theme":"웰빙","plans":[{"place":"천안시립도서관","time":"오전","activities":["독서","휴식"]},{"place":"도서관 카페","time":"점심","activities":["간단 식사"]},{"place":"천안예술의전당","time":"오후","activities":["공연 관람"]}]},
+              { "day":"Day 7","theme":"하이킹","plans":[{"place":"광덕산 등산로","time":"오전","activities":["등산","전망대 감상"]},{"place":"휴게소","time":"점심","activities":["도시락"]},{"place":"병천천 산책로","time":"오후","activities":["물길 따라 걷기","피크닉"]}]},
+              { "day":"Day 8","theme":"맛집탐방","plans":[{"place":"순대타운 재방문","time":"오전","activities":["순대 추가 시식"]},{"place":"순대거리 맛집","time":"점심","activities":["다양한 순대 메뉴"]},{"place":"천안역 주변","time":"오후","activities":["전통 차 체험"]}]},
+              { "day":"Day 9","theme":"데이트","plans":[{"place":"천안터널공원","time":"오전","activities":["공원 산책"]},{"place":"공원 카페","time":"점심","activities":["커피 타임"]},{"place":"삼거리타워 전망대","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 10","theme":"쇼핑","plans":[{"place":"백석동 패션거리","time":"오전","activities":["쇼핑"]},{"place":"거리 내 맛집","time":"점심","activities":["길거리 음식 체험"]},{"place":"천안종합터미널","time":"오후","activities":["기념품 구매"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_002",
+        "name": "아산",
+        "description": "온천과 한국정원, 역사 유적이 어우러진 힐링 도시입니다.",
+        "images": ["Asan.png"],
+        "tags": ["봄","가을","충청","자연","역사","체험","힐링","1박2일","가족여행"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"온천힐링","plans":[{"place":"온양온천","time":"오전","activities":["온천욕","스파 체험"]},{"place":"온천장 식당","time":"점심","activities":["온천장 국밥"]},{"place":"아산스파비스","time":"오후","activities":["찜질방","수영장"]}]},
+              { "day":"Day 2","theme":"역사탐방","plans":[{"place":"현충사","time":"오전","activities":["사적지 투어"]},{"place":"인근 식당","time":"점심","activities":["충무김밥"]},{"place":"이순신 유적지","time":"오후","activities":["기념관 관람"]}]},
+              { "day":"Day 3","theme":"문화체험","plans":[{"place":"외암민속마을","time":"오전","activities":["한옥 구경","공예 체험"]},{"place":"마을 식당","time":"점심","activities":["시골 밥상 체험"]},{"place":"민속박물관","time":"오후","activities":["전시 관람"]}]},
+              { "day":"Day 4","theme":"자연탐방","plans":[{"place":"영인산 산림욕장","time":"오전","activities":["트레킹"]},{"place":"휴게소","time":"점심","activities":["도시락"]},{"place":"신정호 호수공원","time":"오후","activities":["호수 산책","자전거"]}]},
+              { "day":"Day 5","theme":"하이킹","plans":[{"place":"송악산 둘레길","time":"오전","activities":["등산"]},{"place":"등산로 입구","time":"점심","activities":["산채비빔밥"]},{"place":"송악산 전망대","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 6","theme":"웰빙","plans":[{"place":"신정호 카페거리","time":"오전","activities":["브런치"]},{"place":"카페","time":"점심","activities":["베이글"]},{"place":"온양민속박물관","time":"오후","activities":["전통 생활사 관람"]}]},
+              { "day":"Day 7","theme":"체험","plans":[{"place":"가곡온천","time":"오전","activities":["온천욕"]},{"place":"온천장","time":"점심","activities":["온천 맛집"]},{"place":"민속박물관","time":"오후","activities":["전통 체험"]}]},
+              { "day":"Day 8","theme":"맛집탐방","plans":[{"place":"전통시장","time":"오전","activities":["시장 구경"]},{"place":"시장 식당","time":"점심","activities":["국밥"]},{"place":"카페거리","time":"오후","activities":["디저트 투어"]}]},
+              { "day":"Day 9","theme":"데이트","plans":[{"place":"음봉저수지","time":"오전","activities":["호수 산책"]},{"place":"저수지 카페","time":"점심","activities":["커피 타임"]},{"place":"레일바이크","time":"오후","activities":["레일바이크 체험"]}]},
+              { "day":"Day 10","theme":"힐링","plans":[{"place":"맹씨행단","time":"오전","activities":["고택 산책"]},{"place":"인근 식당","time":"점심","activities":["한정식"]},{"place":"천문대","time":"오후","activities":["천체 관측"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_003",
+        "name": "보령",
+        "description": "머드축제와 해양 레저가 유명한 해변 도시입니다.",
+        "images": ["Boryung.png"],
+        "tags": ["여름","충청","바다","축제","캠핑","해양레저","가족여행","친구와","데이트"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"해변놀이","plans":[{"place":"대천해수욕장","time":"오전","activities":["수영","모래놀이"]},{"place":"해변가 식당","time":"점심","activities":["회"]},{"place":"머드체험장","time":"오후","activities":["머드팩 체험"]}]},
+              { "day":"Day 2","theme":"워킹","plans":[{"place":"오천항 방파제","time":"오전","activities":["산책"]},{"place":"방파제 인근","time":"점심","activities":["해물 칼국수"]},{"place":"등대공원","time":"오후","activities":["절경 감상"]}]},
+              { "day":"Day 3","theme":"체험","plans":[{"place":"해저터널","time":"오전","activities":["해저 산책"]},{"place":"터널 인근","time":"점심","activities":["해산물 뷔페"]},{"place":"솔미미술관","time":"오후","activities":["전시 관람"]}]},
+              { "day":"Day 4","theme":"캠핑","plans":[{"place":"삽시도 캠핑장","time":"오전","activities":["캠핑 준비"]},{"place":"캠핑장","time":"점심","activities":["캠핑 요리"]},{"place":"밤바다 산책","time":"오후","activities":["별보기"]}]},
+              { "day":"Day 5","theme":"역사탐방","plans":[{"place":"성주사지","time":"오전","activities":["사적지 투어"]},{"place":"인근 식당","time":"점심","activities":["된장찌개"]},{"place":"웅천읍성","time":"오후","activities":["산책"]}]},
+              { "day":"Day 6","theme":"온천힐링","plans":[{"place":"덕산온천","time":"오전","activities":["온천욕"]},{"place":"온천장","time":"점심","activities":["온천국"]},{"place":"옥마산 전망대","time":"오후","activities":["트레킹"]}]},
+              { "day":"Day 7","theme":"낙조감상","plans":[{"place":"청라언덕","time":"오전","activities":["조개껍데기 길 걷기"]},{"place":"언덕 카페","time":"점심","activities":["커피"]},{"place":"해변 낙조 포인트","time":"오후","activities":["낙조 감상"]}]},
+              { "day":"Day 8","theme":"해양레저","plans":[{"place":"요트투어","time":"오전","activities":["요트 체험"]},{"place":"선착장 인근","time":"점심","activities":["해산물"]},{"place":"서핑 체험장","time":"오후","activities":["서핑"]}]},
+              { "day":"Day 9","theme":"맛집탐방","plans":[{"place":"젓갈시장","time":"오전","activities":["시장 구경"]},{"place":"시장 식당","time":"점심","activities":["젓갈 시식"]},{"place":"중앙시장","time":"오후","activities":["거리 음식"]}]},
+              { "day":"Day 10","theme":"힐링","plans":[{"place":"마량포구","time":"오전","activities":["포구 산책"]},{"place":"포구 식당","time":"점심","activities":["낙지볶음"]},{"place":"바다 카페","time":"오후","activities":["커피 타임"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_004",
+        "name": "공주",
+        "description": "백제 문화유산이 살아있는 역사 도시입니다.",
+        "images": ["Gongju.npg"],
+        "tags": ["봄","가을","충청","역사","문화유산","워킹","당일치기","가족여행"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"역사탐방","plans":[{"place":"공산성","time":"오전","activities":["성곽 산책"]},{"place":"인근 식당","time":"점심","activities":["백제 국밥"]},{"place":"무령왕릉","time":"오후","activities":["능묘 관람"]}]},
+              { "day":"Day 2","theme":"문화탐방","plans":[{"place":"송산리고분군","time":"오전","activities":["고분군 탐방"]},{"place":"탑정호","time":"점심","activities":["호반 맛집"]},{"place":"국립공주박물관","time":"오후","activities":["전시 관람"]}]},
+              { "day":"Day 3","theme":"워킹","plans":[{"place":"갑사","time":"오전","activities":["사찰 산책"]},{"place":"갑사 식당","time":"점심","activities":["사찰음식"]},{"place":"계룡산 등산로","time":"오후","activities":["트레킹"]}]},
+              { "day":"Day 4","theme":"체험","plans":[{"place":"알밤테마공원","time":"오전","activities":["밤줍기 체험"]},{"place":"테마공원 식당","time":"점심","activities":["밤 요리"]},{"place":"금강 유람선","time":"오후","activities":["유람선 탑승"]}]},
+              { "day":"Day 5","theme":"하이킹","plans":[{"place":"계룡산국립공원","time":"오전","activities":["등산"]},{"place":"휴게소","time":"점심","activities":["도시락"]},{"place":"관음봉","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 6","theme":"맛집탐방","plans":[{"place":"중앙시장","time":"오전","activities":["시장 구경"]},{"place":"시장 맛집","time":"점심","activities":["칼국수"]},{"place":"카페거리","time":"오후","activities":["디저트 투어"]}]},
+              { "day":"Day 7","theme":"힐링","plans":[{"place":"자연휴양림","time":"오전","activities":["숲속 산책"]},{"place":"카페","time":"점심","activities":["커피 타임"]},{"place":"집현전","time":"오후","activities":["역사 산책"]}]},
+              { "day":"Day 8","theme":"문화탐방","plans":[{"place":"소로리조각공원","time":"오전","activities":["조각 감상"]},{"place":"공원 카페","time":"점심","activities":["브런치"]},{"place":"감영","time":"오후","activities":["전통 건물 관람"]}]},
+              { "day":"Day 9","theme":"데이트","plans":[{"place":"야간개장 공산성","time":"오전","activities":["야간 산책"]},{"place":"인근 카페","time":"점심","activities":["로맨틱 브런치"]},{"place":"대교 전망대","time":"오후","activities":["금강 조망"]}]},
+              { "day":"Day 10","theme":"쇼핑","plans":[{"place":"종합시장","time":"오전","activities":["기념품 구매"]},{"place":"시장 식당","time":"점심","activities":["충청 특산"]},{"place":"카페거리","time":"오후","activities":["커피 타임"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_005",
+        "name": "논산",
+        "description": "훈련소와 금강변 경관, 농촌 체험이 가능한 도시입니다.",
+        "images": ["Nonsan.npg"],
+        "tags": ["봄","가을","충청","역사","자연","워킹","체험","당일치기"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"역사탐방","plans":[{"place":"훈련소 정문","time":"오전","activities":["기념사진"]},{"place":"주변 분식점","time":"점심","activities":["분식 체험"]},{"place":"연무대","time":"오후","activities":["유적 관람"]}]},
+              { "day":"Day 2","theme":"웰빙","plans":[{"place":"탑정호","time":"오전","activities":["호수 산책"]},{"place":"호수공원 카페","time":"점심","activities":["브런치"]},{"place":"금강변","time":"오후","activities":["워킹"]}]},
+              { "day":"Day 3","theme":"역사탐방","plans":[{"place":"백제군사박물관","time":"오전","activities":["전시 관람"]},{"place":"인근 식당","time":"점심","activities":["전통 한식"]},{"place":"노성고분군","time":"오후","activities":["고분 산책"]}]},
+              { "day":"Day 4","theme":"문화체험","plans":[{"place":"두마서원","time":"오전","activities":["서원 투어"]},{"place":"서원 인근","time":"점심","activities":["향토 음식"]},{"place":"고소산성","time":"오후","activities":["성곽 산책"]}]},
+              { "day":"Day 5","theme":"자연탐방","plans":[{"place":"산림박물관","time":"오전","activities":["전시 관람"]},{"place":"박물관 카페","time":"점심","activities":["전통차"]},{"place":"산림공원","time":"오후","activities":["숲속 산책"]}]},
+              { "day":"Day 6","theme":"체험","plans":[{"place":"딸기체험농장","time":"오전","activities":["딸기 따기"]},{"place":"농장 카페","time":"점심","activities":["딸기 디저트"]},{"place":"젓갈시장","time":"오후","activities":["젓갈 시식"]}]},
+              { "day":"Day 7","theme":"데이트","plans":[{"place":"연산공원","time":"오전","activities":["산책"]},{"place":"공원 카페","time":"점심","activities":["커피"]},{"place":"천변","time":"오후","activities":["자전거"]}]},
+              { "day":"Day 8","theme":"하이킹","plans":[{"place":"강경젓갈시장","time":"오전","activities":["시장 구경"]},{"place":"시장 식당","time":"점심","activities":["젓갈 비빔밥"]},{"place":"강경천변","time":"오후","activities":["산책"]}]},
+              { "day":"Day 9","theme":"맛집탐방","plans":[{"place":"탕정순대골목","time":"오전","activities":["순대 시식"]},{"place":"골목 식당","time":"점심","activities":["순댓국"]},{"place":"카페","time":"오후","activities":["디저트"]}]},
+              { "day":"Day 10","theme":"힐링","plans":[{"place":"문화원 정원","time":"오전","activities":["정원 산책"]},{"place":"정원 카페","time":"점심","activities":["가벼운 식사"]},{"place":"역 주변","time":"오후","activities":["기념품 쇼핑"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_006",
+        "name": "서산",
+        "description": "간월암·해미읍성 등 문화유산과 갯벌 체험이 가능합니다.",
+        "images": ["Seosan.png"],
+        "tags": ["봄","가을","충청","역사","자연","체험","당일치기"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"자연탐방","plans":[{"place":"간월암","time":"오전","activities":["섬 산책"]},{"place":"인근 식당","time":"점심","activities":["바지락 칼국수"]},{"place":"간월재","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 2","theme":"역사탐방","plans":[{"place":"해미읍성","time":"오전","activities":["읍성 산책"]},{"place":"읍성 인근","time":"점심","activities":["떡갈비"]},{"place":"팔봉산","time":"오후","activities":["트레킹"]}]},
+              { "day":"Day 3","theme":"웰빙","plans":[{"place":"운산저수지","time":"오전","activities":["호수 산책"]},{"place":"저수지 카페","time":"점심","activities":["커피"]},{"place":"버드랜드","time":"오후","activities":["조류 관찰"]}]},
+              { "day":"Day 4","theme":"문화체험","plans":[{"place":"음암서원","time":"오전","activities":["서원 관람"]},{"place":"서원 인근","time":"점심","activities":["전통 음식"]},{"place":"흥주사","time":"오후","activities":["사찰 산책"]}]},
+              { "day":"Day 5","theme":"해양체험","plans":[{"place":"몽산포 해수욕장","time":"오전","activities":["수영"]},{"place":"해수욕장","time":"점심","activities":["회"]},{"place":"갯벌 체험장","time":"오후","activities":["갯벌 체험"]}]},
+              { "day":"Day 6","theme":"힐링","plans":[{"place":"솔송정","time":"오전","activities":["연못 산책"]},{"place":"인근","time":"점심","activities":["전통차"]},{"place":"읍성","time":"오후","activities":["산책"]}]},
+              { "day":"Day 7","theme":"맛집탐방","plans":[{"place":"먹자골목","time":"오전","activities":["시장 구경"]},{"place":"골목 식당","time":"점심","activities":["칼국수"]},{"place":"서산시장","time":"오후","activities":["시장 투어"]}]},
+              { "day":"Day 8","theme":"데이트","plans":[{"place":"부석사","time":"오전","activities":["사찰 관람"]},{"place":"인근","time":"점심","activities":["한정식"]},{"place":"납월당","time":"오후","activities":["정자 산책"]}]},
+              { "day":"Day 9","theme":"체험","plans":[{"place":"갯벌체험장","time":"오전","activities":["조개 캐기"]},{"place":"체험장 인근","time":"점심","activities":["조개구이"]},{"place":"해변","time":"오후","activities":["산책"]}]},
+              { "day":"Day 10","theme":"힐링","plans":[{"place":"황금박쥐동굴","time":"오전","activities":["동굴 탐험"]},{"place":"인근","time":"점심","activities":["도시락"]},{"place":"간월암","time":"오후","activities":["석양 감상"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_007",
+        "name": "계룡",
+        "description": "계룡산 국립공원과 군문화 체험이 가능한 곳입니다.",
+        "images": ["Gyeryong.png"],
+        "tags": ["봄","가을","충청","산","하이킹","체험","당일치기"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"하이킹","plans":[{"place":"갑사","time":"오전","activities":["사찰 등산로"]},{"place":"갑사 식당","time":"점심","activities":["사찰음식"]},{"place":"관음봉","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 2","theme":"역사체험","plans":[{"place":"동학사","time":"오전","activities":["전시 관람"]},{"place":"인근","time":"점심","activities":["향토 음식"]},{"place":"정병사","time":"오후","activities":["군 문화 체험"]}]},
+              { "day":"Day 3","theme":"자연탐방","plans":[{"place":"탐방지원센터","time":"오전","activities":["트레킹"]},{"place":"지원센터 카페","time":"점심","activities":["커피"]},{"place":"문화공원","time":"오후","activities":["역사 산책"]}]},
+              { "day":"Day 4","theme":"체험","plans":[{"place":"군문화축제장","time":"오전","activities":["군악 공연"]},{"place":"푸드트럭","time":"점심","activities":["길거리 음식"]},{"place":"군문화관","time":"오후","activities":["장비 체험"]}]},
+              { "day":"Day 5","theme":"웰빙","plans":[{"place":"동굴","time":"오전","activities":["동굴 관람"]},{"place":"카페","time":"점심","activities":["간식"]},{"place":"옛길","time":"오후","activities":["산책"]}]},
+              { "day":"Day 6","theme":"역사탐방","plans":[{"place":"서원","time":"오전","activities":["서원 관람"]},{"place":"인근","time":"점심","activities":["전통차"]},{"place":"예술의전당","time":"오후","activities":["공연 관람"]}]},
+              { "day":"Day 7","theme":"하이킹","plans":[{"place":"계곡","time":"오전","activities":["계곡 산책"]},{"place":"인근","time":"점심","activities":["물회"]},{"place":"둘레길","time":"오후","activities":["자연 관찰"]}]},
+              { "day":"Day 8","theme":"체험","plans":[{"place":"농촌체험마을","time":"오전","activities":["농사 체험"]},{"place":"마을 식당","time":"점심","activities":["된장찌개"]},{"place":"축제장","time":"오후","activities":["야간 공연"]}]},
+              { "day":"Day 9","theme":"맛집탐방","plans":[{"place":"중앙시장","time":"오전","activities":["시장 구경"]},{"place":"시장 맛집","time":"점심","activities":["칼국수"]},{"place":"카페거리","time":"오후","activities":["디저트"]}]},
+              { "day":"Day 10","theme":"힐링","plans":[{"place":"저수지","time":"오전","activities":["호수 산책"]},{"place":"매점","time":"점심","activities":["도시락"]},{"place":"도서관","time":"오후","activities":["독서"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_008",
+        "name": "대전",
+        "description": "과학과 자연, 먹거리가 풍부한 대전광역시입니다.",
+        "images": ["Daejeon.png"],
+        "tags": ["봄","가을","충청","자연","문화","과학","워킹","데이트","친구와"],
+        "travel_plan": [
+          {
+            "transportation": "대중교통",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"과학탐방","plans":[{"place":"국립중앙과학관","time":"오전","activities":["전시 관람"]},{"place":"과학관 카페","time":"점심","activities":["브런치"]},{"place":"엑스포공원","time":"오후","activities":["산책","조형물 감상"]}]},
+              { "day":"Day 2","theme":"자연탐방","plans":[{"place":"한밭수목원","time":"오전","activities":["식물원 관람"]},{"place":"수목원 카페","time":"점심","activities":["샐러드"]},{"place":"장태산휴양림","time":"오후","activities":["등산"]}]},
+              { "day":"Day 3","theme":"워킹","plans":[{"place":"대전천변","time":"오전","activities":["강변 산책"]},{"place":"천변 인근","time":"점심","activities":["분식"]},{"place":"뿌리공원","time":"오후","activities":["문화 산책"]}]},
+              { "day":"Day 4","theme":"문화탐방","plans":[{"place":"시립미술관","time":"오전","activities":["전시 관람"]},{"place":"미술관 카페","time":"점심","activities":["샌드위치"]},{"place":"문화의거리","time":"오후","activities":["거리 공연 감상"]}]},
+              { "day":"Day 5","theme":"레저","plans":[{"place":"오월드","time":"오전","activities":["테마파크 체험"]},{"place":"오월드 식당","time":"점심","activities":["놀이공원 음식"]},{"place":"수목원","time":"오후","activities":["온실 관람"]}]},
+              { "day":"Day 6","theme":"맛집탐방","plans":[{"place":"중앙시장","time":"오전","activities":["시장 구경"]},{"place":"시장 맛집","time":"점심","activities":["칼국수"]},{"place":"둔산동 카페거리","time":"오후","activities":["디저트"]}]},
+              { "day":"Day 7","theme":"데이트","plans":[{"place":"엑스포다리","time":"오전","activities":["강변 산책"]},{"place":"다리 인근","time":"점심","activities":["브런치"]},{"place":"갑천 카페거리","time":"오후","activities":["커피 타임"]}]},
+              { "day":"Day 8","theme":"체험","plans":[{"place":"근현대사전시관","time":"오전","activities":["전시 관람"]},{"place":"인근 식당","time":"점심","activities":["한식"]},{"place":"KAIST","time":"오후","activities":["캠퍼스 산책"]}]},
+              { "day":"Day 9","theme":"힐링","plans":[{"place":"휴양림","time":"오전","activities":["숲속 산책"]},{"place":"휴게소","time":"점심","activities":["간식"]},{"place":"수목원","time":"오후","activities":["호수 산책"]}]},
+              { "day":"Day 10","theme":"쇼핑","plans":[{"place":"타임월드","time":"오전","activities":["쇼핑"]},{"place":"몰 내","time":"점심","activities":["푸드코트"]},{"place":"카페거리","time":"오후","activities":["커피"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_009",
+        "name": "세종",
+        "description": "계획도시 세종, 호수공원과 문화시설이 어우러진 곳입니다.",
+        "images": ["Sejong.png"],
+        "tags": ["봄","가을","충청","자연","문화","워킹","당일치기","가족여행"],
+        "travel_plan": [
+          {
+            "transportation": "대중교통",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"자연탐방","plans":[{"place":"세종호수공원","time":"오전","activities":["호수 산책"]},{"place":"호수공원 카페","time":"점심","activities":["브런치"]},{"place":"문화관","time":"오후","activities":["전시 관람"]}]},
+              { "day":"Day 2","theme":"문화탐방","plans":[{"place":"국립세종도서관","time":"오전","activities":["자료 열람"]},{"place":"도서관 카페","time":"점심","activities":["간식"]},{"place":"전통시장","time":"오후","activities":["시장 구경"]}]},
+              { "day":"Day 3","theme":"역사탐방","plans":[{"place":"전의향교","time":"오전","activities":["서원 관람"]},{"place":"향교 인근","time":"점심","activities":["전통차"]},{"place":"조치원공원","time":"오후","activities":["산책"]}]},
+              { "day":"Day 4","theme":"워킹","plans":[{"place":"수목원","time":"오전","activities":["수목원 탐험"]},{"place":"카페","time":"점심","activities":["커피"]},{"place":"휴양림","time":"오후","activities":["숲속 산책"]}]},
+              { "day":"Day 5","theme":"체험","plans":[{"place":"복숭아테마공원","time":"오전","activities":["복숭아 따기"]},{"place":"테마공원 카페","time":"점심","activities":["디저트"]},{"place":"정부청사","time":"오후","activities":["건축 투어"]}]},
+              { "day":"Day 6","theme":"힐링","plans":[{"place":"BRT공원","time":"오전","activities":["산책"]},{"place":"인근 카페","time":"점심","activities":["샌드위치"]},{"place":"호수공원","time":"오후","activities":["노을 감상"]}]},
+              { "day":"Day 7","theme":"맛집탐방","plans":[{"place":"전통시장","time":"오전","activities":["시장 구경"]},{"place":"시장 맛집","time":"점심","activities":["닭갈비"]},{"place":"카페거리","time":"오후","activities":["디저트"]}]},
+              { "day":"Day 8","theme":"데이트","plans":[{"place":"유람선","time":"오전","activities":["유람선 투어"]},{"place":"선착장 카페","time":"점심","activities":["커피"]},{"place":"예술회관","time":"오후","activities":["공연 관람"]}]},
+              { "day":"Day 9","theme":"체험","plans":[{"place":"체육관","time":"오전","activities":["수영"]},{"place":"체육관 카페","time":"점심","activities":["스포츠 음료"]},{"place":"산책로","time":"오후","activities":["자전거"]}]},
+              { "day":"Day 10","theme":"쇼핑","plans":[{"place":"트리플스트리트","time":"오전","activities":["쇼핑"]},{"place":"몰 내","time":"점심","activities":["푸드코트"]},{"place":"역 주변","time":"오후","activities":["기념품 구매"]}]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "location_010",
+        "name": "당진",
+        "description": "왜목마을·난지섬 등 해양 풍광과 농촌 체험이 어우러진 도시입니다.",
+        "images": ["Dangjin.png"],
+        "tags": ["봄","가을","충청","자연","체험","바다","섬탐험","당일치기"],
+        "travel_plan": [
+          {
+            "transportation": "승용차",
+            "dailySchedules": [
+              { "day":"Day 1","theme":"바다감상","plans":[{"place":"왜목마을","time":"오전","activities":["해변 산책"]},{"place":"인근 식당","time":"점심","activities":["해물칼국수"]},{"place":"일출전망대","time":"오후","activities":["전망 감상"]}]},
+              { "day":"Day 2","theme":"섬탐험","plans":[{"place":"난지섬","time":"오전","activities":["섬 자전거 투어"]},{"place":"섬 카페","time":"점심","activities":["브런치"]},{"place":"캠핑장","time":"오후","activities":["캠핑 체험"]}]},
+              { "day":"Day 3","theme":"역사탐방","plans":[{"place":"합덕제","time":"오전","activities":["제방 산책"]},{"place":"인근","time":"점심","activities":["된장찌개"]},{"place":"석문산진","time":"오후","activities":["유적 탐방"]}]},
+              { "day":"Day 4","theme":"체험","plans":[{"place":"포도체험마을","time":"오전","activities":["포도 따기"]},{"place":"체험장 카페","time":"점심","activities":["디저트"]},{"place":"미술관","time":"오후","activities":["전시 관람"]}]},
+              { "day":"Day 5","theme":"맛집탐방","plans":[{"place":"장터","time":"오전","activities":["시장 구경"]},{"place":"시장 맛집","time":"점심","activities":["칼국수"]},{"place":"성지","time":"오후","activities":["순례"]}]},
+              { "day":"Day 6","theme":"자연탐방","plans":[{"place":"국립공원","time":"오전","activities":["숲길 산책"]},{"place":"인근 카페","time":"점심","activities":["커피"]},{"place":"민속마을","time":"오후","activities":["전통촌 관람"]}]},
+              { "day":"Day 7","theme":"해양레저","plans":[{"place":"기지포해수욕장","time":"오전","activities":["수영"]},{"place":"해변 식당","time":"점심","activities":["해산물"]},{"place":"서핑장","time":"오후","activities":["서핑 체험"]}]},
+              { "day":"Day 8","theme":"체험","plans":[{"place":"염소농장","time":"오전","activities":["먹이 주기"]},{"place":"농장 카페","time":"점심","activities":["치즈 시식"]},{"place":"옛시장","time":"오후","activities":["시장 구경"]}]},
+              { "day":"Day 9","theme":"힐링","plans":[{"place":"성지 정원","time":"오전","activities":["정원 산책"]},{"place":"정원 카페","time":"점심","activities":["전통차"]},{"place":"해변","time":"오후","activities":["바닷가 쉼"]}]},
+              { "day":"Day 10","theme":"데이트","plans":[{"place":"유람선","time":"오전","activities":["유람선 투어"]},{"place":"섬 카페","time":"점심","activities":["커피"]},{"place":"터미널","time":"오후","activities":["기념품 구매"]}]}
+            ]
+          }
+        ]
+      }
+    ]
+}  

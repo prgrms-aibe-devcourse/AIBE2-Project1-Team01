@@ -6,7 +6,13 @@ import "./TripDetailPage.css"; // 외부 스타일시트 import
 
 export const TripDetailPage = () => {
   const location = useLocation();
-  const { id, locationName, travelPeriod, plans } = location.state || {};
+  const {
+    locationName,
+    locationDescription,
+    locationImage,
+    travelPeriod,
+    plans,
+  } = location.state || {};
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (locationName === undefined) {
@@ -32,7 +38,12 @@ export const TripDetailPage = () => {
       <TravelPlanList planData={plans} />
 
       {isModalOpen && (
-        <TripModal id={id} onClose={() => setIsModalOpen(false)} />
+        <TripModal
+          locationName={locationName}
+          locaionDescription={locationDescription}
+          locationImage={locationImage}
+          onClose={() => setIsModalOpen(false)}
+        />
       )}
     </div>
   );

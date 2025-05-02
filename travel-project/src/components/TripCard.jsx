@@ -8,6 +8,7 @@ export const TripCard = ({
   id,
   image = testImage,
   locationName = "지역명",
+  locationDescription = "지역 설명",
   travelPeriod = "5.5 - 5.8",
   tags = ["태그"],
   plans,
@@ -18,8 +19,9 @@ export const TripCard = ({
     console.log(plans);
     navigate(`/trip/${id}`, {
       state: {
-        id,
         locationName,
+        locationDescription,
+        locationImage: image,
         travelPeriod,
         plans,
       },
@@ -90,7 +92,7 @@ export const TripCard = ({
       <div className="rectangle" />
       <div className="regioncard-img">
         <img
-          src={require(`../assets/img/${image}`)}
+          src={require(`../assets/images/${image}`)}
           alt="여행 이미지"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
