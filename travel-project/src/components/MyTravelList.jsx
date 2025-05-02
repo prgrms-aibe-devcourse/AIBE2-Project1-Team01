@@ -41,6 +41,7 @@ const MyTravelList = () => {
               key={trip.id}
               id={trip.locationId}
               locationName={trip.locationName}
+              locationDescription={trip.locationDescription}
               travelPeriod={trip.period}
               image={trip.locationImage}
               tags={trip.tags}
