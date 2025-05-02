@@ -46,7 +46,7 @@
   object-fit: cover;
   border-radius: 8px;
 }
-.modal-content {
+.review-modal-content {
   width: 100%;
   display: flex;
   flex-direction: column;

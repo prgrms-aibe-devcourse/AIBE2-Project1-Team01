@@ -16,7 +16,7 @@ const ReviewDetailModal = ({ review, onClose, onPrev, onNext, hasPrev, hasNext }
             <div className="photo-placeholder">사진 없음</div>
           )}
         </div>
-        <div className="modal-content">
+        <div className="review-modal-content">
           <div className="modal-header">
             <div className="modal-rating">{renderStars(review.rating)}</div>
             <div className="modal-location">{review.location}</div>
