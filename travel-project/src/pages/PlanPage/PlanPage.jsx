@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import DatePickerModal from "../../components/DatePickerModal";
 import TransportSelectModal from "../../components/TransportSelectModal";
@@ -6,34 +7,34 @@ import { useTravelPlan } from "../../hooks/useTravelPlan";
 import TravelPlanList from "../../components/TravelPlanList";
 import "./PlanPage.css";
 
-export const PlanPage = () => {
+export const PlanPage = ({ locationId }) => {
   const [step, setStep] = useState("date"); // 'date' → 'transport' → 'done'
   const [dateRange, setDateRange] = useState(null);
   const [travelRange, setTravelRange] = useState(0);
   const [transportType, setTransportType] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
 
-  const locationId = "location_001"; //TODO: 이전 페이지에서 받아오기
+  const navigate = useNavigate();
 
-  const { planData, locationName } = useTravelPlan(
+  const { planData, locationName, locationImage, tags } = useTravelPlan(
     locationId,
     transportType,
     travelRange
   );
-  
-  const [showConfirm, setShowConfirm] = useState(false);
 
   const handleSave = async () => {
     const saveData = {
       locationId,
       locationName,
-      travelRange,
+      locationImage,
       period: dateRange, // ex) "2025.04.25 ~ 2025.05.01"
+      tags: tags,
       plan: planData,
     };
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/plans",
+        "http://localhost:4000/mytrip",
         saveData
       );
       setShowConfirm(true);
@@ -42,6 +43,10 @@ export const PlanPage = () => {
       console.error("저장 실패:", error);
       alert("저장 중 오류가 발생했습니다.");
     }
+  };
+
+  const handelMoveToMyTrip = () => {
+    navigate("/mytrips", { replace: true });
   };
 
   return (
@@ -98,7 +103,7 @@ export const PlanPage = () => {
                 </p>
                 <div className="modal-buttons">
                   <button onClick={() => setShowConfirm(false)}>닫기</button>
-                  <button>확인</button>
+                  <button onClick={handelMoveToMyTrip}>확인</button>
                 </div>
               </div>
             </div>
