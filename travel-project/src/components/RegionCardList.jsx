@@ -76,6 +76,7 @@ function RegionCardList() {
         {filteredCards.map((card) => (
           <RegionCard
             key={card.id}
+            id={card.id} // id 값 전달 추가
             imagePath={card.image}
             regionName={card.name}
             regionDescription={card.description}

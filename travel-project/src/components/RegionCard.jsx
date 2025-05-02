@@ -6,6 +6,7 @@ import TravelDetailPage, { handleCardClick } from "./TravelDetailPage";
 /* 사용예시입니다. */
 /*
 <RegionCard 
+    id="location_001" // 원본 json 경로의 id 값
     regionName="서울" 
     regionDescription="대한민국의 수도이자 최대 도시입니다."
     imagePath={require("../../assets/img/test2.jpg")}
@@ -151,9 +152,13 @@ export const RegionCard = ({
 
   // 카드 클릭 이벤트 핸들러 -> 상세페이지 모달로 연결
   const onCardClick = () => {
+    // 원본 id 값 확인 (id에 location_001과 같은 원본 id가 있는 경우)
+    const originalLocationId = id && typeof id === 'string' && id.includes('location_') ? id : null;
+    
     // 카드 데이터 생성
     const cardData = {
-      id: id || "default",
+      id: id || "default", // id 값 사용
+      originalId: originalLocationId || id, // 원본 json의 id 값을 별도로 저장
       name: regionName,
       description: regionDescription,
       tags: tags,
