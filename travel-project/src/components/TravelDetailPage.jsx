@@ -52,8 +52,6 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
     }
   };
 
-  
-
   return (
     <div className="travel-detail-modal" onClick={handleBackgroundClick}>
       <div className="modal-content">
@@ -61,8 +59,8 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
         <img src={photoUrl} alt="여행지 이미지" className="travel-image" />
         <h2 className="travel-title">{name}</h2>
         <p className="travel-description">{description}</p>
-        <p className="json-path">데이터 출처: {jsonFile}</p>
-        <p className="location-id">원본 위치 ID: {originalId}</p>
+        {/* <p className="json-path">데이터 출처: {jsonFile}</p>
+        <p className="location-id">원본 위치 ID: {originalId}</p> */}
 
         <div className="tag-list">
           {tags.map((tag, idx) => (
