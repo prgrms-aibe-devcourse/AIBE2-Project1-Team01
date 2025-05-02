@@ -1,18 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import { MainPage } from './pages/MainPage/MainPage.jsx';
+import { MainPage } from './pages/MainPage/MainPage';
+import { MyTripPage } from './pages/travel/MyTripPage';
+import { TripDetailPage } from './pages/travel/TripDetailPage';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          {/* 다른 경로들은 여기에 추가하세요 */}
-          <Route path="/region/:regionId" element={<div>지역 상세 페이지 (개발 중)</div>} />
-        </Routes>
-      </div>
+      {/* ✅ Navbar 컴포넌트 사용 */}
+      <Navbar />
+
+      {/* 페이지 전환 라우팅 */}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/mytrips" element={<MyTripPage />} />
+        <Route path="/trip/:id" element={<TripDetailPage />} />
+      </Routes>
     </Router>
   );
 }
