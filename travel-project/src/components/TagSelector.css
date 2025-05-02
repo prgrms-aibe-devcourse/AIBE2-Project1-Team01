@@ -73,7 +73,7 @@
   background-color: #ffffff;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 600px;
+  min-width: 608px;
   box-shadow: 0px 5px 5px rgba(142, 142, 142, 0.2);
   margin-top: 16px; /*입력창 위로*/
 }
