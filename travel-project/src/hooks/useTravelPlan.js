@@ -4,6 +4,8 @@ import PlanTest from "../data/PlanTest.json";
 export const useTravelPlan = (locationId, transportType, travelRange) => {
   const [planData, setPlanData] = useState([]);
   const [locationName, setLocationName] = useState("");
+  const [locationImage, setLocationImage] = useState("");
+  const [tags, setTags] = useState([]);
 
   useEffect(() => {
     // 전체 여행지 리스트 중에서 해당 ID에 맞는 여행지 데이터 찾기
@@ -12,6 +14,8 @@ export const useTravelPlan = (locationId, transportType, travelRange) => {
 
     // 여행지 이름을 상태로 저장
     setLocationName(location.name);
+    setLocationImage(location.images[0])
+    setTags(location.tags);
 
     // 해당 교통수단에 맞는 travel_plan을 찾고, 그 안의 일정을 travelRange만큼 자르기
     const slicedSchedules = location.travel_plan
@@ -24,5 +28,5 @@ export const useTravelPlan = (locationId, transportType, travelRange) => {
     }
   }, [locationId, transportType, travelRange]);
 
-  return { planData, locationName };
+  return { planData, locationName, locationImage, tags };
 };
