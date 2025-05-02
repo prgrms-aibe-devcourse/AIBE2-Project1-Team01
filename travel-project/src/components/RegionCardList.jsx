@@ -70,11 +70,12 @@ function RegionCardList() {
           filteredCards.map((card) => (
             <RegionCard
               key={card.id}
+              id={card.id}
               imagePath={card.image}
               regionName={card.name}
               regionDescription={card.description}
               tags={card.tags}
-              url={`/detail/${card.id}`} // 상세 페이지로 이동
+              url={`/detail/${card.id}`} // URL 속성은 유지(향후 필요할 수 있음)
             />
           ))
         )}
