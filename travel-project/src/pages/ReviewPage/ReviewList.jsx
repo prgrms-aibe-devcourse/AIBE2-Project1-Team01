@@ -7,10 +7,15 @@ import './ReviewList.css';
 
 function ReviewList() {
   const navigate = useNavigate();
-  const { reviews } = useReview();
+  const { reviews, locations } = useReview();
+  const [selectedLocation, setSelectedLocation] = useState('전체');
   
   const filteredReviews = reviews.filter(
-    (review) => review && review.content && review.content.trim() !== ''
+    (review) => {
+      const hasContent = review && review.content && review.content.trim() !== '';
+      const matchesLocation = selectedLocation === '전체' || review.location === selectedLocation;
+      return hasContent && matchesLocation;
+    }
   );
 
   // 팝업 상태 및 현재 인덱스
@@ -35,7 +40,21 @@ function ReviewList() {
   };
 
   return (
-    <div className="review-list-page">      
+    <div className="review-list-page">
+      <div className="review-header">
+        <h1 className="reviewPage-title">리뷰</h1>
+        <select 
+          className="location-filter"
+          value={selectedLocation}
+          onChange={(e) => setSelectedLocation(e.target.value)}
+        >
+          {locations.map((location) => (
+            <option key={location} value={location}>
+              {location}
+            </option>
+          ))}
+        </select>
+      </div>
       <div className="review-list">
         {filteredReviews.map((review, idx) => (
           <div key={review.id} onClick={() => handleCardClick(idx)}>
