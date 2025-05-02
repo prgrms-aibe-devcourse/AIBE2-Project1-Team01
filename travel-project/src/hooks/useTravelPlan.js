@@ -26,7 +26,7 @@ export const useTravelPlan = (
 
       // 여행지 이름을 상태로 저장
       setLocationName(location.name);
-      setLocationDescription(location.locationDescription);
+      setLocationDescription(location.description);
       setLocationImage(location.images[0]);
       setTags(location.tags);
 
