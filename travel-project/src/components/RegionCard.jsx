@@ -11,6 +11,7 @@ import TravelDetailPage, { handleCardClick } from "./TravelDetailPage";
     imagePath={require("../../assets/img/test2.jpg")}
     tags={["관광", "맛집", "역사","도시"]}  // 3개만 입력하면 3개만 표시됨
     url="/region/seoul"  // 클릭 시 이동할 URL
+    jsonPath="../data/regions/1.json"  // 원본 JSON 파일 경로
 />
 */
 
@@ -58,6 +59,7 @@ export const RegionCard = ({
   tags = ["태그"], // 기본값으로 1개의 태그만 표시
   url = "/", // 클릭 시 이동할 URL, 기본값은 홈페이지
   id,
+  jsonPath, // 원본 JSON 파일 경로 추가
 }) => {
   // 최대 4개의 태그만 표시하도록 제한
   const slicedTags = tags.slice(0, 4);
@@ -156,6 +158,7 @@ export const RegionCard = ({
       description: regionDescription,
       tags: tags,
       image: imagePath,
+      jsonPath: jsonPath, // 원본 JSON 파일 경로 추가
     };
 
     // 모달 열기 //

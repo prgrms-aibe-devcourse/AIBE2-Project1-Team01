@@ -12,7 +12,7 @@ export const handleCardClick = (card, setSelectedCard, setIsModalOpen) => {
     tags: card.tags,
     photoUrl: card.image,
     regionId: card.id,
-    jsonFile: `../data/regions/${card.id}.json` // 데이터 파일 경로
+    jsonFile: card.jsonPath || `../data/regions/${card.id.split('-')[0]}.json` // 원본 JSON 경로 사용, 없으면 기본값
   };
   
   console.log('변환된 reviewData:', reviewData);
@@ -46,6 +46,7 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
         <img src={photoUrl} alt="여행지 이미지" className="travel-image" />
         <h2 className="travel-title">{name}</h2>
         <p className="travel-description">{description}</p>
+
         <div className="tag-list">
           {tags.map((tag, idx) => (
             <span className="tag-item" key={idx}>#{tag}</span>

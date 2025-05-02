@@ -19,16 +19,16 @@ function RegionCardList() {
   useEffect(() => {
     // ✅ 파일명 정보를 함께 넣은 데이터 배열 구성
     const allData = [
-      { file: "1", data: data1 },
-      { file: "2", data: data2 },
-      { file: "3", data: data3 },
-      { file: "4", data: data4 },
-      { file: "5", data: data5 },
-      { file: "6", data: data6 },
+      { file: "1", data: data1, path: "../data/regions/1.json" },
+      { file: "2", data: data2, path: "../data/regions/2.json" },
+      { file: "3", data: data3, path: "../data/regions/3.json" },
+      { file: "4", data: data4, path: "../data/regions/4.json" },
+      { file: "5", data: data5, path: "../data/regions/5.json" },
+      { file: "6", data: data6, path: "../data/regions/6.json" },
     ];
 
     // ✅ 각 파일별 데이터에 파일명 prefix를 붙인 id 생성
-    const cardList = allData.flatMap(({ file, data }) =>
+    const cardList = allData.flatMap(({ file, data, path }) =>
       data.locations.map((loc, index) => ({
         id: `${file}-${loc.id || `loc_${index}`}`, // 🔑 id에 파일 prefix 추가
         name: loc.name,
@@ -44,6 +44,7 @@ function RegionCardList() {
               }
             })(),
         tags: loc.tags,
+        jsonPath: path, // ✅ JSON 파일 경로 추가
       }))
     );
 
@@ -80,6 +81,7 @@ function RegionCardList() {
             regionDescription={card.description}
             tags={card.tags}
             url={`/detail/${card.id}`} // ✅ detail 경로도 유니크 id로 유지
+            jsonPath={card.jsonPath} // ✅ JSON 파일 경로 추가
           />
         ))}
       </div>

@@ -65,6 +65,14 @@
   color: #444;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.json-path {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
   margin-bottom: 12px;
 }
 
