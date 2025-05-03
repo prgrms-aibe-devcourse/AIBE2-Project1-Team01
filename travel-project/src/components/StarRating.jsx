@@ -3,7 +3,7 @@ import './ReviewCard.css';
 
 // 꽉 찬 별 아이콘 컴포넌트
 export const BigStar = () => (
-  <svg className="star-svg large" viewBox="0 0 24 24">
+  <svg className="star-svg" viewBox="0 0 24 24">
     <polygon
       points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
       fill="currentColor"
@@ -15,7 +15,7 @@ export const BigStar = () => (
 
 // 빈 별 아이콘 컴포넌트
 export const EmptyStar = () => (
-  <svg className="star-svg large star-outline" viewBox="0 0 24 24">
+  <svg className="star-svg star-outline" viewBox="0 0 24 24">
     <polygon
       points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
     />
@@ -24,7 +24,7 @@ export const EmptyStar = () => (
 
 // 반 별 아이콘 컴포넌트 (절반만 채워진 별)
 export const HalfStar = () => (
-  <svg className="star-svg large" viewBox="0 0 24 24">
+  <svg className="star-svg" viewBox="0 0 24 24">
     <defs>
       {/* 별의 왼쪽/오른쪽 색상을 구분하는 그라데이션 정의 */}
       <linearGradient id="half-gradient" x1="0" x2="1" y1="0" y2="0">
