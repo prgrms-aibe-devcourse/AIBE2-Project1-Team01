@@ -76,6 +76,8 @@
   min-width: 608px;
   box-shadow: 0px 5px 5px rgba(142, 142, 142, 0.2);
   margin-top: 16px; /*입력창 위로*/
+  position: relative; /* 추가: blur 영향을 받지 않도록 */
+  z-index: 1000; /* 추가: modal-backdrop보다 위에 위치 */
 }
   
   .search-bar:hover {
@@ -101,6 +103,19 @@
     flex-shrink: 0; /* 아이콘이 줄어들지 않도록 고정 */
   }
   
+  /* 모달이 열렸을 때 뒷배경 blur 효과 */
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: fadeIn 0.2s ease;
+  }
+  
   .tag-modal {
     position: absolute;
     top: calc(100% + 5px); /* search-bar 높이 + 약간의 간격 */
@@ -109,7 +124,7 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1001; /* search-bar보다 위에 위치 */
     padding: 20px;
     animation: fadeIn 0.2s ease;
   }
