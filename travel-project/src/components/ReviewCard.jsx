@@ -15,11 +15,11 @@ function ReviewCard({ review }) {
         )}
       </div>
       
-      <div className="review-title">{review.content}</div>
       <div className="review-location">{review.location}</div>
       <div className="review-date">
         {review.startDate} ~ {review.endDate}
       </div>
+      <div className="review-content">{review.content}</div>
       <div className="review-rating">
         {renderStars(review.rating)}
       </div>
