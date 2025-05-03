@@ -11,20 +11,20 @@
   width: 100%;
 }
 
-.overlap-group {
+.region-overlap-group {
   border-radius: 10px;
-  height: 362px;
+  height: 370px;  /* 372px에서 370px로 변경 */
   position: relative;
   width: 227px;
 }
 
-.rectangle {
+.region-rectangle {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #000000;
   border-radius: 10px;
   box-shadow: 8px 8px 4px #c9f0f766;
-  height: 362px;
+  height: 370px;  /* 372px에서 370px로 변경 */
   left: 0;
   opacity: 0.5;
   position: absolute;
@@ -86,7 +86,7 @@
   border-radius: 10px;
   height: 19px;
   position: absolute;
-  top: 338px;
+  top: 344px;  /* 342px에서 344px로 변경하여 2px 아래로 이동 */
   min-width: 30px; /* 최소 너비 */
   transition: width 0.2s ease;
   /* 더 이상 max-width 제한 없음 */
@@ -98,10 +98,14 @@
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 14.0px;
+  line-height: 19px;  /* tag-wrapper의 높이와 동일하게 설정하여 세로 중앙 정렬 */
   position: absolute;
-  top: 339px;
+  top: 344px;  /* tag-wrapper와 동일한 top 값으로 설정 */
   white-space: nowrap;
   z-index: 1; /* 텍스트가 래퍼 위에 표시되도록 */
   text-align: center; /* 중앙 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 19px; /* tag-wrapper와 동일한 높이 */
 }
