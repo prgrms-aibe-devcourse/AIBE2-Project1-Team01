@@ -1,45 +1,58 @@
 .travel-detail-modal {
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
-  width: 100vw;
+  width: 100vw; 
   height: 100vh;
   background: rgba(0, 0, 0, 0.3);
+
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   z-index: 1000;
 }
 
 .modal-content {
   position: relative;
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  width: 360px;
-  max-width: 90%;
-  padding: 24px 20px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+
+  /* PC에선 뷰포트 폭의 80%, 최대 1200px, 최소 360px */
+  width: 80vw;
+  max-width: 400px;
+  min-width: 360px;
+
+  padding: 40px 20px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-top: 1px; 
 }
 
 .close-button {
   position: absolute;
   top: 12px;
   right: 12px;
-  font-size: 22px;
-  background: none;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  background: #fff;
   border: none;
+  border-radius: 50%;
   color: #666;
   cursor: pointer;
-  z-index: 10;
-  padding: 6px;
-  background-color: white;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* hover 시 살짝 진한 회색으로 */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.close-button:hover {
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 .travel-image {
@@ -47,17 +60,15 @@
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  margin-top: 50px; /* ✅ 이미지와 X 겹침 방지용 여백 */
-  padding-top: 20px;
-  margin-bottom: 16px;
+  /* 위 margin 제거, 대신 아래 여백만 */
+  margin: 0 0 16px;
 }
 
 .travel-title {
+  align-self: flex-start;       /* 왼쪽 정렬 */
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
-  text-align: left;
-  width: 100%;
+  margin: 0 0 8px;
 }
 
 .travel-description {
@@ -65,45 +76,39 @@
   color: #444;
   line-height: 1.5;
   text-align: center;
-  margin-bottom: 8px;
-}
-
-.json-path, .location-id {
-  font-size: 12px;
-  color: #888;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 6px;
+  margin: 0 0 12px;
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .tag-item {
-  background-color: #f0f0f0;
-  padding: 4px 8px;
-  border-radius: 6px;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
   font-size: 12px;
   color: #555;
 }
 
 .recommend-button {
+  width: 100%;
+  padding: 12px 0;
   background-color: #4F9DDE;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .recommend-button:hover {
   background-color: #3c84c8;
 }
