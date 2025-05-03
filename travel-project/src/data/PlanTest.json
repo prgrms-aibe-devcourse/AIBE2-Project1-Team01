@@ -1,0 +1,161 @@
+{
+    "locations": [
+      {
+        "id": "location_001",
+        "name": "경주 불국사",
+        "description": "역사적인 문화유산과 아름다운 자연경관이 어우러진 사찰",
+        "location": {
+          "city": "경주",
+          "province": "경상북도"
+        },
+        "images": [
+          "yangsan2.jpg",
+          "https://example.com/images/bulguksa2.jpg"
+        ],
+        "tags": [
+          "역사", "문화유산", "전통", "힐링", "가족여행", "사진명소"
+        ],
+        "ratings": {
+          "average": 4.6,
+          "review_count": 3201
+        },
+        "official_website": "http://www.bulguksa.or.kr/",
+        "region_theme": "전통문화",
+        "travel_plan": [
+            {
+                "transportation": "대중교통",
+                "dailySchedules": [
+                    {
+                        "day": "Day 1",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 2",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 3",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 4",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 5",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 6",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 7",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 8",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 9",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    },
+                    {
+                        "day": "Day 10",
+                        "theme": "문화탐방",
+                        "plans": [
+                            {"place": "아사쿠사", "time": "오전", "activities":["센소지 절 참배", "나카미세 거리 구경"]},
+                            {"place": "Asakusa Menchi (고로케)", "time": "점심", "activities":  []},
+                            {"place": "우에노", "time": "오후", "activities":  ["공원 산책", "국립박물관 구경"]},
+                            {"place": "아키하바라", "time": "저녁-야경", "activities": ["전자상가 구경", "규카츠 먹기"]}
+                        ]
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "id": "location_002",
+        "name": "속초 해수욕장",
+        "description": "푸른 동해 바다가 펼쳐진 아름다운 해변, 여름에 특히 인기 많은 휴양지",
+        "location": {
+          "city": "속초",
+          "province": "강원도"
+        },
+        "images": [
+          "https://example.com/images/sokcho1.jpg",
+          "https://example.com/images/sokcho2.jpg"
+        ],
+        "tags": [
+          "바다", "여름", "해변", "가족여행", "데이트", "자연"
+        ],
+        "ratings": {
+          "average": 4.4,
+          "review_count": 2120
+        },
+        "official_website": "https://www.sokchotour.com/",
+        "region_theme": "자연/힐링",
+        "plan": [
+               "Day1",
+               "Day2",
+               "Day3"
+        ]
+      }
+    ]
+  }
+  

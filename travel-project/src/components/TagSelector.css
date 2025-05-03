@@ -1,0 +1,266 @@
+/* TagSelector.css */
+.tag-selector-container {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Search Tags */
+.search-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+  padding: 2px 0;
+  max-height: 70px; /* 한정된 최대 높이 설정 */
+  overflow-y: auto; /* 태그가 너무 많을 경우 스크롤 표시 */
+}
+
+.search-tag {
+  padding: 8px 10px;
+  background-color: #4F9DDE;
+  color: white;
+  border-radius: 16px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* search-tag의 remove-tag 버튼 스타일 */
+.search-tag .remove-tag {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+  transition: background-color 0.2s;
+}
+
+.search-tag .remove-tag:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.search-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.search-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* 기존 입력창이 너무 머치지 않도록 높이 조정 */
+.search-bar {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 608px;
+  box-shadow: 0px 5px 5px rgba(142, 142, 142, 0.2);
+  margin-top: 16px; /*입력창 위로*/
+}
+  
+  .search-bar:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .search-icon {
+    color: #4F9DDE;
+    margin-left: 8px;
+    flex-shrink: 0; /* 아이콘이 줄어들지 않도록 고정 */
+  }
+  
+  .tag-modal {
+    position: absolute;
+    top: calc(100% + 5px); /* search-bar 높이 + 약간의 간격 */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    animation: fadeIn 0.2s ease;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .tag-modal .modal-header {  /*modal-header 안에 텍스트 중앙정렬*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .tag-modal .modal-header .modal-title { /*modal-header 안에 텍스트 중앙정렬*/
+    width: 100%;
+    text-align: center;
+  }
+  
+  .modal-title {  /*modal-header 안에 텍스트 중앙정렬*/
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center; 
+    width: 100%; /* 부모 기준으로 정렬되도록 */
+    color: #333;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .close-button:hover {
+    background-color: #f5f5f5;
+    color: #555;
+  }
+  
+  .category-section {
+    margin-bottom: 12px;
+  }
+  
+  .category-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #444;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  /* 모달 포터 및 닫기 버튼 */
+  .modal-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 16px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .close-modal-button {
+    background-color: #4F9DDE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .close-modal-button:hover {
+    background-color: #EEEEEE;
+  }
+  
+  .close-modal-button:active {
+    background-color: #4F9DDE;
+  }
+  
+  .tag-button {
+    padding: 4px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #fff;
+    margin: 1px;
+  }
+  
+  .tag-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tag-button.selected {
+    background-color: #4F9DDE;
+    color: white;
+    border-color: #4F9DDE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* search-tag의 remove-tag 버튼에 대한 스타일 유지 */
+  .remove-tag {
+    cursor: pointer;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .remove-tag:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
