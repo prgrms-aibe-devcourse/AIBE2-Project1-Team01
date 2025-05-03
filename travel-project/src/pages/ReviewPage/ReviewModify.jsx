@@ -40,6 +40,10 @@ function ReviewModify() {
     setPhotoPreview(review.photo || '');
   }, [review]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handlePhotoChange = (e) => {
     const file = e.target.files[0];
     if (!file) return;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BigStar, EmptyStar, HalfStar } from '../../components/StarRating';
 import { useReview } from '../../contexts/ReviewContext';
@@ -20,6 +20,10 @@ function ReviewWrite() {
   const [myStarRate, setMyStarRate] = useState(0); // 최종 선택
   const [photoPreview, setPhotoPreview] = useState('');
   const [fileName, setFileName] = useState(''); // 파일 이름 상태 추가
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
