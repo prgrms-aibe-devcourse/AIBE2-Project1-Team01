@@ -12,7 +12,7 @@
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-  padding: 32px 32px 80px 32px;
+  padding: 39px 32px 80px 32px;
   width: 600px;
   height: 650px;
   display: flex;
@@ -21,8 +21,8 @@
 }
 .close-btn {
   position: absolute;
-  top: -8px;
-  right: -3px;
+  top: -3px;
+  right: -1px;
   background: none;
   border: none;
   font-size: 2rem;
@@ -86,7 +86,6 @@
   height: 196px;
   margin-top: 16px;
   padding: 16px;
-  background: #f8f9fa;
   border-radius: 8px;
   overflow-y: auto;
 }
