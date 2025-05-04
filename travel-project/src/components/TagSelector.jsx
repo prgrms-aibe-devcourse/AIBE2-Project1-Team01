@@ -87,6 +87,9 @@ const TagSelector = ({ onSubmit }) => {
 
   return (
     <div className="tag-selector-container">
+      {/* blur 배경 추가 */}
+      {isModalOpen && <div className="modal-backdrop" />}
+      
       <div
         ref={searchRef}
         onClick={() => {

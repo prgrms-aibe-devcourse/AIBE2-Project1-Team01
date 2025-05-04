@@ -45,7 +45,10 @@ const RegionTag = React.forwardRef(({ text, index, startPosition }, ref) => {
       <div
         ref={tagTextRef}
         className="region-tag"
-        style={{ left: `${startPosition + 10}px` }} // 텍스트 위치 조정
+        style={{
+          left: `${startPosition}px`,  // tag-wrapper와 동일한 위치
+          width: `${tagWrapperRef.current ? tagWrapperRef.current.style.width : 'auto'}`  // wrapper와 동일한 너비
+        }}
       >
         {text}
       </div>
@@ -142,7 +145,7 @@ export const RegionCard = ({
     cursor: "pointer",
     display: "block",
     width: "227px", // overlap-group과 동일한 너비
-    height: "362px", // overlap-group과 동일한 높이
+    height: "370px", // overlap-group과 동일한 높이
     position: "relative",
   };
 
@@ -188,10 +191,10 @@ export const RegionCard = ({
   };
 
   return (
-    <div style={{ width: "227px", height: "362px", position: "relative" }}>
+    <div style={{ width: "227px", height: "370px", position: "relative" }}>
       <div onClick={onCardClick} style={cardStyle}>
-        <div className="overlap-group">
-          <div className="rectangle" />
+        <div className="region-overlap-group">
+          <div className="region-rectangle" />
 
           <div className="regioncard-img">
             <img
