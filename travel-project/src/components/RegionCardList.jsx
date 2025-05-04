@@ -72,19 +72,27 @@ function RegionCardList() {
   return (
     <div>
       <TagSelector onSubmit={setSelectedTags} />
-      <div className="card-list">
-        {filteredCards.map((card) => (
-          <RegionCard
-            key={card.id}
-            id={card.id} // id 값 전달 추가
-            imagePath={card.image}
-            regionName={card.name}
-            regionDescription={card.description}
-            tags={card.tags}
-            url={`/detail/${card.id}`} // ✅ detail 경로도 유니크 id로 유지
-            jsonPath={card.jsonPath} // ✅ JSON 파일 경로 추가
-          />
-        ))}
+      <div className="card-list-wrapper">
+        {filteredCards.length > 0 ? (
+          <div className="card-list">
+            {filteredCards.map((card) => (
+              <RegionCard
+                key={card.id}
+                id={card.id}
+                imagePath={card.image}
+                regionName={card.name}
+                regionDescription={card.description}
+                tags={card.tags}
+                url={`/detail/${card.id}`}
+                jsonPath={card.jsonPath}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="no-results-text">
+            태그에 맞는 여행지를 찾을 수 없습니다.
+          </p>
+        )}
       </div>
     </div>
   );
