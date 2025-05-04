@@ -89,10 +89,12 @@ function RegionCardList() {
             ))}
           </div>
         ) : (
+          <div className="no-results-wrapper">
           <p className="no-results-text">
             태그에 맞는 여행지를 찾을 수 없습니다.
           </p>
-        )}
+        </div>
+      )}
       </div>
     </div>
   );

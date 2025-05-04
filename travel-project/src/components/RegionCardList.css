@@ -1,8 +1,9 @@
 .card-list-wrapper {
   width: 1300px; /* 카드 5개 x 227px + gap 고려 */
   margin: 40px auto 0; /* 상단 여백 + 가운데 정렬 */
-  padding: 0 10px; /* 좌우 내부 여백 */
+  padding: 0 0; /* 좌우 내부 여백 */
   justify-content: center;
+  padding-bottom: 70px;
 }
 
 .card-list {
@@ -11,6 +12,7 @@
   justify-content: flex-start; /* 카드 왼쪽 정렬 */
   gap: 40px; /* 카드 간 간격 */
   margin-top: 0px;
+  padding-bottom: 10px;
 }
 
 .center-text {
@@ -21,7 +23,7 @@
 }
 
 .no-results-text {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-size: 1.2rem;
   color: #888;
@@ -29,6 +31,16 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease;
+}
+
+/* no-results-wrapper가 화면 남은 영역을 모두 차지하도록 설정 */
+.no-results-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;     /* 가로 중앙 */
+  align-items: flex-end;       /* 세로 아래쪽에 가까운 위치 */
+  min-height: 250px;           /* fallback 높이 (컨텐츠 짧을 때 대비) */
+  padding-bottom: 120px;       /* Footer와 겹치지 않도록 공간 확보 */
 }
 
 
