@@ -125,4 +125,9 @@
 .star-outline {
   fill: none;
   stroke: #FFD700;
+}
+
+.star-container.hovered .star-svg {
+  color: #FFD700 !important;
+  stroke: #FFD700 !important;
 } 
