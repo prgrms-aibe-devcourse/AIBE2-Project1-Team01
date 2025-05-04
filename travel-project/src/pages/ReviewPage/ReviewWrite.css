@@ -427,10 +427,15 @@
   margin-bottom: 6px;
 }
 .char-count {
-  font-size: 12px;
-  color: #888;
   text-align: right;
-  margin-top: -6px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+  padding-right: 4px;
+}
+.char-count span {
+  color: #4F9DDE;
+  font-weight: 500;
 }
 .optional {
   font-size: 13px;

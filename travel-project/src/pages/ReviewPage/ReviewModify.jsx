@@ -229,6 +229,9 @@ function ReviewModify() {
             maxLength={150}
             placeholder="리뷰 내용을 입력하세요."
           />
+          <div className="char-count">
+            <span>{reviewContent.length}</span>/150
+          </div>
         </div>        
         <div className="form-section">
           <div className="form-label">사진 수정하기</div>

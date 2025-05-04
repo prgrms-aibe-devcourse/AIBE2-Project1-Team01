@@ -221,6 +221,9 @@ function ReviewWrite() {
             maxLength={150}
             placeholder="리뷰 내용을 입력하세요."
           />
+          <div className="char-count">
+            <span>{review.length}</span>/150
+          </div>
         </div>
         {/* 5. 사진 추가 */}
         <div className="form-section">
