@@ -64,14 +64,64 @@
   display: flex;
   align-items: center;
   gap: 2px;
+  position: relative;
 }
 .star-container {
   position: relative;
   display: inline-block;
 }
+.star-container.hovered .star-svg {
+  color: #FFD700 !important;
+  stroke: #FFD700 !important;
+}
+.star-container .tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  white-space: nowrap;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  z-index: 10;
+}
+.star-container:hover .tooltip {
+  opacity: 1;
+}
+.star-container .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  z-index: 1;
+}
+.star-container .tooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 11.5px 11.5px 0 11.5px;
+  border-style: solid;
+  border-color: #ddd transparent transparent transparent;
+  z-index: 0;
+}
 .rating-text {
-  margin-left: 8px;
-  font-size: 1rem;
+  margin-left: 12px;
+  font-size: 16px;
+  color: #666;
+  min-width: 80px;
 }
 .date-inputs {
   display: flex;
@@ -84,12 +134,66 @@
   border-radius: 4px;
   font-size: 16px;
 }
-.location-input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+.location-input-container {
+  display: flex;
+  gap: 10px;
   width: 100%;
+  height: 48px;
+}
+.location-input {
+  flex: 1;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 100%;
+  box-sizing: border-box;
+}
+.location-confirm-btn {
+  padding: 0 20px;
+  background: #4F9DDE;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
+}
+.location-confirm-btn:hover {
+  background: #3d8bc8;
+}
+.location-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.location-text {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  line-height: 1;
+}
+.location-edit-btn {
+  padding: 6px 16px;
+  background: #fff;
+  color: #4F9DDE;
+  border: 1px solid #4F9DDE;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 32px;
+  line-height: 1;
+}
+.location-edit-btn:hover {
+  background: #4F9DDE;
+  color: white;
 }
 .review-content-input {
   width: 100%;
@@ -120,8 +224,14 @@
 .common-btn.blue {
   background: #2196f3;
 }
+.common-btn.blue:hover {
+  background: #1976d2;
+}
 .common-btn.red {
   background: #f66;
+}
+.common-btn.red:hover {
+  background: #e53935;
 }
 
 .review-photo {
@@ -160,4 +270,419 @@
 
 .delete-btn {
   background: #f66 !important;
-} 
+}
+
+/* 전체 레이아웃 */
+.reviewwrite-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  min-height: 700px;
+}
+
+/* 좌측: 숙소 정보 */
+.reviewwrite-left {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 0 20px;
+  gap: 18px;
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+  background: none;
+  z-index: 2;
+}
+.hotel-image-box {
+  width: 260px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 10px;
+}
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotel-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.hotel-address {
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.hotel-join-info {
+  background: #e6f4ea;
+  color: #1a7f37;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 6px 18px;
+  margin-top: 10px;
+}
+
+/* 우측: 리뷰 폼 */
+.reviewwrite-right {
+  flex: 1 1 0%;
+  padding: 40px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  border-radius: 0;
+}
+.form-section {
+  margin-bottom: 28px;
+}
+.form-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+.form-label.main {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.rating-circles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: 2px solid #e0e0e0;
+}
+.circle.active {
+  background: #4F9DDE;
+  border: 2px solid #4F9DDE;
+}
+.rating-label {
+  font-size: 15px;
+  color: #888;
+  margin-left: 12px;
+}
+.date-selects {
+  display: flex;
+  gap: 10px;
+}
+.date-selects select {
+  font-size: 15px;
+  padding: 7px 18px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.companion-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.companion-btn {
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.companion-btn.selected {
+  background: #4F9DDE;
+  color: #fff;
+  border: 1.5px solid #4F9DDE;
+}
+.review-textarea {
+  width: 96%;
+  min-height: 70px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  resize: vertical;
+  margin-bottom: 6px;
+}
+.review-title-input {
+  width: 100%;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+}
+.char-count {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-top: -6px;
+}
+.optional {
+  font-size: 13px;
+  color: #888;
+  margin-left: 8px;
+}
+.photo-preview-box {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+.photo-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.photo-remove-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #fff;
+  color: #e53935;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.photo-upload-label {
+  display: block;
+  cursor: pointer;
+}
+.photo-upload-box {
+  width: 99.5%;
+  min-height: 80px;
+  background: #f5f5f5;
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  color: #888;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px 0;
+  margin-bottom: 6px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #444;
+  margin-top: 8px;
+}
+.checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+}
+.info-text {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 18px;
+}
+.info-text a {
+  color: #4F9DDE;
+  text-decoration: underline;
+}
+.continue-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 18px;
+  padding: 16px 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.continue-btn:disabled {
+  background: #bbb;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.photo-upload-label.drag-active .photo-upload-box {
+  background: #e3f2fd;
+  border-color: #4F9DDE;
+  color: #1976d2;
+}
+
+.location-photo-box {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-photo-preview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.location-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.location-photo-remove-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.location-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+}
+
+.location-photo-upload-label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.location-photo-upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+}
+
+.location-photo-upload-box span {
+  font-size: 16px;
+}
+
+.location-photo-upload-sub {
+  font-size: 14px !important;
+  color: #888;
+}
+
+.location-photo-empty {
+  width: 100%;
+  height: 100%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #888;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.reviewwrite-right .review-rating-select .star-container svg {
+  font-size: 41px;
+  width: 41px;
+  height: 41px;
+}
+
+.reviewwrite-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewwrite-close-btn .tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  white-space: nowrap;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.reviewwrite-close-btn:hover .tooltip {
+  opacity: 1;
+}
+
+.reviewwrite-close-btn .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  z-index: 1;
+}
+
+.reviewwrite-close-btn .tooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 11.5px 11.5px 0 11.5px;
+  border-style: solid;
+  border-color: #ddd transparent transparent transparent;
+  z-index: 0;
+}
+
+.vertical-divider {
+  width: 1px;
+  background: #e0e0e0;
+  margin: 0 32px;
+  min-height: 600px;
+  position: sticky;
+  top: 40px;
+  align-self: stretch;
+  z-index: 1;
+}
+
+.reviewwrite-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: left;
+  color: #222;
+  width: 100%;
+}
