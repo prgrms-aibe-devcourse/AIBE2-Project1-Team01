@@ -11,7 +11,7 @@
   justify-items: center;
 }
 .write-btn {
-  background: #1976d2;
+  background: #4F9DDE;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -22,11 +22,11 @@
   position: fixed;
   right: 40px;
   bottom: 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   z-index: 100;
 }
 .write-btn:hover {
-  background: #1565c0;
+  background: #3a85c3;
 } 
 .reviewPage-title {
   font-size: 24px;
