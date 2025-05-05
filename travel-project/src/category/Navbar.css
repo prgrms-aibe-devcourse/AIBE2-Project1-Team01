@@ -22,9 +22,10 @@
 
 .navbar-right {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
   font-family: "Noto Sans", sans-serif;
+  padding-right: 15px
 }
 
 .navbar-right a {
