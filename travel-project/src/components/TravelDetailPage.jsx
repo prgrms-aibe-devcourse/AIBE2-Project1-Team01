@@ -6,12 +6,10 @@ import "./TravelDetailPage.css";
 export const handleCardClick = (card, setSelectedCard, setIsModalOpen) => {
   const origId = card.originalId || card.id;
   let trueOriginalId = origId;
-
-  // location_ 형태의 ID가 있는지 확인
+  
   if (typeof origId === "string" && origId.includes("location_")) {
-    trueOriginalId = origId; // location_로 시작하는 ID가 있다면 이것이 진짜 원본 ID
+    trueOriginalId = origId;
   } else if (typeof origId === "string" && origId.includes("-")) {
-    // 파일번호-위치ID 형태의 경우, 위치 ID만 추출
     trueOriginalId = origId.split("-")[1];
   }
 
@@ -34,9 +32,7 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
   const navigate = useNavigate();
 
   if (!reviewData) return null;
-
-  const { name, description, tags, photoUrl, jsonIndex, locationId } =
-    reviewData;
+  const { name, description, tags, photoUrl, jsonIndex, locationId } = reviewData;
 
   const handleBackgroundClick = (e) => {
     if (e.target.classList.contains("travel-detail-modal")) {
@@ -47,17 +43,13 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
   return (
     <div className="travel-detail-modal" onClick={handleBackgroundClick}>
       <div className="modal-content">
-        <button className="close-button" onClick={onClose}>
-          ×
-        </button>
+        <button className="close-button" onClick={onClose}>×</button>
         <img src={photoUrl} alt={name} className="travel-image" />
         <h2 className="travel-title">{name}</h2>
         <p className="travel-description">{description}</p>
         <div className="tag-list">
           {tags.map((t, i) => (
-            <span key={i} className="tag-item">
-              #{t}
-            </span>
+            <span key={i} className="tag-item">#{t}</span>
           ))}
         </div>
         <button
@@ -68,7 +60,7 @@ const TravelDetailPage = ({ reviewData, onClose }) => {
             })
           }
         >
-          일정 추천 받기
+          일정 추천
         </button>
       </div>
     </div>
