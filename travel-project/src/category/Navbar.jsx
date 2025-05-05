@@ -17,6 +17,7 @@ function Navbar() {
             window.location.href = "/"; // 강제 새로고침
           }}
         >
+
           <img src={logoImg} alt="Logo" className="logo" />
         </Link>
       </div>
