@@ -10,6 +10,7 @@ import ReviewWrite from './pages/ReviewPage/ReviewWrite';
 import ReviewModify from './pages/ReviewPage/ReviewModify';
 import ReviewDetail from './pages/ReviewPage/ReviewDetail';
 import { ReviewProvider } from './contexts/ReviewContext';
+import { PlanPage } from './pages/PlanPage/PlanPage'; 
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/reviews/new" element={<ReviewWrite />} />
             <Route path="/reviews/:id" element={<ReviewDetail />} />
             <Route path="/reviews/:id/edit" element={<ReviewModify />} />
+            <Route path="/plan" element={<PlanPage />} />
           </Routes>
         </div>
         <Footer />

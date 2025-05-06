@@ -1,10 +1,12 @@
-/* Footer */
+/* Footer는 일반 Block 요소 */
 .footer {
   text-align: center;
-  padding: 10px;
-  font-size: 12px; /* ✅ 폰트 크기 12px */
-  margin-top: 30px;
-  color: rgba(79, 157, 222, 0.3); /* ✅ #4F9DDE 색상 + 30% 투명도 */
+  padding: 16px;
+  font-size: 12px;
+  background-color: white;
+  color: rgba(79, 157, 222, 0.4);
+  margin: 0; /* 혹시 margin-top 남아 있으면 제거 */
+  padding-top: 5vh;
 }
 
 .footer hr {

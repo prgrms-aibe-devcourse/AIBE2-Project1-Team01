@@ -1,20 +1,27 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,  useLocation, Navigate } from "react-router-dom";
 import axios from "axios";
+
 import DatePickerModal from "../../components/DatePickerModal";
 import TransportSelectModal from "../../components/TransportSelectModal";
 import { useTravelPlan } from "../../hooks/useTravelPlan";
 import TravelPlanList from "../../components/TravelPlanList";
+
 import "./PlanPage.css";
 
-export const PlanPage = ({ fileName = "1", locationId = "location_001" }) => {
+export const PlanPage = () => {
+  const navigate = useNavigate();
+    const { state } = useLocation();
+  
   const [step, setStep] = useState("date"); // 'date' → 'transport' → 'done'
   const [dateRange, setDateRange] = useState(null);
   const [travelRange, setTravelRange] = useState(0);
   const [transportType, setTransportType] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
 
-  const navigate = useNavigate();
+  // state 가 없거나 잘못됐을 때도, fileName/locationId 변수는 미리 계산
+  const fileName   = state?.jsonIndex   ?? "1";
+  const locationId = state?.locationId  ?? "location_001";
 
   const { planData, locationName, locationDescription, locationImage, tags } = useTravelPlan(
     fileName,
@@ -22,6 +29,10 @@ export const PlanPage = ({ fileName = "1", locationId = "location_001" }) => {
     transportType,
     travelRange
   );
+
+    if (!state) {
+      return <Navigate to="/" replace />;
+    }
 
   const handleSave = async () => {
     const saveData = {

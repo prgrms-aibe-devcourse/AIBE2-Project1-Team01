@@ -57,30 +57,14 @@
   font-size: 14px;
 }
 
-.review-title {
-  color: #000000;
+.review-location {
   font-size: 16px;
   font-weight: 700;
   left: 9px;
   letter-spacing: 0;
-  line-height: 22.4px;
-  position: absolute;
-  top: 258px;
-  white-space: nowrap;
-  width: 211px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.review-location {
-  color: #6b6b6b;
-  font-size: 12px;
-  font-weight: 400;
-  left: 9px;
-  letter-spacing: 0;
   line-height: 16.8px;
   position: absolute;
-  top: 282px;
+  top: 258px;
   width: 211px;
   text-align: left;
 }
@@ -93,21 +77,34 @@
   letter-spacing: 0;
   line-height: 16.8px;
   position: absolute;
-  top: 300px;
+  top: 282px;
   width: 211px;
   text-align: left;
 }
 
-.review-rating {
-  position: absolute;
-  top: 320px;
+.review-content {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
   left: 9px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 300px;
+  width: 211px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
-.review-content {
-  font-size: 14px;
-  color: #333;
-  min-height: 20px;
+.review-rating {
+  position: absolute;
+  top: 333px;
+  left: 9px;
 }
 
 .star-svg {
@@ -116,8 +113,8 @@
   stroke-width: 1.5;
   display: inline-block;
   vertical-align: middle;
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
 }
 
 .star-svg.large {
@@ -128,4 +125,9 @@
 .star-outline {
   fill: none;
   stroke: #FFD700;
+}
+
+.star-container.hovered .star-svg {
+  color: #FFD700 !important;
+  stroke: #FFD700 !important;
 } 
