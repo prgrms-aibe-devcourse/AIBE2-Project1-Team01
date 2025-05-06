@@ -6,6 +6,9 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.3);
 
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +27,7 @@
   max-width: 400px;
   min-width: 360px;
 
-  padding: 40px 20px 20px;
+  padding: 30px 20px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -34,8 +37,9 @@
 
 .close-button {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 16px !important;
+  right: 16px !important;
+  transform: none !important;
   width: 32px;
   height: 32px;
   font-size: 16px;
@@ -47,7 +51,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* hover 시 살짝 진한 회색으로 */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .close-button:hover {
@@ -61,7 +64,7 @@
   object-fit: cover;
   border-radius: 8px;
   /* 위 margin 제거, 대신 아래 여백만 */
-  margin: 0 0 16px;
+  margin: 20px 0 16px;
 }
 
 .travel-title {
@@ -75,14 +78,14 @@
   font-size: 14px;
   color: #444;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   margin: 0 0 12px;
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 8px;
   width: 100%;
   margin-bottom: 20px;
