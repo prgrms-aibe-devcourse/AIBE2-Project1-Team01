@@ -6,7 +6,7 @@ import "react-date-range/dist/styles.css"; // 메인 스타일 시트
 import "react-date-range/dist/theme/default.css"; // 테마 CSS 파일
 import "./DatePickerModal.css";
 
-const DatePickerModal = ({ onConfirm }) => {
+const DatePickerModal = ({ onConfirm, onClose }) => {
   // 오늘 날짜 (시간 00:00으로 초기화)
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -126,7 +126,7 @@ const DatePickerModal = ({ onConfirm }) => {
 
   return (
     <div className="date-picker-container">
-      <button className="close-button">×</button>
+      <button className="close-button" onClick={onClose}>×</button>
 
       <h2 className="date-picker-title">여행 기간이 어떻게 되시나요?</h2>
       <p className="date-picker-subtitle">

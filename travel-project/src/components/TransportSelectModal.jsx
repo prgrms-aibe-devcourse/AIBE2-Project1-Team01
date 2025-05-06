@@ -6,7 +6,7 @@ const TransportSelectModal = ({ onConfirm, onClose }) => {
 
   return (
     <div className="transport-modal">
-      <button className="close-button">×</button>
+      <button className="close-button" onClick={onClose}>×</button>
 
       <h2 className="modal-title">이동 수단을 선택해 주세요</h2>
       <p className="modal-subtitle">

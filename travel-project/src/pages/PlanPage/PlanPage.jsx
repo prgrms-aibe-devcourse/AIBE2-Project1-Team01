@@ -72,6 +72,10 @@ export const PlanPage = () => {
     navigate("/mytrips", { replace: true });
   };
 
+  const handleCloseModal = () => {
+    navigate("/", { replace: true });
+  };
+
   return (
     <div className="plan-page-container">
       {step === "date" && (
@@ -83,6 +87,7 @@ export const PlanPage = () => {
                 setTravelRange(range);
                 setStep("transport");
               }}
+              onClose={handleCloseModal}
             />
           </div>
         </div>
@@ -96,6 +101,7 @@ export const PlanPage = () => {
                 setTransportType(selectedTransport);
                 setStep("done");
               }}
+              onClose={handleCloseModal}
             />
           </div>
         </div>
